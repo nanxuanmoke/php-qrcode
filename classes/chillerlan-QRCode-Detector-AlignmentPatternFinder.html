@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -42,7 +43,30 @@
 
     <nav class="phpdocumentor-topnav">
     <ul class="phpdocumentor-topnav__menu">
-        </ul>
+                        <li class="phpdocumentor-topnav__menu-item -menu">
+                <a href="https://php-qrcode.readthedocs.io">
+                    <span>
+                                                                        User Manual
+                    </span>
+                </a>
+            </li>
+                                <li class="phpdocumentor-topnav__menu-item -social">
+                <a href="https://github.com/chillerlan/php-qrcode">
+                    <span>
+                                                                        <i class="fab fa-github"></i>
+                                                
+                    </span>
+                </a>
+            </li>
+                    <li class="phpdocumentor-topnav__menu-item -social">
+                <a href="https://github.com/chillerlan/php-qrcode/discussions">
+                    <span>
+                                                                        <i class="fas fa-envelope-open-text"></i>
+                                                
+                    </span>
+                </a>
+            </li>
+                </ul>
 </nav>
 </header>
 
@@ -52,8 +76,8 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/chillerlan.html" class="">chillerlan</a>
@@ -70,7 +94,7 @@
             </ul>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/Application.html" class="">Application</a>
@@ -78,21 +102,22 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/chillerlan.html">chillerlan</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/chillerlan-qrcode.html">QRCode</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/chillerlan-qrcode-detector.html">Detector</a></li>
@@ -113,15 +138,23 @@
     
     </h2>
 
+<div class="phpdocumentor-label-line">
+
+    <div class="phpdocumentor-label phpdocumentor-label--success"><span>Final</span><span>Yes</span></div>
+
+
+</div>
+
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Detector/AlignmentPatternFinder.php"><a href="files/src-detector-alignmentpatternfinder.html"><abbr title="src/Detector/AlignmentPatternFinder.php">AlignmentPatternFinder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
             <p class="phpdocumentor-summary">This class attempts to find alignment patterns in a QR Code. Alignment patterns look like finder
 patterns but are smaller and appear at regular intervals throughout the image.</p>
+
 
     <section class="phpdocumentor-description"><p>At the moment this only looks for the bottom-right alignment pattern.</p>
 <p>This is mostly a simplified copy of FinderPatternFinder. It is copied,
@@ -133,7 +166,8 @@ some code.</p>
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -145,8 +179,7 @@ some code.</p>
 </section>
 
                                     </dd>
-                        </dl>
-
+                                            </dl>
 
 
 
@@ -154,40 +187,59 @@ some code.</p>
 
 <h3 id="toc">
     Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
 </h3>
 
+
+
+
+
+
+
+
+
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#property_bitMatrix">$bitMatrix</a>
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#property_matrix">$matrix</a>
     <span>
                         &nbsp;: <a href="classes/chillerlan-QRCode-Decoder-BitMatrix.html"><abbr title="\chillerlan\QRCode\Decoder\BitMatrix">BitMatrix</abbr></a>            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#property_moduleSize">$moduleSize</a>
+    <a class="" href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#property_moduleSize">$moduleSize</a>
     <span>
                         &nbsp;: float            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#property_possibleCenters">$possibleCenters</a>
+    <a class="" href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#property_possibleCenters">$possibleCenters</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                        &nbsp;: array&lt;string|int, <a href="classes/chillerlan-QRCode-Detector-AlignmentPattern.html"><abbr title="\chillerlan\QRCode\Detector\AlignmentPattern">AlignmentPattern</abbr></a>&gt;            </span>
 </dt>
-<dd></dd>
 
-                <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#method___construct">__construct()</a>
+    </dl>
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Creates a finder that will look in a portion of the whole image.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#method_find">find()</a>
+    <a class="" href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#method_find">find()</a>
     <span>
                                 &nbsp;: <a href="classes/chillerlan-QRCode-Detector-AlignmentPattern.html"><abbr title="\chillerlan\QRCode\Detector\AlignmentPattern">AlignmentPattern</abbr></a>|null    </span>
 </dt>
@@ -195,7 +247,7 @@ some code.</p>
 it&#039;s pretty performance-critical and so is written to be fast foremost.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#method_centerFromEnd">centerFromEnd()</a>
+    <a class="" href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#method_centerFromEnd">centerFromEnd()</a>
     <span>
                                 &nbsp;: float    </span>
 </dt>
@@ -203,7 +255,7 @@ it&#039;s pretty performance-critical and so is written to be fast foremost.</dd
 figures the location of the center of this black/white/black run.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#method_crossCheckVertical">crossCheckVertical()</a>
+    <a class="" href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#method_crossCheckVertical">crossCheckVertical()</a>
     <span>
                                 &nbsp;: float|null    </span>
 </dt>
@@ -212,23 +264,22 @@ figures the location of the center of this black/white/black run.</dd>
 alignment pattern to see if the same proportion is detected.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#method_foundPatternCross">foundPatternCross()</a>
+    <a class="" href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#method_foundPatternCross">foundPatternCross()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#method_handlePossibleCenter">handlePossibleCenter()</a>
+    <a class="" href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#method_handlePossibleCenter">handlePossibleCenter()</a>
     <span>
                                 &nbsp;: <a href="classes/chillerlan-QRCode-Detector-AlignmentPattern.html"><abbr title="\chillerlan\QRCode\Detector\AlignmentPattern">AlignmentPattern</abbr></a>|null    </span>
 </dt>
 <dd>This is called when a horizontal scan finds a possible alignment pattern. It will
-cross check with a vertical scan, and if successful, will see if this pattern had been
+cross-check with a vertical scan, and if successful, will see if this pattern had been
 found on a previous horizontal scan. If so, we consider it confirmed and conclude we have
 found the alignment pattern.</dd>
 
-        </dl>
+    </dl>
 
 
 
@@ -239,6 +290,7 @@ found the alignment pattern.</dd>
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
             <a href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="
@@ -247,29 +299,31 @@ found the alignment pattern.</dd>
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_bitMatrix">
-        $bitMatrix
-        <a href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#property_bitMatrix" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_matrix">
+        $matrix
+        <a href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#property_matrix" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Detector/AlignmentPatternFinder.php"><a href="files/src-detector-alignmentpatternfinder.html"><abbr title="src/Detector/AlignmentPatternFinder.php">AlignmentPatternFinder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
     
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type"><a href="classes/chillerlan-QRCode-Decoder-BitMatrix.html"><abbr title="\chillerlan\QRCode\Decoder\BitMatrix">BitMatrix</abbr></a></span>
-    <span class="phpdocumentor-signature__name">$bitMatrix</span>
+    <span class="phpdocumentor-signature__name">$matrix</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
+    
+    
+    
 
     
 
@@ -284,16 +338,18 @@ found the alignment pattern.</dd>
     <h4 class="phpdocumentor-element__name" id="property_moduleSize">
         $moduleSize
         <a href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#property_moduleSize" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Detector/AlignmentPatternFinder.php"><a href="files/src-detector-alignmentpatternfinder.html"><abbr title="src/Detector/AlignmentPatternFinder.php">AlignmentPatternFinder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
+    
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
@@ -301,9 +357,9 @@ found the alignment pattern.</dd>
     <span class="phpdocumentor-signature__name">$moduleSize</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
+    
+    
+    
 
     
 
@@ -318,25 +374,29 @@ found the alignment pattern.</dd>
     <h4 class="phpdocumentor-element__name" id="property_possibleCenters">
         $possibleCenters
         <a href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#property_possibleCenters" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Detector/AlignmentPatternFinder.php"><a href="files/src-detector-alignmentpatternfinder.html"><abbr title="src/Detector/AlignmentPatternFinder.php">AlignmentPatternFinder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
     
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, <a href="classes/chillerlan-QRCode-Detector-AlignmentPattern.html"><abbr title="\chillerlan\QRCode\Detector\AlignmentPattern">AlignmentPattern</abbr></a>&gt;</span>
     <span class="phpdocumentor-signature__name">$possibleCenters</span>
     </code>
 
     
     
+    
+
     
 
 </article>
@@ -346,6 +406,7 @@ found the alignment pattern.</dd>
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
             <a href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="phpdocumentor-element
@@ -356,11 +417,12 @@ found the alignment pattern.</dd>
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
         <a href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Detector/AlignmentPatternFinder.php"><a href="files/src-detector-alignmentpatternfinder.html"><abbr title="src/Detector/AlignmentPatternFinder.php">AlignmentPatternFinder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -368,13 +430,16 @@ found the alignment pattern.</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/chillerlan-QRCode-Decoder-BitMatrix.html"><abbr title="\chillerlan\QRCode\Decoder\BitMatrix">BitMatrix</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$image</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$moduleSize</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/chillerlan-QRCode-Decoder-BitMatrix.html"><abbr title="\chillerlan\QRCode\Decoder\BitMatrix">BitMatrix</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$matrix</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$moduleSize</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$image</span>
+                <span class="phpdocumentor-signature__argument__name">$matrix</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/chillerlan-QRCode-Decoder-BitMatrix.html"><abbr title="\chillerlan\QRCode\Decoder\BitMatrix">BitMatrix</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -395,10 +460,8 @@ found the alignment pattern.</dd>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
+    
+
     
 </article>
                     <article
@@ -410,11 +473,12 @@ found the alignment pattern.</dd>
     <h4 class="phpdocumentor-element__name" id="method_find">
         find()
         <a href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#method_find" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Detector/AlignmentPatternFinder.php"><a href="files/src-detector-alignmentpatternfinder.html"><abbr title="src/Detector/AlignmentPatternFinder.php">AlignmentPatternFinder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">62</span>
 
     </aside>
 
@@ -425,6 +489,9 @@ it&#039;s pretty performance-critical and so is written to be fast foremost.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">find</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$startX</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$startY</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$width</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$height</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/chillerlan-QRCode-Detector-AlignmentPattern.html"><abbr title="\chillerlan\QRCode\Detector\AlignmentPattern">AlignmentPattern</abbr></a>|null</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -468,11 +535,13 @@ it&#039;s pretty performance-critical and so is written to be fast foremost.</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/chillerlan-QRCode-Detector-AlignmentPattern.html"><abbr title="\chillerlan\QRCode\Detector\AlignmentPattern">AlignmentPattern</abbr></a>|null</span>
-            &mdash;
-        
     
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/chillerlan-QRCode-Detector-AlignmentPattern.html"><abbr title="\chillerlan\QRCode\Detector\AlignmentPattern">AlignmentPattern</abbr></a>|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -483,11 +552,12 @@ it&#039;s pretty performance-critical and so is written to be fast foremost.</p>
     <h4 class="phpdocumentor-element__name" id="method_centerFromEnd">
         centerFromEnd()
         <a href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#method_centerFromEnd" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Detector/AlignmentPatternFinder.php"><a href="files/src-detector-alignmentpatternfinder.html"><abbr title="src/Detector/AlignmentPatternFinder.php">AlignmentPatternFinder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">209</span>
+    <span class="phpdocumentor-element-found-in__line">207</span>
 
     </aside>
 
@@ -498,6 +568,9 @@ figures the location of the center of this black/white/black run.</p>
     <span class="phpdocumentor-signature__visibility">private</span>
                     <span class="phpdocumentor-signature__name">centerFromEnd</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, int&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stateCount</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$end</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">float</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -519,11 +592,13 @@ figures the location of the center of this black/white/black run.</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">float</span>
-            &mdash;
-        
     
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">float</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -534,11 +609,12 @@ figures the location of the center of this black/white/black run.</p>
     <h4 class="phpdocumentor-element__name" id="method_crossCheckVertical">
         crossCheckVertical()
         <a href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#method_crossCheckVertical" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Detector/AlignmentPatternFinder.php"><a href="files/src-detector-alignmentpatternfinder.html"><abbr title="src/Detector/AlignmentPatternFinder.php">AlignmentPatternFinder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">226</span>
+    <span class="phpdocumentor-element-found-in__line">223</span>
 
     </aside>
 
@@ -550,7 +626,16 @@ alignment pattern to see if the same proportion is detected.</p>
     <span class="phpdocumentor-signature__visibility">private</span>
                     <span class="phpdocumentor-signature__name">crossCheckVertical</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$startI</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$centerJ</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$maxCount</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$originalStateCountTotal</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">float|null</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
+        <section class="phpdocumentor-description"><p>$startI   row where an alignment pattern was detected
+$centerJ  center of the section that appears to cross an alignment pattern
+$maxCount maximum reasonable number of modules that should be
+observed in any reading state, based on the results of the horizontal scan</p>
+<p>returns vertical center of alignment pattern, or null if not found</p>
+</section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -558,28 +643,21 @@ alignment pattern to see if the same proportion is detected.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>row where an alignment pattern was detected</p>
-</section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$centerJ</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>center of the section that appears to cross an alignment pattern</p>
-</section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$maxCount</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>maximum reasonable number of modules that should be
-observed in any reading state, based on the results of the horizontal scan</p>
-</section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$originalStateCountTotal</span>
@@ -592,13 +670,13 @@ observed in any reading state, based on the results of the horizontal scan</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">float|null</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>vertical center of alignment pattern, or null if not found</p>
-</section>
-
     
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">float|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -609,11 +687,12 @@ observed in any reading state, based on the results of the horizontal scan</p>
     <h4 class="phpdocumentor-element__name" id="method_foundPatternCross">
         foundPatternCross()
         <a href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#method_foundPatternCross" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Detector/AlignmentPatternFinder.php"><a href="files/src-detector-alignmentpatternfinder.html"><abbr title="src/Detector/AlignmentPatternFinder.php">AlignmentPatternFinder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">152</span>
+    <span class="phpdocumentor-element-found-in__line">154</span>
 
     </aside>
 
@@ -622,6 +701,9 @@ observed in any reading state, based on the results of the horizontal scan</p>
     <span class="phpdocumentor-signature__visibility">private</span>
                     <span class="phpdocumentor-signature__name">foundPatternCross</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, int&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stateCount</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -638,14 +720,18 @@ observed in any reading state, based on the results of the horizontal scan</p>
 
     
 
+    
+
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>true if the proportions of the counts is close enough to the 1/1/1 ratios
+        <span class="phpdocumentor-signature__response_type">bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>true if the proportions of the counts is close enough to the 1/1/1 ratios
 used by alignment patterns to be considered a match</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -656,16 +742,17 @@ used by alignment patterns to be considered a match</p>
     <h4 class="phpdocumentor-element__name" id="method_handlePossibleCenter">
         handlePossibleCenter()
         <a href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#method_handlePossibleCenter" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Detector/AlignmentPatternFinder.php"><a href="files/src-detector-alignmentpatternfinder.html"><abbr title="src/Detector/AlignmentPatternFinder.php">AlignmentPatternFinder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">177</span>
+    <span class="phpdocumentor-element-found-in__line">178</span>
 
     </aside>
 
         <p class="phpdocumentor-summary">This is called when a horizontal scan finds a possible alignment pattern. It will
-cross check with a vertical scan, and if successful, will see if this pattern had been
+cross-check with a vertical scan, and if successful, will see if this pattern had been
 found on a previous horizontal scan. If so, we consider it confirmed and conclude we have
 found the alignment pattern.</p>
 
@@ -673,6 +760,9 @@ found the alignment pattern.</p>
     <span class="phpdocumentor-signature__visibility">private</span>
                     <span class="phpdocumentor-signature__name">handlePossibleCenter</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, int&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stateCount</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$i</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$j</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/chillerlan-QRCode-Detector-AlignmentPattern.html"><abbr title="\chillerlan\QRCode\Detector\AlignmentPattern">AlignmentPattern</abbr></a>|null</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -707,80 +797,154 @@ found the alignment pattern.</p>
 
     
 
+    
+
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/chillerlan-QRCode-Detector-AlignmentPattern.html"><abbr title="\chillerlan\QRCode\Detector\AlignmentPattern">AlignmentPattern</abbr></a>|null</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>if we have found the same pattern twice, or null if not</p>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/chillerlan-QRCode-Detector-AlignmentPattern.html"><abbr title="\chillerlan\QRCode\Detector\AlignmentPattern">AlignmentPattern</abbr></a>|null</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>if we have found the same pattern twice, or null if not</p>
 </section>
 
-    
+            </section>
+
 </article>
             </section>
 
-        
+        <div class="phpdocumentor-modal" id="source-view">
+    <div class="phpdocumentor-modal-bg" data-exit-button></div>
+    <div class="phpdocumentor-modal-container">
+        <div class="phpdocumentor-modal-content">
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/src/Detector/AlignmentPatternFinder.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+        </div>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
+    </div>
+</div>
+
     <script type="text/javascript">
-        function loadExternalCodeSnippets(line) {
-            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
-                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
-                var language = 'php';
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
 
-                var code = document.createElement('code');
-                code.className = 'language-' + language;
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
 
-                pre.textContent = '';
+                    var xhr = new XMLHttpRequest();
 
-                pre.setAttribute('data-line', line)
-                code.textContent = 'Loading…';
+                    xhr.open('GET', src, true);
 
-                pre.appendChild(code);
-
-                var xhr = new XMLHttpRequest();
-
-                xhr.open('GET', src, true);
-
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState == 4) {
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
 
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
-
                             Prism.highlightElement(code);
+                            return;
                         }
-                        else if (xhr.status >= 400) {
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
                             code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
                         }
-                        else {
-                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
-                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
                     }
-                };
+                    modal.classList.add("phpdocumentor-modal__open");
 
-                xhr.send(null);
-            });
-        }
-
-        var modals = document.querySelectorAll("[data-modal]");
-
-        modals.forEach(function (trigger) {
-            trigger.addEventListener("click", function (event) {
-                //event.preventDefault();
-                const modal = document.getElementById(trigger.dataset.modal);
-                modal.classList.add("phpdocumentor-modal__open");
-                loadExternalCodeSnippets(trigger.dataset.line)
-                const exits = modal.querySelectorAll("[data-exit-button]");
-                exits.forEach(function (exit) {
-                    exit.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        modal.classList.remove("phpdocumentor-modal__open");
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
                     });
                 });
             });
-        });
+        })();
     </script>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                                            <li><a href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#property_matrix">$matrix</a></li>
+                                                    <li class=""><a href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#property_moduleSize">$moduleSize</a></li>
+                                                    <li class=""><a href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#property_possibleCenters">$possibleCenters</a></li>
+                                            </ul>
+                </li>
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li class=""><a href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#method_find">find()</a></li>
+                                            <li class=""><a href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#method_centerFromEnd">centerFromEnd()</a></li>
+                                            <li class=""><a href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#method_crossCheckVertical">crossCheckVertical()</a></li>
+                                            <li class=""><a href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#method_foundPatternCross">foundPatternCross()</a></li>
+                                            <li class=""><a href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#method_handlePossibleCenter">handlePossibleCenter()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -791,7 +955,6 @@ found the alignment pattern.</p>
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 

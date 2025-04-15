@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -42,7 +43,30 @@
 
     <nav class="phpdocumentor-topnav">
     <ul class="phpdocumentor-topnav__menu">
-        </ul>
+                        <li class="phpdocumentor-topnav__menu-item -menu">
+                <a href="https://php-qrcode.readthedocs.io">
+                    <span>
+                                                                        User Manual
+                    </span>
+                </a>
+            </li>
+                                <li class="phpdocumentor-topnav__menu-item -social">
+                <a href="https://github.com/chillerlan/php-qrcode">
+                    <span>
+                                                                        <i class="fab fa-github"></i>
+                                                
+                    </span>
+                </a>
+            </li>
+                    <li class="phpdocumentor-topnav__menu-item -social">
+                <a href="https://github.com/chillerlan/php-qrcode/discussions">
+                    <span>
+                                                                        <i class="fas fa-envelope-open-text"></i>
+                                                
+                    </span>
+                </a>
+            </li>
+                </ul>
 </nav>
 </header>
 
@@ -52,8 +76,8 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/chillerlan.html" class="">chillerlan</a>
@@ -70,7 +94,7 @@
             </ul>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/Application.html" class="">Application</a>
@@ -78,21 +102,22 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/chillerlan.html">chillerlan</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/chillerlan-qrcodetest.html">QRCodeTest</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/chillerlan-qrcodetest-data.html">Data</a></li>
@@ -103,7 +128,7 @@
     ByteTest
 
         <span class="phpdocumentor-element__extends">
-        extends <a href="classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html"><abbr title="\chillerlan\QRCodeTest\Data\DatainterfaceTestAbstract">DatainterfaceTestAbstract</abbr></a>
+        extends <a href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html"><abbr title="\chillerlan\QRCodeTest\Data\DataInterfaceTestAbstract">DataInterfaceTestAbstract</abbr></a>
     </span>
     
             <div class="phpdocumentor-element__package">
@@ -116,10 +141,17 @@
     
     </h2>
 
+<div class="phpdocumentor-label-line">
+
+    <div class="phpdocumentor-label phpdocumentor-label--success"><span>Final</span><span>Yes</span></div>
+
+
+</div>
+
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="tests/Data/ByteTest.php"><a href="files/tests-data-bytetest.html"><abbr title="tests/Data/ByteTest.php">ByteTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
@@ -135,126 +167,222 @@
 
 <h3 id="toc">
     Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/chillerlan-QRCodeTest-Data-ByteTest.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
 </h3>
 
+
+
+
+
+
+
+<h4 id="toc-constants">
+    Constants
+    <a href="classes/chillerlan-QRCodeTest-Data-ByteTest.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/chillerlan-QRCodeTest-Data-ByteTest.html#property_FQN">$FQN</a>
+            <dt class="phpdocumentor-table-of-contents__entry -constant -protected">
+    <a class="" href="classes/chillerlan-QRCodeTest-Data-ByteTest.html#constant_testData">testData</a>
     <span>
-                        &nbsp;: string            </span>
+        &nbsp;= &#039;[¯\_(ツ)_/¯]&#039;                            </span>
 </dt>
-<dd></dd>
+
+    </dl>
+
+
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/chillerlan-QRCodeTest-Data-ByteTest.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#property_dataMode">$dataMode</a>
+    <span>
+                        &nbsp;: <a href="classes/chillerlan-QRCode-Data-QRDataModeInterface.html"><abbr title="\chillerlan\QRCode\Data\QRDataModeInterface">QRDataModeInterface</abbr></a>            </span>
+</dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html#property_QRData">$QRData</a>
+    <a class="" href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#property_QRData">$QRData</a>
     <span>
                         &nbsp;: <a href="classes/chillerlan-QRCode-Data-QRData.html"><abbr title="\chillerlan\QRCode\Data\QRData">QRData</abbr></a>            </span>
 </dt>
-<dd></dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html#property_reflection">$reflection</a>
+    </dl>
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/chillerlan-QRCodeTest-Data-ByteTest.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/chillerlan-QRCodeTest-QRMaxLengthTrait.html#method_getMaxLengthForMode">getMaxLengthForMode()</a>
     <span>
-                        &nbsp;: <abbr title="\ReflectionClass">ReflectionClass</abbr>            </span>
+                                &nbsp;: int    </span>
 </dt>
-<dd></dd>
+<dd>the maximum character count for the given $mode and $eccLevel</dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/chillerlan-QRCodeTest-Data-ByteTest.html#property_testdata">$testdata</a>
-    <span>
-                        &nbsp;: string            </span>
-</dt>
-<dd></dd>
-
-                <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html#method_maskPatternProvider">maskPatternProvider()</a>
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_maskPatternProvider">maskPatternProvider()</a>
     <span>
                                 &nbsp;: array&lt;string|int, array&lt;string|int, int&gt;&gt;    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-QRCodeTest-Data-ByteTest.html#method_stringValidateProvider">stringValidateProvider()</a>
+    <a class="" href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_maxLengthProvider">maxLengthProvider()</a>
+    <span>
+                                &nbsp;: <abbr title="\Generator">Generator</abbr>    </span>
+</dt>
+<dd>Generates test data for each data mode:</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/chillerlan-QRCodeTest-Data-ByteTest.html#method_stringValidateProvider">stringValidateProvider()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd>isByte() passses any binary string and only fails on empty strings</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html#method_testCodeLengthOverflowException">testCodeLengthOverflowException()</a>
+    <a class="" href="classes/chillerlan-QRCodeTest-Data-ByteTest.html#method_testBinaryStringInvalid">testBinaryStringInvalid()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd>Tests if an exception is thrown on data overflow</dd>
+<dd>Tests if a random binary string is properly validated as false</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html#method_testGetMinimumVersion">testGetMinimumVersion()</a>
+    <a class="" href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testDecodeSegment">testDecodeSegment()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Tests decoding a data segment from a given BitBuffer</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testGetMinimumVersion">testGetMinimumVersion()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Tests getting the minimum QR version for the given data</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html#method_testGetMinimumVersionException">testGetMinimumVersionException()</a>
+    <a class="" href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testGetMinimumVersionException">testGetMinimumVersionException()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd>Tests if an exception is thrown when the data exceeds the maximum version while auto detecting</dd>
+<dd>Tests if an exception is thrown when the data exceeds the maximum version while auto-detecting</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html#method_testInitMatrix">testInitMatrix()</a>
+    <a class="" href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testInitMatrix">testInitMatrix()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Tests initializing the data matrix</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html#method_testInstance">testInstance()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd>Verifies the data interface instance</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-QRCodeTest-Data-ByteTest.html#method_testInvalidDataException">testInvalidDataException()</a>
+    <a class="" href="classes/chillerlan-QRCodeTest-Data-ByteTest.html#method_testInvalidDataException">testInvalidDataException()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Tests if an exception is thrown when an invalid character is encountered</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html#method_testInvalidDataOnEmptyException">testInvalidDataOnEmptyException()</a>
+    <a class="" href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testInvalidDataOnEmptyException">testInvalidDataOnEmptyException()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Tests if an exception is thrown if the given string is empty</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html#method_testValidateString">testValidateString()</a>
+    <a class="" href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testMaxLength">testMaxLength()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testMaxLengthOverflowException">testMaxLengthOverflowException()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Tests if an exception is thrown on data overflow</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testValidateString">testValidateString()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Tests if a string is properly validated for the respective data mode</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_versionBreakpointProvider">versionBreakpointProvider()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>returns versions within the version breakpoints 1-9, 10-26 and 27-40</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html#method_setUp">setUp()</a>
+    <a class="" href="classes/chillerlan-QRCodeTest-Data-ByteTest.html#method_getDataModeInterface">getDataModeInterface()</a>
+    <span>
+                                &nbsp;: <a href="classes/chillerlan-QRCode-Data-QRDataModeInterface.html"><abbr title="\chillerlan\QRCode\Data\QRDataModeInterface">QRDataModeInterface</abbr></a>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a class="" href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_setUp">setUp()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd></dd>
 
-        </dl>
+    </dl>
 
 
 
         
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/chillerlan-QRCodeTest-Data-ByteTest.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article class="phpdocumentor-element -constant -protected ">
+    <h4 class="phpdocumentor-element__name" id="constant_testData">
+        testData
+        <a href="classes/chillerlan-QRCodeTest-Data-ByteTest.html#constant_testData" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/Data/ByteTest.php"><a href="files/tests-data-bytetest.html"><abbr title="tests/Data/ByteTest.php">ByteTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">22</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">testData</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;[¯\_(ツ)_/¯]&#039;</span>
+</code>
+
+
+    
+    
+    
+
+    
+
+</article>
+            </section>
 
         
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
             <a href="classes/chillerlan-QRCodeTest-Data-ByteTest.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="
@@ -263,29 +391,31 @@
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_FQN">
-        $FQN
-        <a href="classes/chillerlan-QRCodeTest-Data-ByteTest.html#property_FQN" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_dataMode">
+        $dataMode
+        <a href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#property_dataMode" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/Data/ByteTest.php"><a href="files/tests-data-bytetest.html"><abbr title="tests/Data/ByteTest.php">ByteTest.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/Data/DataInterfaceTestAbstract.php"><a href="files/tests-data-datainterfacetestabstract.html"><abbr title="tests/Data/DataInterfaceTestAbstract.php">DataInterfaceTestAbstract.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
     
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$FQN</span>
-     = <span class="phpdocumentor-signature__default-value">\chillerlan\QRCode\Data\Byte::class</span></code>
+        <span class="phpdocumentor-signature__type"><a href="classes/chillerlan-QRCode-Data-QRDataModeInterface.html"><abbr title="\chillerlan\QRCode\Data\QRDataModeInterface">QRDataModeInterface</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$dataMode</span>
+    </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
+    
+    
+    
 
     
 
@@ -299,17 +429,19 @@
 >
     <h4 class="phpdocumentor-element__name" id="property_QRData">
         $QRData
-        <a href="classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html#property_QRData" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#property_QRData" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/Data/DatainterfaceTestAbstract.php"><a href="files/tests-data-datainterfacetestabstract.html"><abbr title="tests/Data/DatainterfaceTestAbstract.php">DatainterfaceTestAbstract.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/Data/DataInterfaceTestAbstract.php"><a href="files/tests-data-datainterfacetestabstract.html"><abbr title="tests/Data/DataInterfaceTestAbstract.php">DataInterfaceTestAbstract.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
+    
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
@@ -317,77 +449,9 @@
     <span class="phpdocumentor-signature__name">$QRData</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
     
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_reflection">
-        $reflection
-        <a href="classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html#property_reflection" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/Data/DatainterfaceTestAbstract.php"><a href="files/tests-data-datainterfacetestabstract.html"><abbr title="tests/Data/DatainterfaceTestAbstract.php">DatainterfaceTestAbstract.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">27</span>
-
-    </aside>
-
     
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\ReflectionClass">ReflectionClass</abbr></span>
-    <span class="phpdocumentor-signature__name">$reflection</span>
-    </code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
     
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_testdata">
-        $testdata
-        <a href="classes/chillerlan-QRCodeTest-Data-ByteTest.html#property_testdata" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/Data/ByteTest.php"><a href="files/tests-data-bytetest.html"><abbr title="tests/Data/ByteTest.php">ByteTest.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">21</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$testdata</span>
-     = <span class="phpdocumentor-signature__default-value">&#039;[¯\\_(ツ)_/¯]&#039;</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
 
     
 
@@ -398,67 +462,208 @@
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
             <a href="classes/chillerlan-QRCodeTest-Data-ByteTest.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="phpdocumentor-element
             -method
             -public
-                                                        "
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getMaxLengthForMode">
+        getMaxLengthForMode()
+        <a href="classes/chillerlan-QRCodeTest-QRMaxLengthTrait.html#method_getMaxLengthForMode" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/QRMaxLengthTrait.php"><a href="files/tests-qrmaxlengthtrait.html"><abbr title="tests/QRMaxLengthTrait.php">QRMaxLengthTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">80</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">the maximum character count for the given $mode and $eccLevel</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getMaxLengthForMode</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mode</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/chillerlan-QRCode-Common-Version.html"><abbr title="\chillerlan\QRCode\Common\Version">Version</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$version</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/chillerlan-QRCode-Common-EccLevel.html"><abbr title="\chillerlan\QRCode\Common\EccLevel">EccLevel</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$eccLevel</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$mode</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$version</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/chillerlan-QRCode-Common-Version.html"><abbr title="\chillerlan\QRCode\Common\Version">Version</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$eccLevel</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/chillerlan-QRCode-Common-EccLevel.html"><abbr title="\chillerlan\QRCode\Common\EccLevel">EccLevel</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/chillerlan-QRCodeTest-QRMaxLengthTrait.html#method_getMaxLengthForMode#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/chillerlan-QRCode-QRCodeException.html"><abbr title="\chillerlan\QRCode\QRCodeException">QRCodeException</abbr></a></span>
+                                                            
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">codeCoverageIgnore</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
 >
     <h4 class="phpdocumentor-element__name" id="method_maskPatternProvider">
         maskPatternProvider()
-        <a href="classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html#method_maskPatternProvider" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_maskPatternProvider" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/Data/DatainterfaceTestAbstract.php"><a href="files/tests-data-datainterfacetestabstract.html"><abbr title="tests/Data/DatainterfaceTestAbstract.php">DatainterfaceTestAbstract.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/Data/DataInterfaceTestAbstract.php"><a href="files/tests-data-datainterfacetestabstract.html"><abbr title="tests/Data/DataInterfaceTestAbstract.php">DataInterfaceTestAbstract.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">maskPatternProvider</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, array&lt;string|int, int&gt;&gt;</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">maskPatternProvider</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, array&lt;string|int, int&gt;&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
 
     
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\chillerlan\QRCodeTest\Data\testInitMatrix()">testInitMatrix()</abbr></span>
-                                        
-                                             
-                                    </dd>
-                        </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, array&lt;string|int, int&gt;&gt;</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, array&lt;string|int, int&gt;&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
             -method
             -public
-                                                        "
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_maxLengthProvider">
+        maxLengthProvider()
+        <a href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_maxLengthProvider" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/Data/DataInterfaceTestAbstract.php"><a href="files/tests-data-datainterfacetestabstract.html"><abbr title="tests/Data/DataInterfaceTestAbstract.php">DataInterfaceTestAbstract.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">124</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generates test data for each data mode:</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">maxLengthProvider</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><ul>
+<li>version</li>
+<li>ECC level</li>
+<li>a string that contains the maximum amount of characters for the given mode</li>
+<li>a string that contains characters for the given mode and that exceeds the maximum length by one/two character(s)</li>
+<li>the maximum allowed character length</li>
+</ul>
+</section>
+
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_maxLengthProvider#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
+                                                            
+                                             
+                                    </dd>
+                                            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
 >
     <h4 class="phpdocumentor-element__name" id="method_stringValidateProvider">
         stringValidateProvider()
         <a href="classes/chillerlan-QRCodeTest-Data-ByteTest.html#method_stringValidateProvider" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="tests/Data/ByteTest.php"><a href="files/tests-data-bytetest.html"><abbr title="tests/Data/ByteTest.php">ByteTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
@@ -466,16 +671,72 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">stringValidateProvider</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">stringValidateProvider</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/chillerlan-QRCodeTest-Data-ByteTest.html#method_stringValidateProvider#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">phpstan-return</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>array&lt;int, array{0: string, 1: bool}&gt;</p>
+</section>
+
+                                    </dd>
+                                            </dl>
 
     
-    
-    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-        
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_testBinaryStringInvalid">
+        testBinaryStringInvalid()
+        <a href="classes/chillerlan-QRCodeTest-Data-ByteTest.html#method_testBinaryStringInvalid" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/Data/ByteTest.php"><a href="files/tests-data-bytetest.html"><abbr title="tests/Data/ByteTest.php">ByteTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">46</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Tests if a random binary string is properly validated as false</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">testBinaryStringInvalid</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+    
+
     
 </article>
                     <article
@@ -484,31 +745,57 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_testCodeLengthOverflowException">
-        testCodeLengthOverflowException()
-        <a href="classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html#method_testCodeLengthOverflowException" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_testDecodeSegment">
+        testDecodeSegment()
+        <a href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testDecodeSegment" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/Data/DatainterfaceTestAbstract.php"><a href="files/tests-data-datainterfacetestabstract.html"><abbr title="tests/Data/DatainterfaceTestAbstract.php">DatainterfaceTestAbstract.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/Data/DataInterfaceTestAbstract.php"><a href="files/tests-data-datainterfacetestabstract.html"><abbr title="tests/Data/DataInterfaceTestAbstract.php">DataInterfaceTestAbstract.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">104</span>
+    <span class="phpdocumentor-element-found-in__line">98</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Tests if an exception is thrown on data overflow</p>
+        <p class="phpdocumentor-summary">Tests decoding a data segment from a given BitBuffer</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testCodeLengthOverflowException</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">testDecodeSegment</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$version</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$version</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
 
     
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testDecodeSegment#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\DataProvider">DataProvider</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        &#039;versionBreakpointProvider&#039;
+    </dd>
+    </dl>
+            </section>
+
     
 </article>
                     <article
@@ -519,12 +806,13 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_testGetMinimumVersion">
         testGetMinimumVersion()
-        <a href="classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html#method_testGetMinimumVersion" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testGetMinimumVersion" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/Data/DatainterfaceTestAbstract.php"><a href="files/tests-data-datainterfacetestabstract.html"><abbr title="tests/Data/DatainterfaceTestAbstract.php">DatainterfaceTestAbstract.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/Data/DataInterfaceTestAbstract.php"><a href="files/tests-data-datainterfacetestabstract.html"><abbr title="tests/Data/DataInterfaceTestAbstract.php">DataInterfaceTestAbstract.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">173</span>
 
     </aside>
 
@@ -532,16 +820,55 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testGetMinimumVersion</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">testGetMinimumVersion</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/chillerlan-QRCode-Common-Version.html"><abbr title="\chillerlan\QRCode\Common\Version">Version</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$version</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/chillerlan-QRCode-Common-EccLevel.html"><abbr title="\chillerlan\QRCode\Common\EccLevel">EccLevel</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$eccLevel</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$str</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$version</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/chillerlan-QRCode-Common-Version.html"><abbr title="\chillerlan\QRCode\Common\Version">Version</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$eccLevel</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/chillerlan-QRCode-Common-EccLevel.html"><abbr title="\chillerlan\QRCode\Common\EccLevel">EccLevel</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$str</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
 
     
-    
-    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testGetMinimumVersion#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\DataProvider">DataProvider</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        &#039;maxLengthProvider&#039;
+    </dd>
+    </dl>
+            </section>
+
     
 </article>
                     <article
@@ -552,29 +879,31 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_testGetMinimumVersionException">
         testGetMinimumVersionException()
-        <a href="classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html#method_testGetMinimumVersionException" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testGetMinimumVersionException" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/Data/DatainterfaceTestAbstract.php"><a href="files/tests-data-datainterfacetestabstract.html"><abbr title="tests/Data/DatainterfaceTestAbstract.php">DatainterfaceTestAbstract.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/Data/DataInterfaceTestAbstract.php"><a href="files/tests-data-datainterfacetestabstract.html"><abbr title="tests/Data/DataInterfaceTestAbstract.php">DataInterfaceTestAbstract.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">91</span>
+    <span class="phpdocumentor-element-found-in__line">219</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Tests if an exception is thrown when the data exceeds the maximum version while auto detecting</p>
+        <p class="phpdocumentor-summary">Tests if an exception is thrown when the data exceeds the maximum version while auto-detecting</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">testGetMinimumVersionException</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
     
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
+    
+
     
 </article>
                     <article
@@ -585,12 +914,13 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_testInitMatrix">
         testInitMatrix()
-        <a href="classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html#method_testInitMatrix" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testInitMatrix" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/Data/DatainterfaceTestAbstract.php"><a href="files/tests-data-datainterfacetestabstract.html"><abbr title="tests/Data/DatainterfaceTestAbstract.php">DatainterfaceTestAbstract.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/Data/DataInterfaceTestAbstract.php"><a href="files/tests-data-datainterfacetestabstract.html"><abbr title="tests/Data/DataInterfaceTestAbstract.php">DataInterfaceTestAbstract.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -598,75 +928,41 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testInitMatrix</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$maskPattern</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">testInitMatrix</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pattern</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$maskPattern</span>
+                <span class="phpdocumentor-signature__argument__name">$pattern</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">dataProvider</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>maskPatternProvider</p>
-</section>
-
-                                    </dd>
-                        </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_testInstance">
-        testInstance()
-        <a href="classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html#method_testInstance" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/Data/DatainterfaceTestAbstract.php"><a href="files/tests-data-datainterfacetestabstract.html"><abbr title="tests/Data/DatainterfaceTestAbstract.php">DatainterfaceTestAbstract.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">40</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Verifies the data interface instance</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testInstance</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
-    
-    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testInitMatrix#attributes" class="headerlink"><i class="fas fa-link"></i></a>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\DataProvider">DataProvider</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        &#039;maskPatternProvider&#039;
+    </dd>
+    </dl>
+            </section>
+
     
 </article>
                     <article
@@ -678,11 +974,12 @@
     <h4 class="phpdocumentor-element__name" id="method_testInvalidDataException">
         testInvalidDataException()
         <a href="classes/chillerlan-QRCodeTest-Data-ByteTest.html#method_testInvalidDataException" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="tests/Data/ByteTest.php"><a href="files/tests-data-bytetest.html"><abbr title="tests/Data/ByteTest.php">ByteTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
@@ -692,27 +989,15 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">testInvalidDataException</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                        </dl>
+    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
+    
+
     
 </article>
                     <article
@@ -723,12 +1008,13 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_testInvalidDataOnEmptyException">
         testInvalidDataOnEmptyException()
-        <a href="classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html#method_testInvalidDataOnEmptyException" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testInvalidDataOnEmptyException" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/Data/DatainterfaceTestAbstract.php"><a href="files/tests-data-datainterfacetestabstract.html"><abbr title="tests/Data/DatainterfaceTestAbstract.php">DatainterfaceTestAbstract.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/Data/DataInterfaceTestAbstract.php"><a href="files/tests-data-datainterfacetestabstract.html"><abbr title="tests/Data/DataInterfaceTestAbstract.php">DataInterfaceTestAbstract.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">124</span>
+    <span class="phpdocumentor-element-found-in__line">239</span>
 
     </aside>
 
@@ -738,14 +1024,167 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">testInvalidDataOnEmptyException</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
     
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_testMaxLength">
+        testMaxLength()
+        <a href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testMaxLength" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/Data/DataInterfaceTestAbstract.php"><a href="files/tests-data-datainterfacetestabstract.html"><abbr title="tests/Data/DataInterfaceTestAbstract.php">DataInterfaceTestAbstract.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">155</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">testMaxLength</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/chillerlan-QRCode-Common-Version.html"><abbr title="\chillerlan\QRCode\Common\Version">Version</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$version</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/chillerlan-QRCode-Common-EccLevel.html"><abbr title="\chillerlan\QRCode\Common\EccLevel">EccLevel</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$eccLevel</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$str</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$version</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/chillerlan-QRCode-Common-Version.html"><abbr title="\chillerlan\QRCode\Common\Version">Version</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$eccLevel</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/chillerlan-QRCode-Common-EccLevel.html"><abbr title="\chillerlan\QRCode\Common\EccLevel">EccLevel</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$str</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testMaxLength#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\DataProvider">DataProvider</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        &#039;maxLengthProvider&#039;
+    </dd>
+    </dl>
+            </section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_testMaxLengthOverflowException">
+        testMaxLengthOverflowException()
+        <a href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testMaxLengthOverflowException" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/Data/DataInterfaceTestAbstract.php"><a href="files/tests-data-datainterfacetestabstract.html"><abbr title="tests/Data/DataInterfaceTestAbstract.php">DataInterfaceTestAbstract.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">203</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Tests if an exception is thrown on data overflow</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">testMaxLengthOverflowException</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/chillerlan-QRCode-Common-Version.html"><abbr title="\chillerlan\QRCode\Common\Version">Version</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$version</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/chillerlan-QRCode-Common-EccLevel.html"><abbr title="\chillerlan\QRCode\Common\EccLevel">EccLevel</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$eccLevel</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$str</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$str1</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$version</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/chillerlan-QRCode-Common-Version.html"><abbr title="\chillerlan\QRCode\Common\Version">Version</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$eccLevel</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/chillerlan-QRCode-Common-EccLevel.html"><abbr title="\chillerlan\QRCode\Common\EccLevel">EccLevel</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$str</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$str1</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testMaxLengthOverflowException#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\DataProvider">DataProvider</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        &#039;maxLengthProvider&#039;
+    </dd>
+    </dl>
+            </section>
+
     
 </article>
                     <article
@@ -756,20 +1195,25 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_testValidateString">
         testValidateString()
-        <a href="classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html#method_testValidateString" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testValidateString" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/Data/DatainterfaceTestAbstract.php"><a href="files/tests-data-datainterfacetestabstract.html"><abbr title="tests/Data/DatainterfaceTestAbstract.php">DatainterfaceTestAbstract.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/Data/DataInterfaceTestAbstract.php"><a href="files/tests-data-datainterfacetestabstract.html"><abbr title="tests/Data/DataInterfaceTestAbstract.php">DataInterfaceTestAbstract.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">83</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Tests if a string is properly validated for the respective data mode</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">testValidateString</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$string</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$expected</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -778,41 +1222,139 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$expected</span>
                 : <span class="phpdocumentor-signature__argument__return-type">bool</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testValidateString#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\DataProvider">DataProvider</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        &#039;stringValidateProvider&#039;
+    </dd>
+    </dl>
+            </section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_versionBreakpointProvider">
+        versionBreakpointProvider()
+        <a href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_versionBreakpointProvider" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/Data/DataInterfaceTestAbstract.php"><a href="files/tests-data-datainterfacetestabstract.html"><abbr title="tests/Data/DataInterfaceTestAbstract.php">DataInterfaceTestAbstract.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">91</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">returns versions within the version breakpoints 1-9, 10-26 and 27-40</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">versionBreakpointProvider</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_versionBreakpointProvider#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">dataProvider</span>
+                    <span class="phpdocumentor-tag__name">phpstan-return</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                 
-                                                 <section class="phpdocumentor-description"><p>stringValidateProvider</p>
+                                                 <section class="phpdocumentor-description"><p>array&lt;string, array{0: int}&gt;</p>
 </section>
 
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getDataModeInterface">
+        getDataModeInterface()
+        <a href="classes/chillerlan-QRCodeTest-Data-ByteTest.html#method_getDataModeInterface" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/Data/ByteTest.php"><a href="files/tests-data-bytetest.html"><abbr title="tests/Data/ByteTest.php">ByteTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">24</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getDataModeInterface</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/chillerlan-QRCode-Data-QRDataModeInterface.html"><abbr title="\chillerlan\QRCode\Data\QRDataModeInterface">QRDataModeInterface</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$data</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/chillerlan-QRCode-Data-QRDataModeInterface.html"><abbr title="\chillerlan\QRCode\Data\QRDataModeInterface">QRDataModeInterface</abbr></a></span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -822,12 +1364,13 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_setUp">
         setUp()
-        <a href="classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html#method_setUp" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_setUp" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/Data/DatainterfaceTestAbstract.php"><a href="files/tests-data-datainterfacetestabstract.html"><abbr title="tests/Data/DatainterfaceTestAbstract.php">DatainterfaceTestAbstract.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/Data/DataInterfaceTestAbstract.php"><a href="files/tests-data-datainterfacetestabstract.html"><abbr title="tests/Data/DataInterfaceTestAbstract.php">DataInterfaceTestAbstract.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -836,83 +1379,170 @@
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">setUp</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
     
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
+    
+
     
 </article>
             </section>
 
-        
+        <div class="phpdocumentor-modal" id="source-view">
+    <div class="phpdocumentor-modal-bg" data-exit-button></div>
+    <div class="phpdocumentor-modal-container">
+        <div class="phpdocumentor-modal-content">
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/tests/Data/ByteTest.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+        </div>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
+    </div>
+</div>
+
     <script type="text/javascript">
-        function loadExternalCodeSnippets(line) {
-            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
-                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
-                var language = 'php';
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
 
-                var code = document.createElement('code');
-                code.className = 'language-' + language;
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
 
-                pre.textContent = '';
+                    var xhr = new XMLHttpRequest();
 
-                pre.setAttribute('data-line', line)
-                code.textContent = 'Loading…';
+                    xhr.open('GET', src, true);
 
-                pre.appendChild(code);
-
-                var xhr = new XMLHttpRequest();
-
-                xhr.open('GET', src, true);
-
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState == 4) {
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
 
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
-
                             Prism.highlightElement(code);
+                            return;
                         }
-                        else if (xhr.status >= 400) {
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
                             code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
                         }
-                        else {
-                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
-                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
                     }
-                };
+                    modal.classList.add("phpdocumentor-modal__open");
 
-                xhr.send(null);
-            });
-        }
-
-        var modals = document.querySelectorAll("[data-modal]");
-
-        modals.forEach(function (trigger) {
-            trigger.addEventListener("click", function (event) {
-                //event.preventDefault();
-                const modal = document.getElementById(trigger.dataset.modal);
-                modal.classList.add("phpdocumentor-modal__open");
-                loadExternalCodeSnippets(trigger.dataset.line)
-                const exits = modal.querySelectorAll("[data-exit-button]");
-                exits.forEach(function (exit) {
-                    exit.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        modal.classList.remove("phpdocumentor-modal__open");
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
                     });
                 });
             });
-        });
+        })();
     </script>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                        <li><a href="classes/chillerlan-QRCodeTest-Data-ByteTest.html#toc-constants">Constants</a></li>
+                                                            <li><a href="classes/chillerlan-QRCodeTest-Data-ByteTest.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/chillerlan-QRCodeTest-Data-ByteTest.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/chillerlan-QRCodeTest-Data-ByteTest.html#constant_testData">testData</a></li>
+                                            </ul>
+                </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#property_dataMode">$dataMode</a></li>
+                                                    <li class=""><a href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#property_QRData">$QRData</a></li>
+                                            </ul>
+                </li>
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li class=""><a href="classes/chillerlan-QRCodeTest-QRMaxLengthTrait.html#method_getMaxLengthForMode">getMaxLengthForMode()</a></li>
+                                            <li class=""><a href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_maskPatternProvider">maskPatternProvider()</a></li>
+                                            <li class=""><a href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_maxLengthProvider">maxLengthProvider()</a></li>
+                                            <li class=""><a href="classes/chillerlan-QRCodeTest-Data-ByteTest.html#method_stringValidateProvider">stringValidateProvider()</a></li>
+                                            <li class=""><a href="classes/chillerlan-QRCodeTest-Data-ByteTest.html#method_testBinaryStringInvalid">testBinaryStringInvalid()</a></li>
+                                            <li class=""><a href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testDecodeSegment">testDecodeSegment()</a></li>
+                                            <li class=""><a href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testGetMinimumVersion">testGetMinimumVersion()</a></li>
+                                            <li class=""><a href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testGetMinimumVersionException">testGetMinimumVersionException()</a></li>
+                                            <li class=""><a href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testInitMatrix">testInitMatrix()</a></li>
+                                            <li class=""><a href="classes/chillerlan-QRCodeTest-Data-ByteTest.html#method_testInvalidDataException">testInvalidDataException()</a></li>
+                                            <li class=""><a href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testInvalidDataOnEmptyException">testInvalidDataOnEmptyException()</a></li>
+                                            <li class=""><a href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testMaxLength">testMaxLength()</a></li>
+                                            <li class=""><a href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testMaxLengthOverflowException">testMaxLengthOverflowException()</a></li>
+                                            <li class=""><a href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testValidateString">testValidateString()</a></li>
+                                            <li class=""><a href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_versionBreakpointProvider">versionBreakpointProvider()</a></li>
+                                            <li class=""><a href="classes/chillerlan-QRCodeTest-Data-ByteTest.html#method_getDataModeInterface">getDataModeInterface()</a></li>
+                                            <li class=""><a href="classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_setUp">setUp()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -923,7 +1553,6 @@
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="classes/chillerlan-QRCodeTest-Data-ByteTest.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 

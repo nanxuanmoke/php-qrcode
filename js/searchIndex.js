@@ -33,13 +33,23 @@ Search.appendIndex(
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Common\\BitBuffer\u003A\u003Aavailable\u0028\u0029",
             "name": "available",
-            "summary": "",
+            "summary": "Returns\u0020the\u0020number\u0020of\u0020bits\u0020that\u0020can\u0020be\u0020read\u0020successfully",
             "url": "classes/chillerlan-QRCode-Common-BitBuffer.html#method_available"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Common\\BitBuffer\u003A\u003Aread\u0028\u0029",
             "name": "read",
             "summary": "",
             "url": "classes/chillerlan-QRCode-Common-BitBuffer.html#method_read"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Common\\BitBuffer\u003A\u003Aclear\u0028\u0029",
+            "name": "clear",
+            "summary": "Clears\u0020the\u0020buffer\u0020and\u0020resets\u0020the\u0020stats",
+            "url": "classes/chillerlan-QRCode-Common-BitBuffer.html#method_clear"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Common\\BitBuffer\u003A\u003Arewind\u0028\u0029",
+            "name": "rewind",
+            "summary": "Resets\u0020the\u0020read\u002Dcounters",
+            "url": "classes/chillerlan-QRCode-Common-BitBuffer.html#method_rewind"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Common\\BitBuffer\u003A\u003A\u0024buffer",
             "name": "buffer",
@@ -96,6 +106,11 @@ Search.appendIndex(
             "summary": "returns\u0020an\u0020array\u0020with\u0020the\u0020max\u0020bit\u0020lengths\u0020for\u0020version\u00201\u002D40\u0020and\u0020the\u0020current\u0020ECC\u0020level",
             "url": "classes/chillerlan-QRCode-Common-EccLevel.html#method_getMaxBits"
         },                {
+            "fqsen": "\\chillerlan\\QRCode\\Common\\EccLevel\u003A\u003AgetMaxBitsForVersion\u0028\u0029",
+            "name": "getMaxBitsForVersion",
+            "summary": "Returns\u0020the\u0020maximum\u0020bit\u0020length\u0020for\u0020the\u0020given\u0020version\u0020and\u0020current\u0020ECC\u0020level",
+            "url": "classes/chillerlan-QRCode-Common-EccLevel.html#method_getMaxBitsForVersion"
+        },                {
             "fqsen": "\\chillerlan\\QRCode\\Common\\EccLevel\u003A\u003AL",
             "name": "L",
             "summary": "",
@@ -133,7 +148,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Common\\ECICharset",
             "name": "ECICharset",
-            "summary": "",
+            "summary": "ISO\/IEC\u002018004\u003A2000\u0020\u002D\u00208.4.1\u0020Extended\u0020Channel\u0020Interpretation\u0020\u0028ECI\u0029\u0020Mode",
             "url": "classes/chillerlan-QRCode-Common-ECICharset.html"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Common\\ECICharset\u003A\u003A__construct\u0028\u0029",
@@ -306,45 +321,35 @@ Search.appendIndex(
             "summary": "The\u0020current\u0020ECI\u0020character\u0020set\u0020ID",
             "url": "classes/chillerlan-QRCode-Common-ECICharset.html#property_charsetID"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Common\\FormatInformation",
-            "name": "FormatInformation",
-            "summary": "Encapsulates\u0020a\u0020QR\u0020Code\u0027s\u0020format\u0020information,\u0020including\u0020the\u0020data\u0020mask\u0020used\u0020and\u0020error\u0020correction\u0020level.",
-            "url": "classes/chillerlan-QRCode-Common-FormatInformation.html"
+            "fqsen": "\\chillerlan\\QRCode\\Common\\GDLuminanceSource",
+            "name": "GDLuminanceSource",
+            "summary": "This\u0020class\u0020is\u0020used\u0020to\u0020help\u0020decode\u0020images\u0020from\u0020files\u0020which\u0020arrive\u0020as\u0020GD\u0020Resource\nIt\u0020does\u0020not\u0020support\u0020rotation.",
+            "url": "classes/chillerlan-QRCode-Common-GDLuminanceSource.html"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Common\\FormatInformation\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\chillerlan\\QRCode\\Common\\GDLuminanceSource\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Receives\u0020the\u0020format\u0020information\u0020from\u0020a\u0020parsed\u0020QR\u0020Code,\u0020detects\u0020ECC\u0020level\u0020and\u0020mask\u0020pattern",
-            "url": "classes/chillerlan-QRCode-Common-FormatInformation.html#method___construct"
+            "summary": "GDLuminanceSource\u0020constructor.",
+            "url": "classes/chillerlan-QRCode-Common-GDLuminanceSource.html#method___construct"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Common\\FormatInformation\u003A\u003AgetErrorCorrectionLevel\u0028\u0029",
-            "name": "getErrorCorrectionLevel",
-            "summary": "Returns\u0020and\u0020EccLevel\u0020instance\u0020ith\u0020the\u0020detected\u0020ECC\u0020level\u0020set",
-            "url": "classes/chillerlan-QRCode-Common-FormatInformation.html#method_getErrorCorrectionLevel"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Common\\FormatInformation\u003A\u003AgetMaskPattern\u0028\u0029",
-            "name": "getMaskPattern",
-            "summary": "Returns\u0020a\u0020MaskPattern\u0020instance\u0020with\u0020the\u0020detected\u0020mask\u0020pattern\u0020set",
-            "url": "classes/chillerlan-QRCode-Common-FormatInformation.html#method_getMaskPattern"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Common\\FormatInformation\u003A\u003AFORMAT_INFO_MASK_QR",
-            "name": "FORMAT_INFO_MASK_QR",
+            "fqsen": "\\chillerlan\\QRCode\\Common\\GDLuminanceSource\u003A\u003AsetLuminancePixels\u0028\u0029",
+            "name": "setLuminancePixels",
             "summary": "",
-            "url": "classes/chillerlan-QRCode-Common-FormatInformation.html#constant_FORMAT_INFO_MASK_QR"
+            "url": "classes/chillerlan-QRCode-Common-GDLuminanceSource.html#method_setLuminancePixels"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Common\\FormatInformation\u003A\u003ADECODE_LOOKUP",
-            "name": "DECODE_LOOKUP",
-            "summary": "See\u0020ISO\u002018004\u003A2006,\u0020Annex\u0020C,\u0020Table\u0020C.1",
-            "url": "classes/chillerlan-QRCode-Common-FormatInformation.html#constant_DECODE_LOOKUP"
+            "fqsen": "\\chillerlan\\QRCode\\Common\\GDLuminanceSource\u003A\u003AfromFile\u0028\u0029",
+            "name": "fromFile",
+            "summary": "Creates\u0020a\u0020LuminanceSource\u0020instance\u0020from\u0020the\u0020given\u0020file",
+            "url": "classes/chillerlan-QRCode-Common-GDLuminanceSource.html#method_fromFile"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Common\\FormatInformation\u003A\u003A\u0024errorCorrectionLevel",
-            "name": "errorCorrectionLevel",
-            "summary": "The\u0020current\u0020ECC\u0020level\u0020value",
-            "url": "classes/chillerlan-QRCode-Common-FormatInformation.html#property_errorCorrectionLevel"
+            "fqsen": "\\chillerlan\\QRCode\\Common\\GDLuminanceSource\u003A\u003AfromBlob\u0028\u0029",
+            "name": "fromBlob",
+            "summary": "Creates\u0020a\u0020LuminanceSource\u0020instance\u0020from\u0020the\u0020given\u0020data\u0020blob",
+            "url": "classes/chillerlan-QRCode-Common-GDLuminanceSource.html#method_fromBlob"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Common\\FormatInformation\u003A\u003A\u0024maskPattern",
-            "name": "maskPattern",
-            "summary": "The\u0020current\u0020mask\u0020pattern\u0020\u00280\u002D7\u0029",
-            "url": "classes/chillerlan-QRCode-Common-FormatInformation.html#property_maskPattern"
+            "fqsen": "\\chillerlan\\QRCode\\Common\\GDLuminanceSource\u003A\u003A\u0024gdImage",
+            "name": "gdImage",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Common-GDLuminanceSource.html#property_gdImage"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Common\\GenericGFPoly",
             "name": "GenericGFPoly",
@@ -461,6 +466,131 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/chillerlan-QRCode-Common-GF256.html#constant_expTable"
         },                {
+            "fqsen": "\\chillerlan\\QRCode\\Common\\IMagickLuminanceSource",
+            "name": "IMagickLuminanceSource",
+            "summary": "This\u0020class\u0020is\u0020used\u0020to\u0020help\u0020decode\u0020images\u0020from\u0020files\u0020which\u0020arrive\u0020as\u0020Imagick\u0020Resource\nIt\u0020does\u0020not\u0020support\u0020rotation.",
+            "url": "classes/chillerlan-QRCode-Common-IMagickLuminanceSource.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Common\\IMagickLuminanceSource\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "IMagickLuminanceSource\u0020constructor.",
+            "url": "classes/chillerlan-QRCode-Common-IMagickLuminanceSource.html#method___construct"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Common\\IMagickLuminanceSource\u003A\u003AsetLuminancePixels\u0028\u0029",
+            "name": "setLuminancePixels",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Common-IMagickLuminanceSource.html#method_setLuminancePixels"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Common\\IMagickLuminanceSource\u003A\u003AfromFile\u0028\u0029",
+            "name": "fromFile",
+            "summary": "Creates\u0020a\u0020LuminanceSource\u0020instance\u0020from\u0020the\u0020given\u0020file",
+            "url": "classes/chillerlan-QRCode-Common-IMagickLuminanceSource.html#method_fromFile"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Common\\IMagickLuminanceSource\u003A\u003AfromBlob\u0028\u0029",
+            "name": "fromBlob",
+            "summary": "Creates\u0020a\u0020LuminanceSource\u0020instance\u0020from\u0020the\u0020given\u0020data\u0020blob",
+            "url": "classes/chillerlan-QRCode-Common-IMagickLuminanceSource.html#method_fromBlob"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Common\\IMagickLuminanceSource\u003A\u003A\u0024imagick",
+            "name": "imagick",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Common-IMagickLuminanceSource.html#property_imagick"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Common\\LuminanceSourceAbstract",
+            "name": "LuminanceSourceAbstract",
+            "summary": "The\u0020purpose\u0020of\u0020this\u0020class\u0020hierarchy\u0020is\u0020to\u0020abstract\u0020different\u0020bitmap\u0020implementations\u0020across\nplatforms\u0020into\u0020a\u0020standard\u0020interface\u0020for\u0020requesting\u0020greyscale\u0020luminance\u0020values.",
+            "url": "classes/chillerlan-QRCode-Common-LuminanceSourceAbstract.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Common\\LuminanceSourceAbstract\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Common-LuminanceSourceAbstract.html#method___construct"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Common\\LuminanceSourceAbstract\u003A\u003AgetLuminances\u0028\u0029",
+            "name": "getLuminances",
+            "summary": "Fetches\u0020luminance\u0020data\u0020for\u0020the\u0020underlying\u0020bitmap.\u0020Values\u0020should\u0020be\u0020fetched\u0020using\u003A\n\u0060int\u0020luminance\u0020\u003D\u0020array\u005By\u0020\u002A\u0020width\u0020\u002B\u0020x\u005D\u0020\u0026\u00200xff\u0060",
+            "url": "classes/chillerlan-QRCode-Common-LuminanceSourceAbstract.html#method_getLuminances"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Common\\LuminanceSourceAbstract\u003A\u003AgetWidth\u0028\u0029",
+            "name": "getWidth",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Common-LuminanceSourceAbstract.html#method_getWidth"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Common\\LuminanceSourceAbstract\u003A\u003AgetHeight\u0028\u0029",
+            "name": "getHeight",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Common-LuminanceSourceAbstract.html#method_getHeight"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Common\\LuminanceSourceAbstract\u003A\u003AgetRow\u0028\u0029",
+            "name": "getRow",
+            "summary": "Fetches\u0020one\u0020row\u0020of\u0020luminance\u0020data\u0020from\u0020the\u0020underlying\u0020platform\u0027s\u0020bitmap.\u0020Values\u0020range\u0020from\n0\u0020\u0028black\u0029\u0020to\u0020255\u0020\u0028white\u0029.\u0020Because\u0020Java\u0020does\u0020not\u0020have\u0020an\u0020unsigned\u0020byte\u0020type,\u0020callers\u0020will\u0020have\nto\u0020bitwise\u0020and\u0020with\u00200xff\u0020for\u0020each\u0020value.\u0020It\u0020is\u0020preferable\u0020for\u0020implementations\u0020of\u0020this\u0020method\nto\u0020only\u0020fetch\u0020this\u0020row\u0020rather\u0020than\u0020the\u0020whole\u0020image,\u0020since\u0020no\u00202D\u0020Readers\u0020may\u0020be\u0020installed\u0020and\ngetLuminances\u0028\u0029\u0020may\u0020never\u0020be\u0020called.",
+            "url": "classes/chillerlan-QRCode-Common-LuminanceSourceAbstract.html#method_getRow"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Common\\LuminanceSourceAbstract\u003A\u003AsetLuminancePixel\u0028\u0029",
+            "name": "setLuminancePixel",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Common-LuminanceSourceAbstract.html#method_setLuminancePixel"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Common\\LuminanceSourceAbstract\u003A\u003AcheckFile\u0028\u0029",
+            "name": "checkFile",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Common-LuminanceSourceAbstract.html#method_checkFile"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Common\\LuminanceSourceAbstract\u003A\u003A\u0024options",
+            "name": "options",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Common-LuminanceSourceAbstract.html#property_options"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Common\\LuminanceSourceAbstract\u003A\u003A\u0024luminances",
+            "name": "luminances",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Common-LuminanceSourceAbstract.html#property_luminances"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Common\\LuminanceSourceAbstract\u003A\u003A\u0024width",
+            "name": "width",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Common-LuminanceSourceAbstract.html#property_width"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Common\\LuminanceSourceAbstract\u003A\u003A\u0024height",
+            "name": "height",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Common-LuminanceSourceAbstract.html#property_height"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Common\\LuminanceSourceInterface",
+            "name": "LuminanceSourceInterface",
+            "summary": "Interface\u0020for\u0020the\u0020luminance\u0020sources",
+            "url": "classes/chillerlan-QRCode-Common-LuminanceSourceInterface.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Common\\LuminanceSourceInterface\u003A\u003AgetLuminances\u0028\u0029",
+            "name": "getLuminances",
+            "summary": "Fetches\u0020luminance\u0020data\u0020for\u0020the\u0020underlying\u0020bitmap.\u0020Values\u0020should\u0020be\u0020fetched\u0020using\u003A\n\u0060int\u0020luminance\u0020\u003D\u0020array\u005By\u0020\u002A\u0020width\u0020\u002B\u0020x\u005D\u0020\u0026\u00200xff\u0060",
+            "url": "classes/chillerlan-QRCode-Common-LuminanceSourceInterface.html#method_getLuminances"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Common\\LuminanceSourceInterface\u003A\u003AgetWidth\u0028\u0029",
+            "name": "getWidth",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Common-LuminanceSourceInterface.html#method_getWidth"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Common\\LuminanceSourceInterface\u003A\u003AgetHeight\u0028\u0029",
+            "name": "getHeight",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Common-LuminanceSourceInterface.html#method_getHeight"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Common\\LuminanceSourceInterface\u003A\u003AgetRow\u0028\u0029",
+            "name": "getRow",
+            "summary": "Fetches\u0020one\u0020row\u0020of\u0020luminance\u0020data\u0020from\u0020the\u0020underlying\u0020platform\u0027s\u0020bitmap.\u0020Values\u0020range\u0020from\n0\u0020\u0028black\u0029\u0020to\u0020255\u0020\u0028white\u0029.\u0020Because\u0020Java\u0020does\u0020not\u0020have\u0020an\u0020unsigned\u0020byte\u0020type,\u0020callers\u0020will\u0020have\nto\u0020bitwise\u0020and\u0020with\u00200xff\u0020for\u0020each\u0020value.\u0020It\u0020is\u0020preferable\u0020for\u0020implementations\u0020of\u0020this\u0020method\nto\u0020only\u0020fetch\u0020this\u0020row\u0020rather\u0020than\u0020the\u0020whole\u0020image,\u0020since\u0020no\u00202D\u0020Readers\u0020may\u0020be\u0020installed\u0020and\ngetLuminances\u0028\u0029\u0020may\u0020never\u0020be\u0020called.",
+            "url": "classes/chillerlan-QRCode-Common-LuminanceSourceInterface.html#method_getRow"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Common\\LuminanceSourceInterface\u003A\u003AfromFile\u0028\u0029",
+            "name": "fromFile",
+            "summary": "Creates\u0020a\u0020LuminanceSource\u0020instance\u0020from\u0020the\u0020given\u0020file",
+            "url": "classes/chillerlan-QRCode-Common-LuminanceSourceInterface.html#method_fromFile"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Common\\LuminanceSourceInterface\u003A\u003AfromBlob\u0028\u0029",
+            "name": "fromBlob",
+            "summary": "Creates\u0020a\u0020LuminanceSource\u0020instance\u0020from\u0020the\u0020given\u0020data\u0020blob",
+            "url": "classes/chillerlan-QRCode-Common-LuminanceSourceInterface.html#method_fromBlob"
+        },                {
             "fqsen": "\\chillerlan\\QRCode\\Common\\MaskPattern",
             "name": "MaskPattern",
             "summary": "ISO\/IEC\u002018004\u003A2000\u0020Section\u00208.8.1\nISO\/IEC\u002018004\u003A2000\u0020Section\u00208.8.2\u0020\u002D\u0020Evaluation\u0020of\u0020masking\u0020results",
@@ -521,6 +651,11 @@ Search.appendIndex(
             "summary": "Apply\u0020mask\u0020penalty\u0020rule\u00204\u0020and\u0020return\u0020the\u0020penalty.\u0020Calculate\u0020the\u0020ratio\u0020of\u0020dark\u0020cells\u0020and\u0020give\npenalty\u0020if\u0020the\u0020ratio\u0020is\u0020far\u0020from\u002050\u0025.\u0020It\u0020gives\u002010\u0020penalty\u0020for\u00205\u0025\u0020distance.",
             "url": "classes/chillerlan-QRCode-Common-MaskPattern.html#method_testRule4"
         },                {
+            "fqsen": "\\chillerlan\\QRCode\\Common\\MaskPattern\u003A\u003AAUTO",
+            "name": "AUTO",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Common-MaskPattern.html#constant_AUTO"
+        },                {
             "fqsen": "\\chillerlan\\QRCode\\Common\\MaskPattern\u003A\u003APATTERN_000",
             "name": "PATTERN_000",
             "summary": "",
@@ -566,6 +701,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/chillerlan-QRCode-Common-MaskPattern.html#constant_PATTERNS"
         },                {
+            "fqsen": "\\chillerlan\\QRCode\\Common\\MaskPattern\u003A\u003APENALTY_N1",
+            "name": "PENALTY_N1",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Common-MaskPattern.html#constant_PENALTY_N1"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Common\\MaskPattern\u003A\u003APENALTY_N2",
+            "name": "PENALTY_N2",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Common-MaskPattern.html#constant_PENALTY_N2"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Common\\MaskPattern\u003A\u003APENALTY_N3",
+            "name": "PENALTY_N3",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Common-MaskPattern.html#constant_PENALTY_N3"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Common\\MaskPattern\u003A\u003APENALTY_N4",
+            "name": "PENALTY_N4",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Common-MaskPattern.html#constant_PENALTY_N4"
+        },                {
             "fqsen": "\\chillerlan\\QRCode\\Common\\MaskPattern\u003A\u003A\u0024maskPattern",
             "name": "maskPattern",
             "summary": "The\u0020current\u0020mask\u0020pattern\u0020value\u0020\u00280\u002D7\u0029",
@@ -573,18 +728,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Common\\Mode",
             "name": "Mode",
-            "summary": "ISO\u002018004\u003A2006,\u00206.4.1,\u0020Tables\u00202\u0020and\u00203",
+            "summary": "Data\u0020mode\u0020information\u0020\u002D\u0020ISO\u002018004\u003A2006,\u00206.4.1,\u0020Tables\u00202\u0020and\u00203",
             "url": "classes/chillerlan-QRCode-Common-Mode.html"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Common\\Mode\u003A\u003AgetLengthBitsForVersion\u0028\u0029",
             "name": "getLengthBitsForVersion",
             "summary": "returns\u0020the\u0020length\u0020bits\u0020for\u0020the\u0020version\u0020breakpoints\u00201\u002D9,\u002010\u002D26\u0020and\u002027\u002D40",
             "url": "classes/chillerlan-QRCode-Common-Mode.html#method_getLengthBitsForVersion"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Common\\Mode\u003A\u003AgetLengthBitsForMode\u0028\u0029",
-            "name": "getLengthBitsForMode",
-            "summary": "returns\u0020the\u0020array\u0020of\u0020length\u0020bits\u0020for\u0020the\u0020given\u0020mode",
-            "url": "classes/chillerlan-QRCode-Common-Mode.html#method_getLengthBitsForMode"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Common\\Mode\u003A\u003ATERMINATOR",
             "name": "TERMINATOR",
@@ -610,6 +760,11 @@ Search.appendIndex(
             "name": "KANJI",
             "summary": "",
             "url": "classes/chillerlan-QRCode-Common-Mode.html#constant_KANJI"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Common\\Mode\u003A\u003AHANZI",
+            "name": "HANZI",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Common-Mode.html#constant_HANZI"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Common\\Mode\u003A\u003ASTRCTURED_APPEND",
             "name": "STRCTURED_APPEND",
@@ -641,74 +796,9 @@ Search.appendIndex(
             "summary": "Map\u0020of\u0020data\u0020mode\u0020\u003D\u003E\u0020interface\u0020\u0028detection\u0020order\u0029",
             "url": "classes/chillerlan-QRCode-Common-Mode.html#constant_INTERFACES"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Common\\ReedSolomonDecoder",
-            "name": "ReedSolomonDecoder",
-            "summary": "Implements\u0020Reed\u002DSolomon\u0020decoding,\u0020as\u0020the\u0020name\u0020implies.",
-            "url": "classes/chillerlan-QRCode-Common-ReedSolomonDecoder.html"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Common\\ReedSolomonDecoder\u003A\u003Adecode\u0028\u0029",
-            "name": "decode",
-            "summary": "Error\u002Dcorrect\u0020and\u0020copy\u0020data\u0020blocks\u0020together\u0020into\u0020a\u0020stream\u0020of\u0020bytes",
-            "url": "classes/chillerlan-QRCode-Common-ReedSolomonDecoder.html#method_decode"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Common\\ReedSolomonDecoder\u003A\u003AcorrectErrors\u0028\u0029",
-            "name": "correctErrors",
-            "summary": "Given\u0020data\u0020and\u0020error\u002Dcorrection\u0020codewords\u0020received,\u0020possibly\u0020corrupted\u0020by\u0020errors,\u0020attempts\u0020to\ncorrect\u0020the\u0020errors\u0020in\u002Dplace\u0020using\u0020Reed\u002DSolomon\u0020error\u0020correction.",
-            "url": "classes/chillerlan-QRCode-Common-ReedSolomonDecoder.html#method_correctErrors"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Common\\ReedSolomonDecoder\u003A\u003AdecodeWords\u0028\u0029",
-            "name": "decodeWords",
-            "summary": "Decodes\u0020given\u0020set\u0020of\u0020received\u0020codewords,\u0020which\u0020include\u0020both\u0020data\u0020and\u0020error\u002Dcorrection\ncodewords.\u0020Really,\u0020this\u0020means\u0020it\u0020uses\u0020Reed\u002DSolomon\u0020to\u0020detect\u0020and\u0020correct\u0020errors,\u0020in\u002Dplace,\nin\u0020the\u0020input.",
-            "url": "classes/chillerlan-QRCode-Common-ReedSolomonDecoder.html#method_decodeWords"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Common\\ReedSolomonDecoder\u003A\u003ArunEuclideanAlgorithm\u0028\u0029",
-            "name": "runEuclideanAlgorithm",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Common-ReedSolomonDecoder.html#method_runEuclideanAlgorithm"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Common\\ReedSolomonDecoder\u003A\u003AfindErrorLocations\u0028\u0029",
-            "name": "findErrorLocations",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Common-ReedSolomonDecoder.html#method_findErrorLocations"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Common\\ReedSolomonDecoder\u003A\u003AfindErrorMagnitudes\u0028\u0029",
-            "name": "findErrorMagnitudes",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Common-ReedSolomonDecoder.html#method_findErrorMagnitudes"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Common\\ReedSolomonEncoder",
-            "name": "ReedSolomonEncoder",
-            "summary": "ISO\/IEC\u002018004\u003A2000\u0020Section\u00208.5\u0020ff",
-            "url": "classes/chillerlan-QRCode-Common-ReedSolomonEncoder.html"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Common\\ReedSolomonEncoder\u003A\u003AinterleaveEcBytes\u0028\u0029",
-            "name": "interleaveEcBytes",
-            "summary": "ECC\u0020interleaving",
-            "url": "classes/chillerlan-QRCode-Common-ReedSolomonEncoder.html#method_interleaveEcBytes"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Common\\ReedSolomonEncoder\u003A\u003AgenerateEcBytes\u0028\u0029",
-            "name": "generateEcBytes",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Common-ReedSolomonEncoder.html#method_generateEcBytes"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Common\\ReedSolomonEncoder\u003A\u003Ainterleave\u0028\u0029",
-            "name": "interleave",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Common-ReedSolomonEncoder.html#method_interleave"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Common\\ReedSolomonEncoder\u003A\u003A\u0024interleavedData",
-            "name": "interleavedData",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Common-ReedSolomonEncoder.html#property_interleavedData"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Common\\ReedSolomonEncoder\u003A\u003A\u0024interleavedDataIndex",
-            "name": "interleavedDataIndex",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Common-ReedSolomonEncoder.html#property_interleavedDataIndex"
-        },                {
             "fqsen": "\\chillerlan\\QRCode\\Common\\Version",
             "name": "Version",
-            "summary": "",
+            "summary": "Version\u0020related\u0020tables\u0020and\u0020methods",
             "url": "classes/chillerlan-QRCode-Common-Version.html"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Common\\Version\u003A\u003A__construct\u0028\u0029",
@@ -741,11 +831,6 @@ Search.appendIndex(
             "summary": "the\u0020alignment\u0020patterns\u0020for\u0020the\u0020current\u0020version",
             "url": "classes/chillerlan-QRCode-Common-Version.html#method_getAlignmentPattern"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Common\\Version\u003A\u003AgetMaxLengthForMode\u0028\u0029",
-            "name": "getMaxLengthForMode",
-            "summary": "the\u0020maximum\u0020character\u0020count\u0020for\u0020the\u0020given\u0020\u0024mode\u0020and\u0020\u0024eccLevel",
-            "url": "classes/chillerlan-QRCode-Common-Version.html#method_getMaxLengthForMode"
-        },                {
             "fqsen": "\\chillerlan\\QRCode\\Common\\Version\u003A\u003AgetRSBlocks\u0028\u0029",
             "name": "getRSBlocks",
             "summary": "returns\u0020ECC\u0020block\u0020information\u0020for\u0020the\u0020given\u0020\u0024version\u0020and\u0020\u0024eccLevel",
@@ -755,6 +840,11 @@ Search.appendIndex(
             "name": "getTotalCodewords",
             "summary": "returns\u0020the\u0020maximum\u0020codewords\u0020for\u0020the\u0020current\u0020version",
             "url": "classes/chillerlan-QRCode-Common-Version.html#method_getTotalCodewords"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Common\\Version\u003A\u003AAUTO",
+            "name": "AUTO",
+            "summary": "Enable\u0020version\u0020auto\u0020detection",
+            "url": "classes/chillerlan-QRCode-Common-Version.html#constant_AUTO"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Common\\Version\u003A\u003AALIGNMENT_PATTERN",
             "name": "ALIGNMENT_PATTERN",
@@ -766,19 +856,14 @@ Search.appendIndex(
             "summary": "ISO\/IEC\u002018004\u003A2000\u0020Annex\u0020D,\u0020Table\u0020D.1\u0020\u002D\u0020Version\u0020information\u0020bit\u0020stream\u0020for\u0020each\u0020version",
             "url": "classes/chillerlan-QRCode-Common-Version.html#constant_VERSION_PATTERN"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Common\\Version\u003A\u003AMAX_LENGTH",
-            "name": "MAX_LENGTH",
-            "summary": "ISO\/IEC\u002018004\u003A2000\u0020Tables\u00207\u002D11\u0020\u002D\u0020Number\u0020of\u0020symbol\u0020characters\u0020and\u0020input\u0020data\u0020capacity\u0020for\u0020versions\u00201\u0020to\u002040",
-            "url": "classes/chillerlan-QRCode-Common-Version.html#constant_MAX_LENGTH"
-        },                {
             "fqsen": "\\chillerlan\\QRCode\\Common\\Version\u003A\u003ARSBLOCKS",
             "name": "RSBLOCKS",
-            "summary": "ISO\/IEC\u002018004\u003A2000\u0020Tables\u002013\u002D22",
+            "summary": "ISO\/IEC\u002018004\u003A2000\u0020Tables\u002013\u002D22\u0020\u002D\u0020Error\u0020correction\u0020characteristics",
             "url": "classes/chillerlan-QRCode-Common-Version.html#constant_RSBLOCKS"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Common\\Version\u003A\u003ATOTAL_CODEWORDS",
             "name": "TOTAL_CODEWORDS",
-            "summary": "",
+            "summary": "ISO\/IEC\u002018004\u003A2000\u0020Table\u00201\u0020\u002D\u0020Data\u0020capacity\u0020of\u0020all\u0020versions\u0020of\u0020QR\u0020Code",
             "url": "classes/chillerlan-QRCode-Common-Version.html#constant_TOTAL_CODEWORDS"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Common\\Version\u003A\u003A\u0024version",
@@ -793,63 +878,73 @@ Search.appendIndex(
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\AlphaNum\u003A\u003AgetLengthInBits\u0028\u0029",
             "name": "getLengthInBits",
-            "summary": "",
+            "summary": "retruns\u0020the\u0020length\u0020in\u0020bits\u0020of\u0020the\u0020data\u0020string",
             "url": "classes/chillerlan-QRCode-Data-AlphaNum.html#method_getLengthInBits"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\AlphaNum\u003A\u003AvalidateString\u0028\u0029",
             "name": "validateString",
-            "summary": "",
+            "summary": "checks\u0020if\u0020the\u0020given\u0020string\u0020qualifies\u0020for\u0020the\u0020encoder\u0020module",
             "url": "classes/chillerlan-QRCode-Data-AlphaNum.html#method_validateString"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\AlphaNum\u003A\u003Awrite\u0028\u0029",
             "name": "write",
-            "summary": "",
+            "summary": "writes\u0020the\u0020actual\u0020data\u0020string\u0020to\u0020the\u0020BitBuffer,\u0020uses\u0020the\u0020given\u0020version\u0020to\u0020determine\u0020the\u0020length\u0020bits",
             "url": "classes/chillerlan-QRCode-Data-AlphaNum.html#method_write"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\AlphaNum\u003A\u003AdecodeSegment\u0028\u0029",
             "name": "decodeSegment",
-            "summary": "",
+            "summary": "reads\u0020a\u0020segment\u0020from\u0020the\u0020BitBuffer\u0020and\u0020decodes\u0020in\u0020the\u0020current\u0020data\u0020mode",
             "url": "classes/chillerlan-QRCode-Data-AlphaNum.html#method_decodeSegment"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Data\\AlphaNum\u003A\u003ACHAR_TO_ORD",
-            "name": "CHAR_TO_ORD",
-            "summary": "ISO\/IEC\u002018004\u003A2000\u0020Table\u00205",
-            "url": "classes/chillerlan-QRCode-Data-AlphaNum.html#constant_CHAR_TO_ORD"
+            "fqsen": "\\chillerlan\\QRCode\\Data\\AlphaNum\u003A\u003Aord\u0028\u0029",
+            "name": "ord",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Data-AlphaNum.html#method_ord"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Data\\AlphaNum\u003A\u003A\u0024datamode",
-            "name": "datamode",
-            "summary": "the\u0020current\u0020data\u0020mode\u003A\u0020Num,\u0020Alphanum,\u0020Kanji,\u0020Byte",
-            "url": "classes/chillerlan-QRCode-Data-AlphaNum.html#property_datamode"
+            "fqsen": "\\chillerlan\\QRCode\\Data\\AlphaNum\u003A\u003Achr\u0028\u0029",
+            "name": "chr",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Data-AlphaNum.html#method_chr"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\AlphaNum\u003A\u003ACHAR_MAP",
+            "name": "CHAR_MAP",
+            "summary": "ISO\/IEC\u002018004\u003A2000\u0020Table\u00205",
+            "url": "classes/chillerlan-QRCode-Data-AlphaNum.html#constant_CHAR_MAP"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\AlphaNum\u003A\u003ADATAMODE",
+            "name": "DATAMODE",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Data-AlphaNum.html#constant_DATAMODE"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\Byte",
             "name": "Byte",
-            "summary": "Byte\u0020mode,\u0020ISO\u002D8859\u002D1\u0020or\u0020UTF\u002D8",
+            "summary": "8\u002Dbit\u0020Byte\u0020mode,\u0020ISO\u002D8859\u002D1\u0020or\u0020UTF\u002D8",
             "url": "classes/chillerlan-QRCode-Data-Byte.html"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\Byte\u003A\u003AgetLengthInBits\u0028\u0029",
             "name": "getLengthInBits",
-            "summary": "",
+            "summary": "retruns\u0020the\u0020length\u0020in\u0020bits\u0020of\u0020the\u0020data\u0020string",
             "url": "classes/chillerlan-QRCode-Data-Byte.html#method_getLengthInBits"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\Byte\u003A\u003AvalidateString\u0028\u0029",
             "name": "validateString",
-            "summary": "",
+            "summary": "checks\u0020if\u0020the\u0020given\u0020string\u0020qualifies\u0020for\u0020the\u0020encoder\u0020module",
             "url": "classes/chillerlan-QRCode-Data-Byte.html#method_validateString"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\Byte\u003A\u003Awrite\u0028\u0029",
             "name": "write",
-            "summary": "",
+            "summary": "writes\u0020the\u0020actual\u0020data\u0020string\u0020to\u0020the\u0020BitBuffer,\u0020uses\u0020the\u0020given\u0020version\u0020to\u0020determine\u0020the\u0020length\u0020bits",
             "url": "classes/chillerlan-QRCode-Data-Byte.html#method_write"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\Byte\u003A\u003AdecodeSegment\u0028\u0029",
             "name": "decodeSegment",
-            "summary": "",
+            "summary": "reads\u0020a\u0020segment\u0020from\u0020the\u0020BitBuffer\u0020and\u0020decodes\u0020in\u0020the\u0020current\u0020data\u0020mode",
             "url": "classes/chillerlan-QRCode-Data-Byte.html#method_decodeSegment"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Data\\Byte\u003A\u003A\u0024datamode",
-            "name": "datamode",
-            "summary": "the\u0020current\u0020data\u0020mode\u003A\u0020Num,\u0020Alphanum,\u0020Kanji,\u0020Byte",
-            "url": "classes/chillerlan-QRCode-Data-Byte.html#property_datamode"
+            "fqsen": "\\chillerlan\\QRCode\\Data\\Byte\u003A\u003ADATAMODE",
+            "name": "DATAMODE",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Data-Byte.html#constant_DATAMODE"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\ECI",
             "name": "ECI",
@@ -863,48 +958,93 @@ Search.appendIndex(
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\ECI\u003A\u003AgetLengthInBits\u0028\u0029",
             "name": "getLengthInBits",
-            "summary": "",
+            "summary": "retruns\u0020the\u0020length\u0020in\u0020bits\u0020of\u0020the\u0020data\u0020string",
             "url": "classes/chillerlan-QRCode-Data-ECI.html#method_getLengthInBits"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\ECI\u003A\u003Awrite\u0028\u0029",
             "name": "write",
-            "summary": "",
+            "summary": "Writes\u0020an\u0020ECI\u0020designator\u0020to\u0020the\u0020bitbuffer",
             "url": "classes/chillerlan-QRCode-Data-ECI.html#method_write"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\ECI\u003A\u003AparseValue\u0028\u0029",
             "name": "parseValue",
-            "summary": "",
+            "summary": "Reads\u0020and\u0020parses\u0020the\u0020value\u0020of\u0020an\u0020ECI\u0020designator",
             "url": "classes/chillerlan-QRCode-Data-ECI.html#method_parseValue"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\ECI\u003A\u003AvalidateString\u0028\u0029",
             "name": "validateString",
-            "summary": "",
+            "summary": "checks\u0020if\u0020the\u0020given\u0020string\u0020qualifies\u0020for\u0020the\u0020encoder\u0020module",
             "url": "classes/chillerlan-QRCode-Data-ECI.html#method_validateString"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\ECI\u003A\u003AdecodeSegment\u0028\u0029",
             "name": "decodeSegment",
-            "summary": "",
+            "summary": "Reads\u0020and\u0020decodes\u0020the\u0020ECI\u0020designator\u0020including\u0020the\u0020following\u0020byte\u0020sequence",
             "url": "classes/chillerlan-QRCode-Data-ECI.html#method_decodeSegment"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Data\\ECI\u003A\u003A\u0024datamode",
-            "name": "datamode",
-            "summary": "the\u0020current\u0020data\u0020mode\u003A\u0020Num,\u0020Alphanum,\u0020Kanji,\u0020Byte",
-            "url": "classes/chillerlan-QRCode-Data-ECI.html#property_datamode"
+            "fqsen": "\\chillerlan\\QRCode\\Data\\ECI\u003A\u003ADATAMODE",
+            "name": "DATAMODE",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Data-ECI.html#constant_DATAMODE"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\ECI\u003A\u003A\u0024encoding",
             "name": "encoding",
             "summary": "The\u0020current\u0020ECI\u0020encoding\u0020id",
             "url": "classes/chillerlan-QRCode-Data-ECI.html#property_encoding"
         },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\Hanzi",
+            "name": "Hanzi",
+            "summary": "Hanzi\u0020\u0028simplified\u0020Chinese\u0029\u0020mode,\u0020GBT18284\u002D2000\u003A\u002013\u002Dbit\u0020double\u002Dbyte\u0020characters\u0020from\u0020the\u0020GB2312\/GB18030\u0020character\u0020set",
+            "url": "classes/chillerlan-QRCode-Data-Hanzi.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\Hanzi\u003A\u003AgetCharCount\u0028\u0029",
+            "name": "getCharCount",
+            "summary": "returns\u0020the\u0020character\u0020count\u0020of\u0020the\u0020\u0024data\u0020string",
+            "url": "classes/chillerlan-QRCode-Data-Hanzi.html#method_getCharCount"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\Hanzi\u003A\u003AgetLengthInBits\u0028\u0029",
+            "name": "getLengthInBits",
+            "summary": "retruns\u0020the\u0020length\u0020in\u0020bits\u0020of\u0020the\u0020data\u0020string",
+            "url": "classes/chillerlan-QRCode-Data-Hanzi.html#method_getLengthInBits"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\Hanzi\u003A\u003AconvertEncoding\u0028\u0029",
+            "name": "convertEncoding",
+            "summary": "encoding\u0020conversion\u0020helper",
+            "url": "classes/chillerlan-QRCode-Data-Hanzi.html#method_convertEncoding"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\Hanzi\u003A\u003AvalidateString\u0028\u0029",
+            "name": "validateString",
+            "summary": "checks\u0020if\u0020a\u0020string\u0020qualifies\u0020as\u0020Hanzi\/GB2312",
+            "url": "classes/chillerlan-QRCode-Data-Hanzi.html#method_validateString"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\Hanzi\u003A\u003Awrite\u0028\u0029",
+            "name": "write",
+            "summary": "writes\u0020the\u0020actual\u0020data\u0020string\u0020to\u0020the\u0020BitBuffer,\u0020uses\u0020the\u0020given\u0020version\u0020to\u0020determine\u0020the\u0020length\u0020bits",
+            "url": "classes/chillerlan-QRCode-Data-Hanzi.html#method_write"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\Hanzi\u003A\u003AdecodeSegment\u0028\u0029",
+            "name": "decodeSegment",
+            "summary": "See\u0020specification\u0020GBT\u002018284\u002D2000",
+            "url": "classes/chillerlan-QRCode-Data-Hanzi.html#method_decodeSegment"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\Hanzi\u003A\u003AENCODING",
+            "name": "ENCODING",
+            "summary": "possible\u0020values\u003A\u0020GB2312,\u0020GB18030",
+            "url": "classes/chillerlan-QRCode-Data-Hanzi.html#constant_ENCODING"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\Hanzi\u003A\u003AGB2312_SUBSET",
+            "name": "GB2312_SUBSET",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Data-Hanzi.html#constant_GB2312_SUBSET"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\Hanzi\u003A\u003ADATAMODE",
+            "name": "DATAMODE",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Data-Hanzi.html#constant_DATAMODE"
+        },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\Kanji",
             "name": "Kanji",
-            "summary": "Kanji\u0020mode\u003A\u0020double\u002Dbyte\u0020characters\u0020from\u0020the\u0020Shift\u0020JIS\u0020character\u0020set",
+            "summary": "Kanji\u0020mode\u003A\u002013\u002Dbit\u0020double\u002Dbyte\u0020characters\u0020from\u0020the\u0020Shift\u002DJIS\u0020character\u0020set",
             "url": "classes/chillerlan-QRCode-Data-Kanji.html"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Data\\Kanji\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "QRDataModeAbstract\u0020constructor.",
-            "url": "classes/chillerlan-QRCode-Data-Kanji.html#method___construct"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\Kanji\u003A\u003AgetCharCount\u0028\u0029",
             "name": "getCharCount",
@@ -913,28 +1053,38 @@ Search.appendIndex(
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\Kanji\u003A\u003AgetLengthInBits\u0028\u0029",
             "name": "getLengthInBits",
-            "summary": "",
+            "summary": "retruns\u0020the\u0020length\u0020in\u0020bits\u0020of\u0020the\u0020data\u0020string",
             "url": "classes/chillerlan-QRCode-Data-Kanji.html#method_getLengthInBits"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\Kanji\u003A\u003AconvertEncoding\u0028\u0029",
+            "name": "convertEncoding",
+            "summary": "encoding\u0020conversion\u0020helper",
+            "url": "classes/chillerlan-QRCode-Data-Kanji.html#method_convertEncoding"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\Kanji\u003A\u003AvalidateString\u0028\u0029",
             "name": "validateString",
-            "summary": "checks\u0020if\u0020a\u0020string\u0020qualifies\u0020as\u0020Kanji",
+            "summary": "checks\u0020if\u0020a\u0020string\u0020qualifies\u0020as\u0020SJIS\u0020Kanji",
             "url": "classes/chillerlan-QRCode-Data-Kanji.html#method_validateString"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\Kanji\u003A\u003Awrite\u0028\u0029",
             "name": "write",
-            "summary": "",
+            "summary": "writes\u0020the\u0020actual\u0020data\u0020string\u0020to\u0020the\u0020BitBuffer,\u0020uses\u0020the\u0020given\u0020version\u0020to\u0020determine\u0020the\u0020length\u0020bits",
             "url": "classes/chillerlan-QRCode-Data-Kanji.html#method_write"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\Kanji\u003A\u003AdecodeSegment\u0028\u0029",
             "name": "decodeSegment",
-            "summary": "",
+            "summary": "reads\u0020a\u0020segment\u0020from\u0020the\u0020BitBuffer\u0020and\u0020decodes\u0020in\u0020the\u0020current\u0020data\u0020mode",
             "url": "classes/chillerlan-QRCode-Data-Kanji.html#method_decodeSegment"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Data\\Kanji\u003A\u003A\u0024datamode",
-            "name": "datamode",
-            "summary": "the\u0020current\u0020data\u0020mode\u003A\u0020Num,\u0020Alphanum,\u0020Kanji,\u0020Byte",
-            "url": "classes/chillerlan-QRCode-Data-Kanji.html#property_datamode"
+            "fqsen": "\\chillerlan\\QRCode\\Data\\Kanji\u003A\u003AENCODING",
+            "name": "ENCODING",
+            "summary": "possible\u0020values\u003A\u0020SJIS,\u0020SJIS\u002D2004",
+            "url": "classes/chillerlan-QRCode-Data-Kanji.html#constant_ENCODING"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\Kanji\u003A\u003ADATAMODE",
+            "name": "DATAMODE",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Data-Kanji.html#constant_DATAMODE"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\Number",
             "name": "Number",
@@ -943,17 +1093,17 @@ Search.appendIndex(
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\Number\u003A\u003AgetLengthInBits\u0028\u0029",
             "name": "getLengthInBits",
-            "summary": "",
+            "summary": "retruns\u0020the\u0020length\u0020in\u0020bits\u0020of\u0020the\u0020data\u0020string",
             "url": "classes/chillerlan-QRCode-Data-Number.html#method_getLengthInBits"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\Number\u003A\u003AvalidateString\u0028\u0029",
             "name": "validateString",
-            "summary": "",
+            "summary": "checks\u0020if\u0020the\u0020given\u0020string\u0020qualifies\u0020for\u0020the\u0020encoder\u0020module",
             "url": "classes/chillerlan-QRCode-Data-Number.html#method_validateString"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\Number\u003A\u003Awrite\u0028\u0029",
             "name": "write",
-            "summary": "",
+            "summary": "writes\u0020the\u0020actual\u0020data\u0020string\u0020to\u0020the\u0020BitBuffer,\u0020uses\u0020the\u0020given\u0020version\u0020to\u0020determine\u0020the\u0020length\u0020bits",
             "url": "classes/chillerlan-QRCode-Data-Number.html#method_write"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\Number\u003A\u003AparseInt\u0028\u0029",
@@ -963,18 +1113,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\Number\u003A\u003AdecodeSegment\u0028\u0029",
             "name": "decodeSegment",
-            "summary": "",
+            "summary": "reads\u0020a\u0020segment\u0020from\u0020the\u0020BitBuffer\u0020and\u0020decodes\u0020in\u0020the\u0020current\u0020data\u0020mode",
             "url": "classes/chillerlan-QRCode-Data-Number.html#method_decodeSegment"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Data\\Number\u003A\u003ANUMBER_TO_ORD",
-            "name": "NUMBER_TO_ORD",
+            "fqsen": "\\chillerlan\\QRCode\\Data\\Number\u003A\u003ADATAMODE",
+            "name": "DATAMODE",
             "summary": "",
-            "url": "classes/chillerlan-QRCode-Data-Number.html#constant_NUMBER_TO_ORD"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Data\\Number\u003A\u003A\u0024datamode",
-            "name": "datamode",
-            "summary": "the\u0020current\u0020data\u0020mode\u003A\u0020Num,\u0020Alphanum,\u0020Kanji,\u0020Byte",
-            "url": "classes/chillerlan-QRCode-Data-Number.html#property_datamode"
+            "url": "classes/chillerlan-QRCode-Data-Number.html#constant_DATAMODE"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\QRCodeDataException",
             "name": "QRCodeDataException",
@@ -983,7 +1128,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\QRData",
             "name": "QRData",
-            "summary": "Processes\u0020the\u0020binary\u0020data\u0020and\u0020maps\u0020it\u0020on\u0020a\u0020matrix\u0020which\u0020is\u0020then\u0020being\u0020returned",
+            "summary": "Processes\u0020the\u0020binary\u0020data\u0020and\u0020maps\u0020it\u0020on\u0020a\u0020QRMatrix\u0020which\u0020is\u0020then\u0020being\u0020returned",
             "url": "classes/chillerlan-QRCode-Data-QRData.html"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\QRData\u003A\u003A__construct\u0028\u0029",
@@ -995,6 +1140,16 @@ Search.appendIndex(
             "name": "setData",
             "summary": "Sets\u0020the\u0020data\u0020string\u0020\u0028internally\u0020called\u0020by\u0020the\u0020constructor\u0029",
             "url": "classes/chillerlan-QRCode-Data-QRData.html#method_setData"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRData\u003A\u003AgetBitBuffer\u0028\u0029",
+            "name": "getBitBuffer",
+            "summary": "Returns\u0020the\u0020current\u0020BitBuffer\u0020instance",
+            "url": "classes/chillerlan-QRCode-Data-QRData.html#method_getBitBuffer"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRData\u003A\u003AsetBitBuffer\u0028\u0029",
+            "name": "setBitBuffer",
+            "summary": "Sets\u0020a\u0020BitBuffer\u0020object",
+            "url": "classes/chillerlan-QRCode-Data-QRData.html#method_setBitBuffer"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\QRData\u003A\u003AwriteMatrix\u0028\u0029",
             "name": "writeMatrix",
@@ -1048,7 +1203,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\QRDataModeAbstract",
             "name": "QRDataModeAbstract",
-            "summary": "",
+            "summary": "abstract\u0020methods\u0020for\u0020the\u0020several\u0020data\u0020modes",
             "url": "classes/chillerlan-QRCode-Data-QRDataModeAbstract.html"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\QRDataModeAbstract\u003A\u003A__construct\u0028\u0029",
@@ -1061,15 +1216,15 @@ Search.appendIndex(
             "summary": "returns\u0020the\u0020character\u0020count\u0020of\u0020the\u0020\u0024data\u0020string",
             "url": "classes/chillerlan-QRCode-Data-QRDataModeAbstract.html#method_getCharCount"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Data\\QRDataModeAbstract\u003A\u003AgetDataMode\u0028\u0029",
-            "name": "getDataMode",
-            "summary": "returns\u0020the\u0020current\u0020data\u0020mode\u0020constant",
-            "url": "classes/chillerlan-QRCode-Data-QRDataModeAbstract.html#method_getDataMode"
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRDataModeAbstract\u003A\u003AconvertEncoding\u0028\u0029",
+            "name": "convertEncoding",
+            "summary": "encoding\u0020conversion\u0020helper",
+            "url": "classes/chillerlan-QRCode-Data-QRDataModeAbstract.html#method_convertEncoding"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Data\\QRDataModeAbstract\u003A\u003A\u0024datamode",
-            "name": "datamode",
-            "summary": "the\u0020current\u0020data\u0020mode\u003A\u0020Num,\u0020Alphanum,\u0020Kanji,\u0020Byte",
-            "url": "classes/chillerlan-QRCode-Data-QRDataModeAbstract.html#property_datamode"
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRDataModeAbstract\u003A\u003AgetLengthBits\u0028\u0029",
+            "name": "getLengthBits",
+            "summary": "shortcut",
+            "url": "classes/chillerlan-QRCode-Data-QRDataModeAbstract.html#method_getLengthBits"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\QRDataModeAbstract\u003A\u003A\u0024data",
             "name": "data",
@@ -1081,15 +1236,15 @@ Search.appendIndex(
             "summary": "Specifies\u0020the\u0020methods\u0020reqired\u0020for\u0020the\u0020data\u0020modules\u0020\u0028Number,\u0020Alphanum,\u0020Byte\u0020and\u0020Kanji\u0029",
             "url": "classes/chillerlan-QRCode-Data-QRDataModeInterface.html"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Data\\QRDataModeInterface\u003A\u003AgetDataMode\u0028\u0029",
-            "name": "getDataMode",
-            "summary": "returns\u0020the\u0020current\u0020data\u0020mode\u0020constant",
-            "url": "classes/chillerlan-QRCode-Data-QRDataModeInterface.html#method_getDataMode"
-        },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\QRDataModeInterface\u003A\u003AgetLengthInBits\u0028\u0029",
             "name": "getLengthInBits",
             "summary": "retruns\u0020the\u0020length\u0020in\u0020bits\u0020of\u0020the\u0020data\u0020string",
             "url": "classes/chillerlan-QRCode-Data-QRDataModeInterface.html#method_getLengthInBits"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRDataModeInterface\u003A\u003AconvertEncoding\u0028\u0029",
+            "name": "convertEncoding",
+            "summary": "encoding\u0020conversion\u0020helper",
+            "url": "classes/chillerlan-QRCode-Data-QRDataModeInterface.html#method_convertEncoding"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\QRDataModeInterface\u003A\u003AvalidateString\u0028\u0029",
             "name": "validateString",
@@ -1106,9 +1261,14 @@ Search.appendIndex(
             "summary": "reads\u0020a\u0020segment\u0020from\u0020the\u0020BitBuffer\u0020and\u0020decodes\u0020in\u0020the\u0020current\u0020data\u0020mode",
             "url": "classes/chillerlan-QRCode-Data-QRDataModeInterface.html#method_decodeSegment"
         },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRDataModeInterface\u003A\u003ADATAMODE",
+            "name": "DATAMODE",
+            "summary": "the\u0020current\u0020data\u0020mode\u003A\u0020Number,\u0020Alphanum,\u0020Kanji,\u0020Hanzi,\u0020Byte,\u0020ECI",
+            "url": "classes/chillerlan-QRCode-Data-QRDataModeInterface.html#constant_DATAMODE"
+        },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix",
             "name": "QRMatrix",
-            "summary": "Holds\u0020a\u0020numerical\u0020representation\u0020of\u0020the\u0020final\u0020QR\u0020Code\u003B\nmaps\u0020the\u0020ECC\u0020coded\u0020binary\u0020data\u0020and\u0020applies\u0020the\u0020mask\u0020pattern",
+            "summary": "Holds\u0020an\u0020array\u0020representation\u0020of\u0020the\u0020final\u0020QR\u0020Code\u0020that\u0020contains\u0020numerical\u0020values\u0020for\u0020later\u0020output\u0020modifications\u003B\nmaps\u0020the\u0020ECC\u0020coded\u0020binary\u0020data\u0020and\u0020applies\u0020the\u0020mask\u0020pattern",
             "url": "classes/chillerlan-QRCode-Data-QRMatrix.html"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003A__construct\u0028\u0029",
@@ -1116,44 +1276,49 @@ Search.appendIndex(
             "summary": "QRMatrix\u0020constructor.",
             "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#method___construct"
         },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AcreateMatrix\u0028\u0029",
+            "name": "createMatrix",
+            "summary": "Creates\u0020a\u00202\u002Ddimensional\u0020array\u0020\u0028square\u0029\u0020of\u0020the\u0020given\u0020\u0024size",
+            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#method_createMatrix"
+        },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AinitFunctionalPatterns\u0028\u0029",
             "name": "initFunctionalPatterns",
             "summary": "shortcut\u0020to\u0020initialize\u0020the\u0020functional\u0020patterns",
             "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#method_initFunctionalPatterns"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AinitFormatInfo\u0028\u0029",
-            "name": "initFormatInfo",
-            "summary": "shortcut\u0020to\u0020set\u0020format\u0020and\u0020version\u0020info",
-            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#method_initFormatInfo"
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AgetMatrix\u0028\u0029",
+            "name": "getMatrix",
+            "summary": "Returns\u0020the\u0020data\u0020matrix",
+            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#method_getMatrix"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003A\u0024matrix",
-            "name": "matrix",
-            "summary": "the\u0020actual\u0020matrix\u0020data\u0020array",
-            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#property_matrix"
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AgetBooleanMatrix\u0028\u0029",
+            "name": "getBooleanMatrix",
+            "summary": "Returns\u0020a\u0020boolean\u0020representation\u0020of\u0020the\u0020data\u0020matrix",
+            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#method_getBooleanMatrix"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003A\u0024version",
-            "name": "version",
-            "summary": "a\u0020Version\u0020instance",
-            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#property_version"
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AgetVersion\u0028\u0029",
+            "name": "getVersion",
+            "summary": "Returns\u0020the\u0020current\u0020version\u0020number",
+            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#method_getVersion"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003A\u0024eccLevel",
-            "name": "eccLevel",
-            "summary": "the\u0020current\u0020ECC\u0020level",
-            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#property_eccLevel"
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AgetEccLevel\u0028\u0029",
+            "name": "getEccLevel",
+            "summary": "Returns\u0020the\u0020current\u0020ECC\u0020level",
+            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#method_getEccLevel"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003A\u0024maskPattern",
-            "name": "maskPattern",
-            "summary": "the\u0020used\u0020mask\u0020pattern,\u0020set\u0020via\u0020QRMatrix\u003A\u003Amask\u0028\u0029",
-            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#property_maskPattern"
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AgetMaskPattern\u0028\u0029",
+            "name": "getMaskPattern",
+            "summary": "Returns\u0020the\u0020current\u0020mask\u0020pattern",
+            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#method_getMaskPattern"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003Asize\u0028\u0029",
-            "name": "size",
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AgetSize\u0028\u0029",
+            "name": "getSize",
             "summary": "Returns\u0020the\u0020absoulute\u0020size\u0020of\u0020the\u0020matrix,\u0020including\u0020quiet\u0020zone\u0020\u0028after\u0020setting\u0020it\u0029.",
-            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#method_size"
+            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#method_getSize"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003Aget\u0028\u0029",
             "name": "get",
-            "summary": "Returns\u0020the\u0020value\u0020of\u0020the\u0020module\u0020at\u0020position\u0020\u005B\u0024x,\u0020\u0024y\u005D",
+            "summary": "Returns\u0020the\u0020value\u0020of\u0020the\u0020module\u0020at\u0020position\u0020\u005B\u0024x,\u0020\u0024y\u005D\u0020or\u0020\u002D1\u0020if\u0020the\u0020coordinate\u0020is\u0020outside\u0020the\u0020matrix",
             "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#method_get"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003Aset\u0028\u0029",
@@ -1161,25 +1326,40 @@ Search.appendIndex(
             "summary": "Sets\u0020the\u0020\u0024M_TYPE\u0020value\u0020for\u0020the\u0020module\u0020at\u0020position\u0020\u005B\u0024x,\u0020\u0024y\u005D",
             "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#method_set"
         },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AsetArea\u0028\u0029",
+            "name": "setArea",
+            "summary": "Fills\u0020an\u0020area\u0020of\u0020\u0024width\u0020\u002A\u0020\u0024height,\u0020from\u0020the\u0020given\u0020starting\u0020point\u0020\u005B\u0024startX,\u0020\u0024startY\u005D\u0020\u0028top\u0020left\u0029\u0020with\u0020\u0024value\u0020for\u0020\u0024M_TYPE.",
+            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#method_setArea"
+        },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003Aflip\u0028\u0029",
             "name": "flip",
-            "summary": "Flips\u0020the\u0020value\u0020of\u0020the\u0020module",
+            "summary": "Flips\u0020the\u0020value\u0020of\u0020the\u0020module\u0020at\u0020\u0028\u0024x,\u0020\u0024y\u0029",
             "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#method_flip"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AcheckType\u0028\u0029",
             "name": "checkType",
-            "summary": "Checks\u0020whether\u0020a\u0020module\u0020is\u0020of\u0020the\u0020given\u0020\u0024M_TYPE",
+            "summary": "Checks\u0020whether\u0020the\u0020module\u0020at\u0020\u0028\u0024x,\u0020\u0024y\u0029\u0020is\u0020of\u0020the\u0020given\u0020\u0024M_TYPE",
             "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#method_checkType"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AcheckTypes\u0028\u0029",
-            "name": "checkTypes",
-            "summary": "checks\u0020whether\u0020a\u0020module\u0020matches\u0020one\u0020of\u0020the\u0020given\u0020\u0024M_TYPES",
-            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#method_checkTypes"
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AcheckTypeIn\u0028\u0029",
+            "name": "checkTypeIn",
+            "summary": "Checks\u0020whether\u0020the\u0020module\u0020at\u0020\u0028\u0024x,\u0020\u0024y\u0029\u0020is\u0020in\u0020the\u0020given\u0020array\u0020of\u0020\u0024M_TYPES,\nreturns\u0020true\u0020if\u0020a\u0020match\u0020is\u0020found,\u0020otherwise\u0020false.",
+            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#method_checkTypeIn"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003Acheck\u0028\u0029",
             "name": "check",
-            "summary": "Checks\u0020whether\u0020a\u0020module\u0020is\u0020true\u0020\u0028dark\u0029\u0020or\u0020false\u0020\u0028light\u0029",
+            "summary": "Checks\u0020whether\u0020the\u0020module\u0020at\u0020\u0028\u0024x,\u0020\u0024y\u0029\u0020is\u0020true\u0020\u0028dark\u0029\u0020or\u0020false\u0020\u0028light\u0029",
             "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#method_check"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AisDark\u0028\u0029",
+            "name": "isDark",
+            "summary": "Checks\u0020whether\u0020the\u0020given\u0020\u0024M_TYPE\u0020is\u0020a\u0020dark\u0020value",
+            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#method_isDark"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AcheckNeighbours\u0028\u0029",
+            "name": "checkNeighbours",
+            "summary": "Checks\u0020the\u0020status\u0020of\u0020the\u0020neighbouring\u0020modules\u0020for\u0020the\u0020module\u0020at\u0020\u0028\u0024x,\u0020\u0024y\u0029\u0020and\u0020returns\u0020a\u0020bitmask\u0020with\u0020the\u0020results.",
+            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#method_checkNeighbours"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AsetDarkModule\u0028\u0029",
             "name": "setDarkModule",
@@ -1213,7 +1393,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AsetFormatInfo\u0028\u0029",
             "name": "setFormatInfo",
-            "summary": "Draws\u0020the\u0020format\u0020info\u0020along\u0020the\u0020finder\u0020patterns",
+            "summary": "Draws\u0020the\u0020format\u0020info\u0020along\u0020the\u0020finder\u0020patterns.\u0020If\u0020no\u0020\u0024maskPattern,\u0020all\u0020format\u0020info\u0020modules\u0020will\u0020be\u0020set\u0020to\u0020false.",
             "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#method_setFormatInfo"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AsetQuietZone\u0028\u0029",
@@ -1221,30 +1401,50 @@ Search.appendIndex(
             "summary": "Draws\u0020the\u0020\u0022quiet\u0020zone\u0022\u0020of\u0020\u0024size\u0020around\u0020the\u0020matrix",
             "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#method_setQuietZone"
         },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003Arotate90\u0028\u0029",
+            "name": "rotate90",
+            "summary": "Rotates\u0020the\u0020matrix\u0020by\u002090\u0020degrees\u0020clock\u0020wise",
+            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#method_rotate90"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003Ainvert\u0028\u0029",
+            "name": "invert",
+            "summary": "Inverts\u0020the\u0020values\u0020of\u0020the\u0020whole\u0020matrix",
+            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#method_invert"
+        },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AsetLogoSpace\u0028\u0029",
             "name": "setLogoSpace",
             "summary": "Clears\u0020a\u0020space\u0020of\u0020\u0024width\u0020\u002A\u0020\u0024height\u0020in\u0020order\u0020to\u0020add\u0020a\u0020logo\u0020or\u0020text.",
             "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#method_setLogoSpace"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AmapData\u0028\u0029",
-            "name": "mapData",
-            "summary": "Maps\u0020the\u0020binary\u0020\u0024data\u0020array\u0020from\u0020QRData\u003A\u003AmaskECC\u0028\u0029\u0020on\u0020the\u0020matrix,\nmasking\u0020the\u0020data\u0020using\u0020\u0024maskPattern\u0020\u0028ISO\/IEC\u002018004\u003A2000\u0020Section\u00208.8\u0029",
-            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#method_mapData"
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AwriteCodewords\u0028\u0029",
+            "name": "writeCodewords",
+            "summary": "Maps\u0020the\u0020interleaved\u0020binary\u0020\u0024data\u0020on\u0020the\u0020matrix",
+            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#method_writeCodewords"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003Amask\u0028\u0029",
             "name": "mask",
-            "summary": "Applies\u0020the\u0020mask\u0020pattern",
+            "summary": "Applies\/reverses\u0020the\u0020mask\u0020pattern",
             "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#method_mask"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AIS_DARK",
+            "name": "IS_DARK",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#constant_IS_DARK"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AM_NULL",
             "name": "M_NULL",
             "summary": "",
             "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#constant_M_NULL"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AM_DARKMODULE",
-            "name": "M_DARKMODULE",
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AM_LOGO",
+            "name": "M_LOGO",
             "summary": "",
-            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#constant_M_DARKMODULE"
+            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#constant_M_LOGO"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AM_LOGO_DARK",
+            "name": "M_LOGO_DARK",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#constant_M_LOGO_DARK"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AM_DATA",
             "name": "M_DATA",
@@ -1286,30 +1486,140 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#constant_M_QUIETZONE"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AM_LOGO",
-            "name": "M_LOGO",
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AM_DARKMODULE",
+            "name": "M_DARKMODULE",
             "summary": "",
-            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#constant_M_LOGO"
+            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#constant_M_DARKMODULE"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AM_DATA_DARK",
+            "name": "M_DATA_DARK",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#constant_M_DATA_DARK"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AM_FINDER_DARK",
+            "name": "M_FINDER_DARK",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#constant_M_FINDER_DARK"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AM_ALIGNMENT_DARK",
+            "name": "M_ALIGNMENT_DARK",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#constant_M_ALIGNMENT_DARK"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AM_TIMING_DARK",
+            "name": "M_TIMING_DARK",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#constant_M_TIMING_DARK"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AM_FORMAT_DARK",
+            "name": "M_FORMAT_DARK",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#constant_M_FORMAT_DARK"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AM_VERSION_DARK",
+            "name": "M_VERSION_DARK",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#constant_M_VERSION_DARK"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AM_FINDER_DOT",
             "name": "M_FINDER_DOT",
             "summary": "",
             "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#constant_M_FINDER_DOT"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AM_TEST",
-            "name": "M_TEST",
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AM_DARKMODULE_LIGHT",
+            "name": "M_DARKMODULE_LIGHT",
             "summary": "",
-            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#constant_M_TEST"
+            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#constant_M_DARKMODULE_LIGHT"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AIS_DARK",
-            "name": "IS_DARK",
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AM_FINDER_DOT_LIGHT",
+            "name": "M_FINDER_DOT_LIGHT",
             "summary": "",
-            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#constant_IS_DARK"
+            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#constant_M_FINDER_DOT_LIGHT"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AM_SEPARATOR_DARK",
+            "name": "M_SEPARATOR_DARK",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#constant_M_SEPARATOR_DARK"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003AM_QUIETZONE_DARK",
+            "name": "M_QUIETZONE_DARK",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#constant_M_QUIETZONE_DARK"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003Aneighbours",
+            "name": "neighbours",
+            "summary": "Map\u0020of\u0020flag\u0020\u003D\u003E\u0020coord",
+            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#constant_neighbours"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003A\u0024version",
+            "name": "version",
+            "summary": "the\u0020matrix\u0020version\u0020\u002D\u0020always\u0020set\u0020in\u0020QRMatrix,\u0020may\u0020be\u0020null\u0020in\u0020BitMatrix",
+            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#property_version"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003A\u0024eccLevel",
+            "name": "eccLevel",
+            "summary": "the\u0020current\u0020ECC\u0020level\u0020\u002D\u0020always\u0020set\u0020in\u0020QRMatrix,\u0020may\u0020be\u0020null\u0020in\u0020BitMatrix",
+            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#property_eccLevel"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003A\u0024maskPattern",
+            "name": "maskPattern",
+            "summary": "the\u0020mask\u0020pattern\u0020that\u0020was\u0020used\u0020in\u0020the\u0020most\u0020recent\u0020operation,\u0020set\u0020via\u003A",
+            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#property_maskPattern"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003A\u0024moduleCount",
             "name": "moduleCount",
             "summary": "the\u0020size\u0020\u0028side\u0020length\u0029\u0020of\u0020the\u0020matrix,\u0020including\u0020quiet\u0020zone\u0020\u0028if\u0020created\u0029",
             "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#property_moduleCount"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\QRMatrix\u003A\u003A\u0024matrix",
+            "name": "matrix",
+            "summary": "the\u0020actual\u0020matrix\u0020data\u0020array",
+            "url": "classes/chillerlan-QRCode-Data-QRMatrix.html#property_matrix"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\ReedSolomonEncoder",
+            "name": "ReedSolomonEncoder",
+            "summary": "Reed\u002DSolomon\u0020encoding\u0020\u002D\u0020ISO\/IEC\u002018004\u003A2000\u0020Section\u00208.5\u0020ff",
+            "url": "classes/chillerlan-QRCode-Data-ReedSolomonEncoder.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\ReedSolomonEncoder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "ReedSolomonDecoder\u0020constructor",
+            "url": "classes/chillerlan-QRCode-Data-ReedSolomonEncoder.html#method___construct"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\ReedSolomonEncoder\u003A\u003AinterleaveEcBytes\u0028\u0029",
+            "name": "interleaveEcBytes",
+            "summary": "ECC\u0020encoding\u0020and\u0020interleaving",
+            "url": "classes/chillerlan-QRCode-Data-ReedSolomonEncoder.html#method_interleaveEcBytes"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\ReedSolomonEncoder\u003A\u003Aencode\u0028\u0029",
+            "name": "encode",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Data-ReedSolomonEncoder.html#method_encode"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\ReedSolomonEncoder\u003A\u003Ainterleave\u0028\u0029",
+            "name": "interleave",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Data-ReedSolomonEncoder.html#method_interleave"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\ReedSolomonEncoder\u003A\u003A\u0024version",
+            "name": "version",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Data-ReedSolomonEncoder.html#property_version"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\ReedSolomonEncoder\u003A\u003A\u0024eccLevel",
+            "name": "eccLevel",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Data-ReedSolomonEncoder.html#property_eccLevel"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\ReedSolomonEncoder\u003A\u003A\u0024interleavedData",
+            "name": "interleavedData",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Data-ReedSolomonEncoder.html#property_interleavedData"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Data\\ReedSolomonEncoder\u003A\u003A\u0024interleavedDataIndex",
+            "name": "interleavedDataIndex",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Data-ReedSolomonEncoder.html#property_interleavedDataIndex"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Decoder\\Binarizer",
             "name": "Binarizer",
@@ -1343,7 +1653,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Decoder\\Binarizer\u003A\u003AcalculateThresholdForBlock\u0028\u0029",
             "name": "calculateThresholdForBlock",
-            "summary": "For\u0020each\u0020block\u0020in\u0020the\u0020image,\u0020calculate\u0020the\u0020average\u0020black\u0020point\u0020using\u0020a\u00205x5\u0020grid\nof\u0020the\u0020blocks\u0020around\u0020it.\u0020Also\u0020handles\u0020the\u0020corner\u0020cases\u0020\u0028fractional\u0020blocks\u0020are\u0020computed\u0020based\non\u0020the\u0020last\u0020pixels\u0020in\u0020the\u0020row\/column\u0020which\u0020are\u0020also\u0020used\u0020in\u0020the\u0020previous\u0020block\u0029.",
+            "summary": "For\u0020each\u0020block\u0020in\u0020the\u0020image,\u0020calculate\u0020the\u0020average\u0020black\u0020point\u0020using\u0020a\u00205x5\u0020grid\nof\u0020the\u0020surrounding\u0020blocks.\u0020Also\u0020handles\u0020the\u0020corner\u0020cases\u0020\u0028fractional\u0020blocks\u0020are\u0020computed\u0020based\non\u0020the\u0020last\u0020pixels\u0020in\u0020the\u0020row\/column\u0020which\u0020are\u0020also\u0020used\u0020in\u0020the\u0020previous\u0020block\u0029.",
             "url": "classes/chillerlan-QRCode-Decoder-Binarizer.html#method_calculateThresholdForBlock"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Decoder\\Binarizer\u003A\u003Acap\u0028\u0029",
@@ -1391,79 +1701,34 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/chillerlan-QRCode-Decoder-Binarizer.html#property_source"
         },                {
+            "fqsen": "\\chillerlan\\QRCode\\Decoder\\Binarizer\u003A\u003A\u0024luminances",
+            "name": "luminances",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Decoder-Binarizer.html#property_luminances"
+        },                {
             "fqsen": "\\chillerlan\\QRCode\\Decoder\\BitMatrix",
             "name": "BitMatrix",
-            "summary": "",
+            "summary": "Extended\u0020QRMatrix\u0020to\u0020map\u0020read\u0020data\u0020from\u0020the\u0020Binarizer",
             "url": "classes/chillerlan-QRCode-Decoder-BitMatrix.html"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Decoder\\BitMatrix\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "QRMatrix\u0020constructor.",
             "url": "classes/chillerlan-QRCode-Decoder-BitMatrix.html#method___construct"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\BitMatrix\u003A\u003Aset\u0028\u0029",
-            "name": "set",
-            "summary": "Sets\u0020the\u0020given\u0020bit\u0020to\u0020true.",
-            "url": "classes/chillerlan-QRCode-Decoder-BitMatrix.html#method_set"
+            "fqsen": "\\chillerlan\\QRCode\\Decoder\\BitMatrix\u003A\u003AresetVersionInfo\u0028\u0029",
+            "name": "resetVersionInfo",
+            "summary": "Resets\u0020the\u0020current\u0020version\u0020info\u0020in\u0020order\u0020to\u0020attempt\u0020another\u0020reading",
+            "url": "classes/chillerlan-QRCode-Decoder-BitMatrix.html#method_resetVersionInfo"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\BitMatrix\u003A\u003Aflip\u0028\u0029",
-            "name": "flip",
-            "summary": "Flips\u0020the\u0020given\u0020bit.\u00201\u0020\u003C\u003C\u0020\u00280xf9\u0020\u0026\u00200x1f\u0029",
-            "url": "classes/chillerlan-QRCode-Decoder-BitMatrix.html#method_flip"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\BitMatrix\u003A\u003AsetRegion\u0028\u0029",
-            "name": "setRegion",
-            "summary": "Sets\u0020a\u0020square\u0020region\u0020of\u0020the\u0020bit\u0020matrix\u0020to\u0020true.",
-            "url": "classes/chillerlan-QRCode-Decoder-BitMatrix.html#method_setRegion"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\BitMatrix\u003A\u003AgetDimension\u0028\u0029",
-            "name": "getDimension",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Decoder-BitMatrix.html#method_getDimension"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\BitMatrix\u003A\u003AgetFormatInfo\u0028\u0029",
-            "name": "getFormatInfo",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Decoder-BitMatrix.html#method_getFormatInfo"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\BitMatrix\u003A\u003AgetVersion\u0028\u0029",
-            "name": "getVersion",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Decoder-BitMatrix.html#method_getVersion"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\BitMatrix\u003A\u003Aget\u0028\u0029",
-            "name": "get",
-            "summary": "Gets\u0020the\u0020requested\u0020bit,\u0020where\u0020true\u0020means\u0020black.",
-            "url": "classes/chillerlan-QRCode-Decoder-BitMatrix.html#method_get"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\BitMatrix\u003A\u003AbuildFunctionPattern\u0028\u0029",
-            "name": "buildFunctionPattern",
-            "summary": "See\u0020ISO\u002018004\u003A2006\u0020Annex\u0020E",
-            "url": "classes/chillerlan-QRCode-Decoder-BitMatrix.html#method_buildFunctionPattern"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\BitMatrix\u003A\u003A\u0024mirror",
-            "name": "mirror",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Decoder-BitMatrix.html#property_mirror"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\BitMatrix\u003A\u003Aunmask\u0028\u0029",
-            "name": "unmask",
-            "summary": "Implementations\u0020of\u0020this\u0020method\u0020reverse\u0020the\u0020data\u0020masking\u0020process\u0020applied\u0020to\u0020a\u0020QR\u0020Code\u0020and\nmake\u0020its\u0020bits\u0020ready\u0020to\u0020read.",
-            "url": "classes/chillerlan-QRCode-Decoder-BitMatrix.html#method_unmask"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\BitMatrix\u003A\u003AsetMirror\u0028\u0029",
-            "name": "setMirror",
-            "summary": "Prepare\u0020the\u0020parser\u0020for\u0020a\u0020mirrored\u0020operation.",
-            "url": "classes/chillerlan-QRCode-Decoder-BitMatrix.html#method_setMirror"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\BitMatrix\u003A\u003AcopyBit\u0028\u0029",
-            "name": "copyBit",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Decoder-BitMatrix.html#method_copyBit"
+            "fqsen": "\\chillerlan\\QRCode\\Decoder\\BitMatrix\u003A\u003AmirrorDiagonal\u0028\u0029",
+            "name": "mirrorDiagonal",
+            "summary": "Mirror\u0020the\u0020bit\u0020matrix\u0020diagonally\u0020in\u0020order\u0020to\u0020attempt\u0020a\u0020second\u0020reading.",
+            "url": "classes/chillerlan-QRCode-Decoder-BitMatrix.html#method_mirrorDiagonal"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Decoder\\BitMatrix\u003A\u003AreadCodewords\u0028\u0029",
             "name": "readCodewords",
-            "summary": "Reads\u0020the\u0020bits\u0020in\u0020the\u0020BitMatrix\u0020representing\u0020the\u0020finder\u0020pattern\u0020in\u0020the\ncorrect\u0020order\u0020in\u0020order\u0020to\u0020reconstruct\u0020the\u0020codewords\u0020bytes\u0020contained\u0020within\u0020the\nQR\u0020Code.",
+            "summary": "Reads\u0020the\u0020bits\u0020in\u0020the\u0020BitMatrix\u0020representing\u0020the\u0020finder\u0020pattern\u0020in\u0020the\ncorrect\u0020order\u0020in\u0020order\u0020to\u0020reconstruct\u0020the\u0020codewords\u0020bytes\u0020contained\u0020within\u0020the\nQR\u0020Code.\u0020Throws\u0020if\u0020the\u0020exact\u0020number\u0020of\u0020bytes\u0020expected\u0020is\u0020not\u0020read.",
             "url": "classes/chillerlan-QRCode-Decoder-BitMatrix.html#method_readCodewords"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Decoder\\BitMatrix\u003A\u003AreadFormatInformation\u0028\u0029",
@@ -1471,9 +1736,14 @@ Search.appendIndex(
             "summary": "Reads\u0020format\u0020information\u0020from\u0020one\u0020of\u0020its\u0020two\u0020locations\u0020within\u0020the\u0020QR\u0020Code.",
             "url": "classes/chillerlan-QRCode-Decoder-BitMatrix.html#method_readFormatInformation"
         },                {
+            "fqsen": "\\chillerlan\\QRCode\\Decoder\\BitMatrix\u003A\u003AcopyVersionBit\u0028\u0029",
+            "name": "copyVersionBit",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Decoder-BitMatrix.html#method_copyVersionBit"
+        },                {
             "fqsen": "\\chillerlan\\QRCode\\Decoder\\BitMatrix\u003A\u003AdoDecodeFormatInformation\u0028\u0029",
             "name": "doDecodeFormatInformation",
-            "summary": "",
+            "summary": "Returns\u0020information\u0020about\u0020the\u0020format\u0020it\u0020specifies,\u0020or\u0020null\u0020if\u0020it\u0020doesn\u0027t\u0020seem\u0020to\u0020match\u0020any\u0020known\u0020pattern",
             "url": "classes/chillerlan-QRCode-Decoder-BitMatrix.html#method_doDecodeFormatInformation"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Decoder\\BitMatrix\u003A\u003AreadVersion\u0028\u0029",
@@ -1483,7 +1753,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Decoder\\BitMatrix\u003A\u003AdecodeVersionInformation\u0028\u0029",
             "name": "decodeVersionInformation",
-            "summary": "",
+            "summary": "Decodes\u0020the\u0020version\u0020information\u0020from\u0020the\u0020given\u0020bit\u0020sequence,\u0020returns\u0020null\u0020if\u0020no\u0020valid\u0020match\u0020is\u0020found.",
             "url": "classes/chillerlan-QRCode-Decoder-BitMatrix.html#method_decodeVersionInformation"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Decoder\\BitMatrix\u003A\u003AuRShift\u0028\u0029",
@@ -1496,35 +1766,40 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/chillerlan-QRCode-Decoder-BitMatrix.html#method_numBitsDiffering"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\BitMatrix\u003A\u003A\u0024dimension",
-            "name": "dimension",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Decoder-BitMatrix.html#property_dimension"
+            "fqsen": "\\chillerlan\\QRCode\\Decoder\\BitMatrix\u003A\u003AsetQuietZone\u0028\u0029",
+            "name": "setQuietZone",
+            "summary": "Draws\u0020the\u0020\u0022quiet\u0020zone\u0022\u0020of\u0020\u0024size\u0020around\u0020the\u0020matrix",
+            "url": "classes/chillerlan-QRCode-Decoder-BitMatrix.html#method_setQuietZone"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\BitMatrix\u003A\u003A\u0024rowSize",
-            "name": "rowSize",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Decoder-BitMatrix.html#property_rowSize"
+            "fqsen": "\\chillerlan\\QRCode\\Decoder\\BitMatrix\u003A\u003AsetLogoSpace\u0028\u0029",
+            "name": "setLogoSpace",
+            "summary": "Clears\u0020a\u0020space\u0020of\u0020\u0024width\u0020\u002A\u0020\u0024height\u0020in\u0020order\u0020to\u0020add\u0020a\u0020logo\u0020or\u0020text.",
+            "url": "classes/chillerlan-QRCode-Decoder-BitMatrix.html#method_setLogoSpace"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\BitMatrix\u003A\u003A\u0024bits",
-            "name": "bits",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Decoder-BitMatrix.html#property_bits"
+            "fqsen": "\\chillerlan\\QRCode\\Decoder\\BitMatrix\u003A\u003ADECODE_LOOKUP",
+            "name": "DECODE_LOOKUP",
+            "summary": "See\u0020ISO\u002018004\u003A2006,\u0020Annex\u0020C,\u0020Table\u0020C.1",
+            "url": "classes/chillerlan-QRCode-Decoder-BitMatrix.html#constant_DECODE_LOOKUP"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\BitMatrix\u003A\u003A\u0024version",
-            "name": "version",
+            "fqsen": "\\chillerlan\\QRCode\\Decoder\\BitMatrix\u003A\u003AFORMAT_INFO_MASK_QR",
+            "name": "FORMAT_INFO_MASK_QR",
             "summary": "",
-            "url": "classes/chillerlan-QRCode-Decoder-BitMatrix.html#property_version"
+            "url": "classes/chillerlan-QRCode-Decoder-BitMatrix.html#constant_FORMAT_INFO_MASK_QR"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\BitMatrix\u003A\u003A\u0024formatInfo",
-            "name": "formatInfo",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Decoder-BitMatrix.html#property_formatInfo"
+            "fqsen": "\\chillerlan\\QRCode\\Decoder\\BitMatrix\u003A\u003A\u0024mirror",
+            "name": "mirror",
+            "summary": "This\u0020flag\u0020has\u0020effect\u0020only\u0020on\u0020the\u0020copyVersionBit\u0028\u0029\u0020method.",
+            "url": "classes/chillerlan-QRCode-Decoder-BitMatrix.html#property_mirror"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Decoder\\Decoder",
             "name": "Decoder",
             "summary": "The\u0020main\u0020class\u0020which\u0020implements\u0020QR\u0020Code\u0020decoding\u0020\u002D\u002D\u0020as\u0020opposed\u0020to\u0020locating\u0020and\u0020extracting\nthe\u0020QR\u0020Code\u0020from\u0020an\u0020image.",
             "url": "classes/chillerlan-QRCode-Decoder-Decoder.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Decoder\\Decoder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Decoder-Decoder.html#method___construct"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Decoder\\Decoder\u003A\u003Adecode\u0028\u0029",
             "name": "decode",
@@ -1536,34 +1811,44 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/chillerlan-QRCode-Decoder-Decoder.html#method_decodeMatrix"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\Decoder\u003A\u003AgetDataBlocks\u0028\u0029",
-            "name": "getDataBlocks",
-            "summary": "When\u0020QR\u0020Codes\u0020use\u0020multiple\u0020data\u0020blocks,\u0020they\u0020are\u0020actually\u0020interleaved.",
-            "url": "classes/chillerlan-QRCode-Decoder-Decoder.html#method_getDataBlocks"
-        },                {
             "fqsen": "\\chillerlan\\QRCode\\Decoder\\Decoder\u003A\u003AdecodeBitStream\u0028\u0029",
             "name": "decodeBitStream",
-            "summary": "",
+            "summary": "Decode\u0020the\u0020contents\u0020of\u0020that\u0020stream\u0020of\u0020bytes",
             "url": "classes/chillerlan-QRCode-Decoder-Decoder.html#method_decodeBitStream"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Decoder\\Decoder\u003A\u003AdecodeAlphanumSegment\u0028\u0029",
+            "name": "decodeAlphanumSegment",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Decoder-Decoder.html#method_decodeAlphanumSegment"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Decoder\\Decoder\u003A\u003A\u0024options",
+            "name": "options",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Decoder-Decoder.html#property_options"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Decoder\\Decoder\u003A\u003A\u0024version",
             "name": "version",
             "summary": "",
             "url": "classes/chillerlan-QRCode-Decoder-Decoder.html#property_version"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\Decoder\u003A\u003A\u0024formatInfo",
-            "name": "formatInfo",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Decoder-Decoder.html#property_formatInfo"
-        },                {
             "fqsen": "\\chillerlan\\QRCode\\Decoder\\Decoder\u003A\u003A\u0024eccLevel",
             "name": "eccLevel",
             "summary": "",
             "url": "classes/chillerlan-QRCode-Decoder-Decoder.html#property_eccLevel"
         },                {
+            "fqsen": "\\chillerlan\\QRCode\\Decoder\\Decoder\u003A\u003A\u0024maskPattern",
+            "name": "maskPattern",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Decoder-Decoder.html#property_maskPattern"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Decoder\\Decoder\u003A\u003A\u0024bitBuffer",
+            "name": "bitBuffer",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Decoder-Decoder.html#property_bitBuffer"
+        },                {
             "fqsen": "\\chillerlan\\QRCode\\Decoder\\DecoderResult",
             "name": "DecoderResult",
-            "summary": "Encapsulates\u0020the\u0020result\u0020of\u0020decoding\u0020a\u0020matrix\u0020of\u0020bits.\u0020This\u0020typically\napplies\u0020to\u00202D\u0020barcode\u0020formats.\u0020For\u0020now\u0020it\u0020contains\u0020the\u0020raw\u0020bytes\u0020obtained,\nas\u0020well\u0020as\u0020a\u0020String\u0020interpretation\u0020of\u0020those\u0020bytes,\u0020if\u0020applicable.",
+            "summary": "Encapsulates\u0020the\u0020result\u0020of\u0020decoding\u0020a\u0020matrix\u0020of\u0020bits.\u0020This\u0020typically\napplies\u0020to\u00202D\u0020barcode\u0020formats.\u0020For\u0020now,\u0020it\u0020contains\u0020the\u0020raw\u0020bytes\u0020obtained\nas\u0020well\u0020as\u0020a\u0020String\u0020interpretation\u0020of\u0020those\u0020bytes,\u0020if\u0020applicable.",
             "url": "classes/chillerlan-QRCode-Decoder-DecoderResult.html"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Decoder\\DecoderResult\u003A\u003A__construct\u0028\u0029",
@@ -1586,15 +1871,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/chillerlan-QRCode-Decoder-DecoderResult.html#method_hasStructuredAppend"
         },                {
+            "fqsen": "\\chillerlan\\QRCode\\Decoder\\DecoderResult\u003A\u003AgetQRMatrix\u0028\u0029",
+            "name": "getQRMatrix",
+            "summary": "Returns\u0020a\u0020QRMatrix\u0020instance\u0020with\u0020the\u0020settings\u0020and\u0020data\u0020of\u0020the\u0020reader\u0020result",
+            "url": "classes/chillerlan-QRCode-Decoder-DecoderResult.html#method_getQRMatrix"
+        },                {
             "fqsen": "\\chillerlan\\QRCode\\Decoder\\DecoderResult\u003A\u003A\u0024rawBytes",
             "name": "rawBytes",
             "summary": "",
             "url": "classes/chillerlan-QRCode-Decoder-DecoderResult.html#property_rawBytes"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\DecoderResult\u003A\u003A\u0024data",
-            "name": "data",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Decoder-DecoderResult.html#property_data"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Decoder\\DecoderResult\u003A\u003A\u0024version",
             "name": "version",
@@ -1611,6 +1896,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/chillerlan-QRCode-Decoder-DecoderResult.html#property_maskPattern"
         },                {
+            "fqsen": "\\chillerlan\\QRCode\\Decoder\\DecoderResult\u003A\u003A\u0024data",
+            "name": "data",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Decoder-DecoderResult.html#property_data"
+        },                {
             "fqsen": "\\chillerlan\\QRCode\\Decoder\\DecoderResult\u003A\u003A\u0024structuredAppendParity",
             "name": "structuredAppendParity",
             "summary": "",
@@ -1621,165 +1911,65 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/chillerlan-QRCode-Decoder-DecoderResult.html#property_structuredAppendSequence"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\GDLuminanceSource",
-            "name": "GDLuminanceSource",
-            "summary": "This\u0020class\u0020is\u0020used\u0020to\u0020help\u0020decode\u0020images\u0020from\u0020files\u0020which\u0020arrive\u0020as\u0020GD\u0020Resource\nIt\u0020does\u0020not\u0020support\u0020rotation.",
-            "url": "classes/chillerlan-QRCode-Decoder-GDLuminanceSource.html"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\GDLuminanceSource\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "GDLuminanceSource\u0020constructor.",
-            "url": "classes/chillerlan-QRCode-Decoder-GDLuminanceSource.html#method___construct"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\GDLuminanceSource\u003A\u003AsetLuminancePixels\u0028\u0029",
-            "name": "setLuminancePixels",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Decoder-GDLuminanceSource.html#method_setLuminancePixels"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\GDLuminanceSource\u003A\u003AfromFile\u0028\u0029",
-            "name": "fromFile",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Decoder-GDLuminanceSource.html#method_fromFile"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\GDLuminanceSource\u003A\u003AfromBlob\u0028\u0029",
-            "name": "fromBlob",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Decoder-GDLuminanceSource.html#method_fromBlob"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\GDLuminanceSource\u003A\u003A\u0024gdImage",
-            "name": "gdImage",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Decoder-GDLuminanceSource.html#property_gdImage"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\IMagickLuminanceSource",
-            "name": "IMagickLuminanceSource",
-            "summary": "This\u0020class\u0020is\u0020used\u0020to\u0020help\u0020decode\u0020images\u0020from\u0020files\u0020which\u0020arrive\u0020as\u0020Imagick\u0020Resource\nIt\u0020does\u0020not\u0020support\u0020rotation.",
-            "url": "classes/chillerlan-QRCode-Decoder-IMagickLuminanceSource.html"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\IMagickLuminanceSource\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "IMagickLuminanceSource\u0020constructor.",
-            "url": "classes/chillerlan-QRCode-Decoder-IMagickLuminanceSource.html#method___construct"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\IMagickLuminanceSource\u003A\u003AsetLuminancePixels\u0028\u0029",
-            "name": "setLuminancePixels",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Decoder-IMagickLuminanceSource.html#method_setLuminancePixels"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\IMagickLuminanceSource\u003A\u003AfromFile\u0028\u0029",
-            "name": "fromFile",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Decoder-IMagickLuminanceSource.html#method_fromFile"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\IMagickLuminanceSource\u003A\u003AfromBlob\u0028\u0029",
-            "name": "fromBlob",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Decoder-IMagickLuminanceSource.html#method_fromBlob"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\IMagickLuminanceSource\u003A\u003A\u0024imagick",
-            "name": "imagick",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Decoder-IMagickLuminanceSource.html#property_imagick"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\LuminanceSourceAbstract",
-            "name": "LuminanceSourceAbstract",
-            "summary": "The\u0020purpose\u0020of\u0020this\u0020class\u0020hierarchy\u0020is\u0020to\u0020abstract\u0020different\u0020bitmap\u0020implementations\u0020across\nplatforms\u0020into\u0020a\u0020standard\u0020interface\u0020for\u0020requesting\u0020greyscale\u0020luminance\u0020values.\u0020The\u0020interface\nonly\u0020provides\u0020immutable\u0020methods\u003B\u0020therefore\u0020crop\u0020and\u0020rotation\u0020create\u0020copies.\u0020This\u0020is\u0020to\u0020ensure\nthat\u0020one\u0020Reader\u0020does\u0020not\u0020modify\u0020the\u0020original\u0020luminance\u0020source\u0020and\u0020leave\u0020it\u0020in\u0020an\u0020unknown\u0020state\nfor\u0020other\u0020Readers\u0020in\u0020the\u0020chain.",
-            "url": "classes/chillerlan-QRCode-Decoder-LuminanceSourceAbstract.html"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\LuminanceSourceAbstract\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Decoder-LuminanceSourceAbstract.html#method___construct"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\LuminanceSourceAbstract\u003A\u003AgetMatrix\u0028\u0029",
-            "name": "getMatrix",
-            "summary": "Fetches\u0020luminance\u0020data\u0020for\u0020the\u0020underlying\u0020bitmap.\u0020Values\u0020should\u0020be\u0020fetched\u0020using\u003A\n\u0060int\u0020luminance\u0020\u003D\u0020array\u005By\u0020\u002A\u0020width\u0020\u002B\u0020x\u005D\u0020\u0026\u00200xff\u0060",
-            "url": "classes/chillerlan-QRCode-Decoder-LuminanceSourceAbstract.html#method_getMatrix"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\LuminanceSourceAbstract\u003A\u003AgetWidth\u0028\u0029",
-            "name": "getWidth",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Decoder-LuminanceSourceAbstract.html#method_getWidth"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\LuminanceSourceAbstract\u003A\u003AgetHeight\u0028\u0029",
-            "name": "getHeight",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Decoder-LuminanceSourceAbstract.html#method_getHeight"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\LuminanceSourceAbstract\u003A\u003AgetRow\u0028\u0029",
-            "name": "getRow",
-            "summary": "Fetches\u0020one\u0020row\u0020of\u0020luminance\u0020data\u0020from\u0020the\u0020underlying\u0020platform\u0027s\u0020bitmap.\u0020Values\u0020range\u0020from\n0\u0020\u0028black\u0029\u0020to\u0020255\u0020\u0028white\u0029.\u0020Because\u0020Java\u0020does\u0020not\u0020have\u0020an\u0020unsigned\u0020byte\u0020type,\u0020callers\u0020will\u0020have\nto\u0020bitwise\u0020and\u0020with\u00200xff\u0020for\u0020each\u0020value.\u0020It\u0020is\u0020preferable\u0020for\u0020implementations\u0020of\u0020this\u0020method\nto\u0020only\u0020fetch\u0020this\u0020row\u0020rather\u0020than\u0020the\u0020whole\u0020image,\u0020since\u0020no\u00202D\u0020Readers\u0020may\u0020be\u0020installed\u0020and\ngetMatrix\u0028\u0029\u0020may\u0020never\u0020be\u0020called.",
-            "url": "classes/chillerlan-QRCode-Decoder-LuminanceSourceAbstract.html#method_getRow"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\LuminanceSourceAbstract\u003A\u003AsetLuminancePixel\u0028\u0029",
-            "name": "setLuminancePixel",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Decoder-LuminanceSourceAbstract.html#method_setLuminancePixel"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\LuminanceSourceAbstract\u003A\u003AcheckFile\u0028\u0029",
-            "name": "checkFile",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Decoder-LuminanceSourceAbstract.html#method_checkFile"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\LuminanceSourceAbstract\u003A\u003A\u0024options",
-            "name": "options",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Decoder-LuminanceSourceAbstract.html#property_options"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\LuminanceSourceAbstract\u003A\u003A\u0024luminances",
-            "name": "luminances",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Decoder-LuminanceSourceAbstract.html#property_luminances"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\LuminanceSourceAbstract\u003A\u003A\u0024width",
-            "name": "width",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Decoder-LuminanceSourceAbstract.html#property_width"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\LuminanceSourceAbstract\u003A\u003A\u0024height",
-            "name": "height",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Decoder-LuminanceSourceAbstract.html#property_height"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\LuminanceSourceInterface",
-            "name": "LuminanceSourceInterface",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Decoder-LuminanceSourceInterface.html"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\LuminanceSourceInterface\u003A\u003AgetMatrix\u0028\u0029",
-            "name": "getMatrix",
-            "summary": "Fetches\u0020luminance\u0020data\u0020for\u0020the\u0020underlying\u0020bitmap.\u0020Values\u0020should\u0020be\u0020fetched\u0020using\u003A\n\u0060int\u0020luminance\u0020\u003D\u0020array\u005By\u0020\u002A\u0020width\u0020\u002B\u0020x\u005D\u0020\u0026\u00200xff\u0060",
-            "url": "classes/chillerlan-QRCode-Decoder-LuminanceSourceInterface.html#method_getMatrix"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\LuminanceSourceInterface\u003A\u003AgetWidth\u0028\u0029",
-            "name": "getWidth",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Decoder-LuminanceSourceInterface.html#method_getWidth"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\LuminanceSourceInterface\u003A\u003AgetHeight\u0028\u0029",
-            "name": "getHeight",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-Decoder-LuminanceSourceInterface.html#method_getHeight"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\LuminanceSourceInterface\u003A\u003AgetRow\u0028\u0029",
-            "name": "getRow",
-            "summary": "Fetches\u0020one\u0020row\u0020of\u0020luminance\u0020data\u0020from\u0020the\u0020underlying\u0020platform\u0027s\u0020bitmap.\u0020Values\u0020range\u0020from\n0\u0020\u0028black\u0029\u0020to\u0020255\u0020\u0028white\u0029.\u0020Because\u0020Java\u0020does\u0020not\u0020have\u0020an\u0020unsigned\u0020byte\u0020type,\u0020callers\u0020will\u0020have\nto\u0020bitwise\u0020and\u0020with\u00200xff\u0020for\u0020each\u0020value.\u0020It\u0020is\u0020preferable\u0020for\u0020implementations\u0020of\u0020this\u0020method\nto\u0020only\u0020fetch\u0020this\u0020row\u0020rather\u0020than\u0020the\u0020whole\u0020image,\u0020since\u0020no\u00202D\u0020Readers\u0020may\u0020be\u0020installed\u0020and\ngetMatrix\u0028\u0029\u0020may\u0020never\u0020be\u0020called.",
-            "url": "classes/chillerlan-QRCode-Decoder-LuminanceSourceInterface.html#method_getRow"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\LuminanceSourceInterface\u003A\u003AfromFile\u0028\u0029",
-            "name": "fromFile",
-            "summary": "Creates\u0020a\u0020LuminanceSource\u0020instance\u0020from\u0020the\u0020given\u0020file",
-            "url": "classes/chillerlan-QRCode-Decoder-LuminanceSourceInterface.html#method_fromFile"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Decoder\\LuminanceSourceInterface\u003A\u003AfromBlob\u0028\u0029",
-            "name": "fromBlob",
-            "summary": "Creates\u0020a\u0020LuminanceSource\u0020instance\u0020from\u0020the\u0020given\u0020data\u0020blob",
-            "url": "classes/chillerlan-QRCode-Decoder-LuminanceSourceInterface.html#method_fromBlob"
-        },                {
             "fqsen": "\\chillerlan\\QRCode\\Decoder\\QRCodeDecoderException",
             "name": "QRCodeDecoderException",
             "summary": "An\u0020exception\u0020container",
             "url": "classes/chillerlan-QRCode-Decoder-QRCodeDecoderException.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Decoder\\ReedSolomonDecoder",
+            "name": "ReedSolomonDecoder",
+            "summary": "Implements\u0020Reed\u002DSolomon\u0020decoding",
+            "url": "classes/chillerlan-QRCode-Decoder-ReedSolomonDecoder.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Decoder\\ReedSolomonDecoder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "ReedSolomonDecoder\u0020constructor",
+            "url": "classes/chillerlan-QRCode-Decoder-ReedSolomonDecoder.html#method___construct"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Decoder\\ReedSolomonDecoder\u003A\u003Adecode\u0028\u0029",
+            "name": "decode",
+            "summary": "Error\u002Dcorrect\u0020and\u0020copy\u0020data\u0020blocks\u0020together\u0020into\u0020a\u0020stream\u0020of\u0020bytes",
+            "url": "classes/chillerlan-QRCode-Decoder-ReedSolomonDecoder.html#method_decode"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Decoder\\ReedSolomonDecoder\u003A\u003AdeinterleaveRawBytes\u0028\u0029",
+            "name": "deinterleaveRawBytes",
+            "summary": "When\u0020QR\u0020Codes\u0020use\u0020multiple\u0020data\u0020blocks,\u0020they\u0020are\u0020actually\u0020interleaved.",
+            "url": "classes/chillerlan-QRCode-Decoder-ReedSolomonDecoder.html#method_deinterleaveRawBytes"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Decoder\\ReedSolomonDecoder\u003A\u003AcorrectErrors\u0028\u0029",
+            "name": "correctErrors",
+            "summary": "Given\u0020data\u0020and\u0020error\u002Dcorrection\u0020codewords\u0020received,\u0020possibly\u0020corrupted\u0020by\u0020errors,\u0020attempts\u0020to\ncorrect\u0020the\u0020errors\u0020in\u002Dplace\u0020using\u0020Reed\u002DSolomon\u0020error\u0020correction.",
+            "url": "classes/chillerlan-QRCode-Decoder-ReedSolomonDecoder.html#method_correctErrors"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Decoder\\ReedSolomonDecoder\u003A\u003AdecodeWords\u0028\u0029",
+            "name": "decodeWords",
+            "summary": "Decodes\u0020given\u0020set\u0020of\u0020received\u0020codewords,\u0020which\u0020include\u0020both\u0020data\u0020and\u0020error\u002Dcorrection\ncodewords.\u0020Really,\u0020this\u0020means\u0020it\u0020uses\u0020Reed\u002DSolomon\u0020to\u0020detect\u0020and\u0020correct\u0020errors,\u0020in\u002Dplace,\nin\u0020the\u0020input.",
+            "url": "classes/chillerlan-QRCode-Decoder-ReedSolomonDecoder.html#method_decodeWords"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Decoder\\ReedSolomonDecoder\u003A\u003ArunEuclideanAlgorithm\u0028\u0029",
+            "name": "runEuclideanAlgorithm",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Decoder-ReedSolomonDecoder.html#method_runEuclideanAlgorithm"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Decoder\\ReedSolomonDecoder\u003A\u003AfindErrorLocations\u0028\u0029",
+            "name": "findErrorLocations",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Decoder-ReedSolomonDecoder.html#method_findErrorLocations"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Decoder\\ReedSolomonDecoder\u003A\u003AfindErrorMagnitudes\u0028\u0029",
+            "name": "findErrorMagnitudes",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Decoder-ReedSolomonDecoder.html#method_findErrorMagnitudes"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Decoder\\ReedSolomonDecoder\u003A\u003A\u0024version",
+            "name": "version",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Decoder-ReedSolomonDecoder.html#property_version"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Decoder\\ReedSolomonDecoder\u003A\u003A\u0024eccLevel",
+            "name": "eccLevel",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Decoder-ReedSolomonDecoder.html#property_eccLevel"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Detector\\AlignmentPattern",
             "name": "AlignmentPattern",
@@ -1813,7 +2003,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Detector\\AlignmentPatternFinder\u003A\u003AhandlePossibleCenter\u0028\u0029",
             "name": "handlePossibleCenter",
-            "summary": "This\u0020is\u0020called\u0020when\u0020a\u0020horizontal\u0020scan\u0020finds\u0020a\u0020possible\u0020alignment\u0020pattern.\u0020It\u0020will\ncross\u0020check\u0020with\u0020a\u0020vertical\u0020scan,\u0020and\u0020if\u0020successful,\u0020will\u0020see\u0020if\u0020this\u0020pattern\u0020had\u0020been\nfound\u0020on\u0020a\u0020previous\u0020horizontal\u0020scan.\u0020If\u0020so,\u0020we\u0020consider\u0020it\u0020confirmed\u0020and\u0020conclude\u0020we\u0020have\nfound\u0020the\u0020alignment\u0020pattern.",
+            "summary": "This\u0020is\u0020called\u0020when\u0020a\u0020horizontal\u0020scan\u0020finds\u0020a\u0020possible\u0020alignment\u0020pattern.\u0020It\u0020will\ncross\u002Dcheck\u0020with\u0020a\u0020vertical\u0020scan,\u0020and\u0020if\u0020successful,\u0020will\u0020see\u0020if\u0020this\u0020pattern\u0020had\u0020been\nfound\u0020on\u0020a\u0020previous\u0020horizontal\u0020scan.\u0020If\u0020so,\u0020we\u0020consider\u0020it\u0020confirmed\u0020and\u0020conclude\u0020we\u0020have\nfound\u0020the\u0020alignment\u0020pattern.",
             "url": "classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#method_handlePossibleCenter"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Detector\\AlignmentPatternFinder\u003A\u003AcenterFromEnd\u0028\u0029",
@@ -1826,10 +2016,10 @@ Search.appendIndex(
             "summary": "After\u0020a\u0020horizontal\u0020scan\u0020finds\u0020a\u0020potential\u0020alignment\u0020pattern,\u0020this\u0020method\n\u0022cross\u002Dchecks\u0022\u0020by\u0020scanning\u0020down\u0020vertically\u0020through\u0020the\u0020center\u0020of\u0020the\u0020possible\nalignment\u0020pattern\u0020to\u0020see\u0020if\u0020the\u0020same\u0020proportion\u0020is\u0020detected.",
             "url": "classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#method_crossCheckVertical"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Detector\\AlignmentPatternFinder\u003A\u003A\u0024bitMatrix",
-            "name": "bitMatrix",
+            "fqsen": "\\chillerlan\\QRCode\\Detector\\AlignmentPatternFinder\u003A\u003A\u0024matrix",
+            "name": "matrix",
             "summary": "",
-            "url": "classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#property_bitMatrix"
+            "url": "classes/chillerlan-QRCode-Detector-AlignmentPatternFinder.html#property_matrix"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Detector\\AlignmentPatternFinder\u003A\u003A\u0024moduleSize",
             "name": "moduleSize",
@@ -1891,10 +2081,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/chillerlan-QRCode-Detector-Detector.html#method_createTransform"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Detector\\Detector\u003A\u003A\u0024bitMatrix",
-            "name": "bitMatrix",
+            "fqsen": "\\chillerlan\\QRCode\\Detector\\Detector\u003A\u003A\u0024matrix",
+            "name": "matrix",
             "summary": "",
-            "url": "classes/chillerlan-QRCode-Detector-Detector.html#property_bitMatrix"
+            "url": "classes/chillerlan-QRCode-Detector-Detector.html#property_matrix"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Detector\\FinderPattern",
             "name": "FinderPattern",
@@ -1998,12 +2188,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Detector\\FinderPatternFinder\u003A\u003AcrossCheckHorizontal\u0028\u0029",
             "name": "crossCheckHorizontal",
-            "summary": "Like\u0020\u0023crossCheckVertical\u0028int,\u0020int,\u0020int,\u0020int\u0029,\u0020and\u0020in\u0020fact\u0020is\u0020basically\u0020identical,\nexcept\u0020it\u0020reads\u0020horizontally\u0020instead\u0020of\u0020vertically.\u0020This\u0020is\u0020used\u0020to\u0020cross\u002Dcross\ncheck\u0020a\u0020vertical\u0020cross\u0020check\u0020and\u0020locate\u0020the\u0020real\u0020center\u0020of\u0020the\u0020alignment\u0020pattern.",
+            "summary": "Like\u0020\u0023crossCheckVertical\u0028int,\u0020int,\u0020int,\u0020int\u0029,\u0020and\u0020in\u0020fact\u0020is\u0020basically\u0020identical,\nexcept\u0020it\u0020reads\u0020horizontally\u0020instead\u0020of\u0020vertically.\u0020This\u0020is\u0020used\u0020to\u0020cross\u002Dcross\ncheck\u0020a\u0020vertical\u0020cross\u002Dcheck\u0020and\u0020locate\u0020the\u0020real\u0020center\u0020of\u0020the\u0020alignment\u0020pattern.",
             "url": "classes/chillerlan-QRCode-Detector-FinderPatternFinder.html#method_crossCheckHorizontal"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Detector\\FinderPatternFinder\u003A\u003AhandlePossibleCenter\u0028\u0029",
             "name": "handlePossibleCenter",
-            "summary": "This\u0020is\u0020called\u0020when\u0020a\u0020horizontal\u0020scan\u0020finds\u0020a\u0020possible\u0020alignment\u0020pattern.\u0020It\u0020will\ncross\u0020check\u0020with\u0020a\u0020vertical\u0020scan,\u0020and\u0020if\u0020successful,\u0020will,\u0020ah,\u0020cross\u002Dcross\u002Dcheck\nwith\u0020another\u0020horizontal\u0020scan.\u0020This\u0020is\u0020needed\u0020primarily\u0020to\u0020locate\u0020the\u0020real\u0020horizontal\ncenter\u0020of\u0020the\u0020pattern\u0020in\u0020cases\u0020of\u0020extreme\u0020skew.",
+            "summary": "This\u0020is\u0020called\u0020when\u0020a\u0020horizontal\u0020scan\u0020finds\u0020a\u0020possible\u0020alignment\u0020pattern.\u0020It\u0020will\ncross\u002Dcheck\u0020with\u0020a\u0020vertical\u0020scan,\u0020and\u0020if\u0020successful,\u0020will,\u0020ah,\u0020cross\u002Dcross\u002Dcheck\nwith\u0020another\u0020horizontal\u0020scan.\u0020This\u0020is\u0020needed\u0020primarily\u0020to\u0020locate\u0020the\u0020real\u0020horizontal\ncenter\u0020of\u0020the\u0020pattern\u0020in\u0020cases\u0020of\u0020extreme\u0020skew.",
             "url": "classes/chillerlan-QRCode-Detector-FinderPatternFinder.html#method_handlePossibleCenter"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Detector\\FinderPatternFinder\u003A\u003AfindRowSkip\u0028\u0029",
@@ -2046,10 +2236,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/chillerlan-QRCode-Detector-FinderPatternFinder.html#constant_CENTER_QUORUM"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Detector\\FinderPatternFinder\u003A\u003A\u0024bitMatrix",
-            "name": "bitMatrix",
+            "fqsen": "\\chillerlan\\QRCode\\Detector\\FinderPatternFinder\u003A\u003A\u0024matrix",
+            "name": "matrix",
             "summary": "",
-            "url": "classes/chillerlan-QRCode-Detector-FinderPatternFinder.html#property_bitMatrix"
+            "url": "classes/chillerlan-QRCode-Detector-FinderPatternFinder.html#property_matrix"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Detector\\FinderPatternFinder\u003A\u003A\u0024possibleCenters",
             "name": "possibleCenters",
@@ -2075,6 +2265,11 @@ Search.appendIndex(
             "name": "sampleGrid",
             "summary": "Samples\u0020an\u0020image\u0020for\u0020a\u0020rectangular\u0020matrix\u0020of\u0020bits\u0020of\u0020the\u0020given\u0020dimension.\u0020The\u0020sampling\ntransformation\u0020is\u0020determined\u0020by\u0020the\u0020coordinates\u0020of\u00204\u0020points,\u0020in\u0020the\u0020original\u0020and\u0020transformed\nimage\u0020space.",
             "url": "classes/chillerlan-QRCode-Detector-GridSampler.html#method_sampleGrid"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Detector\\GridSampler\u003A\u003A\u0024points",
+            "name": "points",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Detector-GridSampler.html#property_points"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Detector\\PerspectiveTransform",
             "name": "PerspectiveTransform",
@@ -2211,6 +2406,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/chillerlan-QRCode-Detector-ResultPoint.html#property_estimatedModuleSize"
         },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\CssColorModuleValueTrait",
+            "name": "CssColorModuleValueTrait",
+            "summary": "Module\u0020value\u0020checks\u0020for\u0020output\u0020classes\u0020that\u0020use\u0020CSS\u0020colors",
+            "url": "classes/chillerlan-QRCode-Output-CssColorModuleValueTrait.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\CssColorModuleValueTrait\u003A\u003AmoduleValueIsValid\u0028\u0029",
+            "name": "moduleValueIsValid",
+            "summary": "note\u003A\u0020we\u0027re\u0020not\u0020necessarily\u0020validating\u0020the\u0020several\u0020values,\u0020just\u0020checking\u0020the\u0020general\u0020syntax\nnote\u003A\u0020css4\u0020colors\u0020are\u0020not\u0020included",
+            "url": "classes/chillerlan-QRCode-Output-CssColorModuleValueTrait.html#method_moduleValueIsValid"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\CssColorModuleValueTrait\u003A\u003AprepareModuleValue\u0028\u0029",
+            "name": "prepareModuleValue",
+            "summary": "implements\u0020\\chillerlan\\QRCode\\Output\\QROutputAbstract\u003A\u003AprepareModuleValue\u0028\u0029",
+            "url": "classes/chillerlan-QRCode-Output-CssColorModuleValueTrait.html#method_prepareModuleValue"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\CssColorModuleValueTrait\u003A\u003AgetDefaultModuleValue\u0028\u0029",
+            "name": "getDefaultModuleValue",
+            "summary": "implements\u0020\\chillerlan\\QRCode\\Output\\QROutputAbstract\u003A\u003AgetDefaultModuleValue\u0028\u0029",
+            "url": "classes/chillerlan-QRCode-Output-CssColorModuleValueTrait.html#method_getDefaultModuleValue"
+        },                {
             "fqsen": "\\chillerlan\\QRCode\\Output\\QRCodeOutputException",
             "name": "QRCodeOutputException",
             "summary": "An\u0020exception\u0020container",
@@ -2226,20 +2441,45 @@ Search.appendIndex(
             "summary": "Determines\u0020whether\u0020the\u0020given\u0020value\u0020is\u0020valid",
             "url": "classes/chillerlan-QRCode-Output-QREps.html#method_moduleValueIsValid"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Output\\QREps\u003A\u003AgetModuleValue\u0028\u0029",
-            "name": "getModuleValue",
-            "summary": "Returns\u0020the\u0020final\u0020value\u0020for\u0020the\u0020given\u0020input\u0020\u0028return\u0020value\u0020depends\u0020on\u0020the\u0020output\u0020module\u0029",
-            "url": "classes/chillerlan-QRCode-Output-QREps.html#method_getModuleValue"
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QREps\u003A\u003AprepareModuleValue\u0028\u0029",
+            "name": "prepareModuleValue",
+            "summary": "Prepares\u0020the\u0020value\u0020for\u0020the\u0020given\u0020input\u0020\u0028return\u0020value\u0020depends\u0020on\u0020the\u0020output\u0020class\u0029",
+            "url": "classes/chillerlan-QRCode-Output-QREps.html#method_prepareModuleValue"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Output\\QREps\u003A\u003AgetDefaultModuleValue\u0028\u0029",
             "name": "getDefaultModuleValue",
-            "summary": "Returns\u0020a\u0020defualt\u0020value\u0020for\u0020either\u0020dark\u0020or\u0020light\u0020modules\u0020\u0028return\u0020value\u0020depends\u0020on\u0020the\u0020output\u0020module\u0029",
+            "summary": "Returns\u0020a\u0020default\u0020value\u0020for\u0020either\u0020dark\u0020or\u0020light\u0020modules\u0020\u0028return\u0020value\u0020depends\u0020on\u0020the\u0020output\u0020class\u0029",
             "url": "classes/chillerlan-QRCode-Output-QREps.html#method_getDefaultModuleValue"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QREps\u003A\u003AformatColor\u0028\u0029",
+            "name": "formatColor",
+            "summary": "Set\u0020the\u0020color\u0020format\u0020string",
+            "url": "classes/chillerlan-QRCode-Output-QREps.html#method_formatColor"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Output\\QREps\u003A\u003Adump\u0028\u0029",
             "name": "dump",
-            "summary": "",
+            "summary": "Generates\u0020the\u0020output,\u0020optionally\u0020dumps\u0020it\u0020to\u0020a\u0020file,\u0020and\u0020returns\u0020it",
             "url": "classes/chillerlan-QRCode-Output-QREps.html#method_dump"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QREps\u003A\u003Aheader\u0028\u0029",
+            "name": "header",
+            "summary": "Returns\u0020the\u0020main\u0020header\u0020for\u0020the\u0020EPS\u0020file,\u0020including\u0020function\u0020definitions\u0020and\u0020background",
+            "url": "classes/chillerlan-QRCode-Output-QREps.html#method_header"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QREps\u003A\u003Apaths\u0028\u0029",
+            "name": "paths",
+            "summary": "returns\u0020one\u0020or\u0020more\u0020EPS\u0020path\u0020blocks",
+            "url": "classes/chillerlan-QRCode-Output-QREps.html#method_paths"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QREps\u003A\u003Amodule\u0028\u0029",
+            "name": "module",
+            "summary": "Returns\u0020a\u0020path\u0020segment\u0020for\u0020a\u0020single\u0020module",
+            "url": "classes/chillerlan-QRCode-Output-QREps.html#method_module"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QREps\u003A\u003AMIME_TYPE",
+            "name": "MIME_TYPE",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Output-QREps.html#constant_MIME_TYPE"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Output\\QRFpdf",
             "name": "QRFpdf",
@@ -2251,25 +2491,35 @@ Search.appendIndex(
             "summary": "QRFpdf\u0020constructor.",
             "url": "classes/chillerlan-QRCode-Output-QRFpdf.html#method___construct"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Output\\QRFpdf\u003A\u003AmoduleValueIsValid\u0028\u0029",
-            "name": "moduleValueIsValid",
-            "summary": "Determines\u0020whether\u0020the\u0020given\u0020value\u0020is\u0020valid",
-            "url": "classes/chillerlan-QRCode-Output-QRFpdf.html#method_moduleValueIsValid"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Output\\QRFpdf\u003A\u003AgetModuleValue\u0028\u0029",
-            "name": "getModuleValue",
-            "summary": "Returns\u0020the\u0020final\u0020value\u0020for\u0020the\u0020given\u0020input\u0020\u0028return\u0020value\u0020depends\u0020on\u0020the\u0020output\u0020module\u0029",
-            "url": "classes/chillerlan-QRCode-Output-QRFpdf.html#method_getModuleValue"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Output\\QRFpdf\u003A\u003AgetDefaultModuleValue\u0028\u0029",
-            "name": "getDefaultModuleValue",
-            "summary": "Returns\u0020a\u0020defualt\u0020value\u0020for\u0020either\u0020dark\u0020or\u0020light\u0020modules\u0020\u0028return\u0020value\u0020depends\u0020on\u0020the\u0020output\u0020module\u0029",
-            "url": "classes/chillerlan-QRCode-Output-QRFpdf.html#method_getDefaultModuleValue"
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRFpdf\u003A\u003AinitFPDF\u0028\u0029",
+            "name": "initFPDF",
+            "summary": "Initializes\u0020an\u0020FPDF\u0020instance",
+            "url": "classes/chillerlan-QRCode-Output-QRFpdf.html#method_initFPDF"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Output\\QRFpdf\u003A\u003Adump\u0028\u0029",
             "name": "dump",
-            "summary": "",
+            "summary": "Generates\u0020the\u0020output,\u0020optionally\u0020dumps\u0020it\u0020to\u0020a\u0020file,\u0020and\u0020returns\u0020it",
             "url": "classes/chillerlan-QRCode-Output-QRFpdf.html#method_dump"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRFpdf\u003A\u003Amodule\u0028\u0029",
+            "name": "module",
+            "summary": "Renders\u0020a\u0020single\u0020module",
+            "url": "classes/chillerlan-QRCode-Output-QRFpdf.html#method_module"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRFpdf\u003A\u003AMIME_TYPE",
+            "name": "MIME_TYPE",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Output-QRFpdf.html#constant_MIME_TYPE"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRFpdf\u003A\u003A\u0024prevColor",
+            "name": "prevColor",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Output-QRFpdf.html#property_prevColor"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRFpdf\u003A\u003A\u0024fpdf",
+            "name": "fpdf",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Output-QRFpdf.html#property_fpdf"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImage",
             "name": "QRGdImage",
@@ -2281,30 +2531,60 @@ Search.appendIndex(
             "summary": "QROutputAbstract\u0020constructor.",
             "url": "classes/chillerlan-QRCode-Output-QRGdImage.html#method___construct"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImage\u003A\u003AmoduleValueIsValid\u0028\u0029",
-            "name": "moduleValueIsValid",
-            "summary": "Determines\u0020whether\u0020the\u0020given\u0020value\u0020is\u0020valid",
-            "url": "classes/chillerlan-QRCode-Output-QRGdImage.html#method_moduleValueIsValid"
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImage\u003A\u003AcheckGD\u0028\u0029",
+            "name": "checkGD",
+            "summary": "Checks\u0020whether\u0020GD\u0020is\u0020installed\u0020and\u0020if\u0020the\u0020given\u0020mode\u0020is\u0020supported",
+            "url": "classes/chillerlan-QRCode-Output-QRGdImage.html#method_checkGD"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImage\u003A\u003AgetModuleValue\u0028\u0029",
-            "name": "getModuleValue",
-            "summary": "Returns\u0020the\u0020final\u0020value\u0020for\u0020the\u0020given\u0020input\u0020\u0028return\u0020value\u0020depends\u0020on\u0020the\u0020output\u0020module\u0029",
-            "url": "classes/chillerlan-QRCode-Output-QRGdImage.html#method_getModuleValue"
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImage\u003A\u003AprepareModuleValue\u0028\u0029",
+            "name": "prepareModuleValue",
+            "summary": "Prepares\u0020the\u0020value\u0020for\u0020the\u0020given\u0020input\u0020\u0028return\u0020value\u0020depends\u0020on\u0020the\u0020output\u0020class\u0029",
+            "url": "classes/chillerlan-QRCode-Output-QRGdImage.html#method_prepareModuleValue"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImage\u003A\u003AgetDefaultModuleValue\u0028\u0029",
             "name": "getDefaultModuleValue",
-            "summary": "Returns\u0020a\u0020defualt\u0020value\u0020for\u0020either\u0020dark\u0020or\u0020light\u0020modules\u0020\u0028return\u0020value\u0020depends\u0020on\u0020the\u0020output\u0020module\u0029",
+            "summary": "Returns\u0020a\u0020default\u0020value\u0020for\u0020either\u0020dark\u0020or\u0020light\u0020modules\u0020\u0028return\u0020value\u0020depends\u0020on\u0020the\u0020output\u0020class\u0029",
             "url": "classes/chillerlan-QRCode-Output-QRGdImage.html#method_getDefaultModuleValue"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImage\u003A\u003Adump\u0028\u0029",
             "name": "dump",
-            "summary": "",
+            "summary": "Generates\u0020the\u0020output,\u0020optionally\u0020dumps\u0020it\u0020to\u0020a\u0020file,\u0020and\u0020returns\u0020it",
             "url": "classes/chillerlan-QRCode-Output-QRGdImage.html#method_dump"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImage\u003A\u003AsetPixel\u0028\u0029",
-            "name": "setPixel",
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImage\u003A\u003AcreateImage\u0028\u0029",
+            "name": "createImage",
+            "summary": "Creates\u0020a\u0020new\u0020GdImage\u0020resource\u0020and\u0020scales\u0020it\u0020if\u0020necessary",
+            "url": "classes/chillerlan-QRCode-Output-QRGdImage.html#method_createImage"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImage\u003A\u003AsetBgColor\u0028\u0029",
+            "name": "setBgColor",
+            "summary": "Sets\u0020the\u0020background\u0020color",
+            "url": "classes/chillerlan-QRCode-Output-QRGdImage.html#method_setBgColor"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImage\u003A\u003AsetTransparencyColor\u0028\u0029",
+            "name": "setTransparencyColor",
+            "summary": "Sets\u0020the\u0020transparency\u0020color,\u0020returns\u0020the\u0020identifier\u0020of\u0020the\u0020new\u0020transparent\u0020color",
+            "url": "classes/chillerlan-QRCode-Output-QRGdImage.html#method_setTransparencyColor"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImage\u003A\u003AgetQuality\u0028\u0029",
+            "name": "getQuality",
+            "summary": "Returns\u0020the\u0020image\u0020quality\u0020value\u0020for\u0020the\u0020current\u0020GdImage\u0020output\u0020child\u0020class\u0020\u0028defaults\u0020to\u0020\u002D1\u0020...\u0020100\u0029",
+            "url": "classes/chillerlan-QRCode-Output-QRGdImage.html#method_getQuality"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImage\u003A\u003AdrawImage\u0028\u0029",
+            "name": "drawImage",
+            "summary": "Draws\u0020the\u0020QR\u0020image",
+            "url": "classes/chillerlan-QRCode-Output-QRGdImage.html#method_drawImage"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImage\u003A\u003Amodule\u0028\u0029",
+            "name": "module",
             "summary": "Creates\u0020a\u0020single\u0020QR\u0020pixel\u0020with\u0020the\u0020given\u0020settings",
-            "url": "classes/chillerlan-QRCode-Output-QRGdImage.html#method_setPixel"
+            "url": "classes/chillerlan-QRCode-Output-QRGdImage.html#method_module"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImage\u003A\u003ArenderImage\u0028\u0029",
+            "name": "renderImage",
+            "summary": "Renders\u0020the\u0020image\u0020with\u0020the\u0020gdimage\u0020function\u0020for\u0020the\u0020desired\u0020output",
+            "url": "classes/chillerlan-QRCode-Output-QRGdImage.html#method_renderImage"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImage\u003A\u003AdumpImage\u0028\u0029",
             "name": "dumpImage",
@@ -2316,10 +2596,115 @@ Search.appendIndex(
             "summary": "The\u0020GD\u0020image\u0020resource",
             "url": "classes/chillerlan-QRCode-Output-QRGdImage.html#property_image"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Output\\QRImage",
-            "name": "QRImage",
-            "summary": "Converts\u0020the\u0020matrix\u0020into\u0020GD\u0020images,\u0020raw\u0020or\u0020base64\u0020output\u0020\u0028requires\u0020ext\u002Dgd\u0029",
-            "url": "classes/chillerlan-QRCode-Output-QRImage.html"
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImage\u003A\u003A\u0024background",
+            "name": "background",
+            "summary": "The\u0020allocated\u0020background\u0020color",
+            "url": "classes/chillerlan-QRCode-Output-QRGdImage.html#property_background"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImage\u003A\u003A\u0024upscaled",
+            "name": "upscaled",
+            "summary": "Whether\u0020we\u0027re\u0020running\u0020in\u0020upscale\u0020mode\u0020\u0028scale\u0020\u003C\u002020\u0029",
+            "url": "classes/chillerlan-QRCode-Output-QRGdImage.html#property_upscaled"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImageAVIF",
+            "name": "QRGdImageAVIF",
+            "summary": "GDImage\u0020avif\u0020output",
+            "url": "classes/chillerlan-QRCode-Output-QRGdImageAVIF.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImageAVIF\u003A\u003ArenderImage\u0028\u0029",
+            "name": "renderImage",
+            "summary": "Renders\u0020the\u0020image\u0020with\u0020the\u0020gdimage\u0020function\u0020for\u0020the\u0020desired\u0020output",
+            "url": "classes/chillerlan-QRCode-Output-QRGdImageAVIF.html#method_renderImage"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImageAVIF\u003A\u003AMIME_TYPE",
+            "name": "MIME_TYPE",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Output-QRGdImageAVIF.html#constant_MIME_TYPE"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImageBMP",
+            "name": "QRGdImageBMP",
+            "summary": "GdImage\u0020bmp\u0020output",
+            "url": "classes/chillerlan-QRCode-Output-QRGdImageBMP.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImageBMP\u003A\u003ArenderImage\u0028\u0029",
+            "name": "renderImage",
+            "summary": "Renders\u0020the\u0020image\u0020with\u0020the\u0020gdimage\u0020function\u0020for\u0020the\u0020desired\u0020output",
+            "url": "classes/chillerlan-QRCode-Output-QRGdImageBMP.html#method_renderImage"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImageBMP\u003A\u003AMIME_TYPE",
+            "name": "MIME_TYPE",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Output-QRGdImageBMP.html#constant_MIME_TYPE"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImageGIF",
+            "name": "QRGdImageGIF",
+            "summary": "GdImage\u0020gif\u0020output",
+            "url": "classes/chillerlan-QRCode-Output-QRGdImageGIF.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImageGIF\u003A\u003ArenderImage\u0028\u0029",
+            "name": "renderImage",
+            "summary": "Renders\u0020the\u0020image\u0020with\u0020the\u0020gdimage\u0020function\u0020for\u0020the\u0020desired\u0020output",
+            "url": "classes/chillerlan-QRCode-Output-QRGdImageGIF.html#method_renderImage"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImageGIF\u003A\u003AMIME_TYPE",
+            "name": "MIME_TYPE",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Output-QRGdImageGIF.html#constant_MIME_TYPE"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImageJPEG",
+            "name": "QRGdImageJPEG",
+            "summary": "GdImage\u0020jpeg\u0020output",
+            "url": "classes/chillerlan-QRCode-Output-QRGdImageJPEG.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImageJPEG\u003A\u003AsetTransparencyColor\u0028\u0029",
+            "name": "setTransparencyColor",
+            "summary": "Sets\u0020the\u0020transparency\u0020color,\u0020returns\u0020the\u0020identifier\u0020of\u0020the\u0020new\u0020transparent\u0020color",
+            "url": "classes/chillerlan-QRCode-Output-QRGdImageJPEG.html#method_setTransparencyColor"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImageJPEG\u003A\u003ArenderImage\u0028\u0029",
+            "name": "renderImage",
+            "summary": "Renders\u0020the\u0020image\u0020with\u0020the\u0020gdimage\u0020function\u0020for\u0020the\u0020desired\u0020output",
+            "url": "classes/chillerlan-QRCode-Output-QRGdImageJPEG.html#method_renderImage"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImageJPEG\u003A\u003AMIME_TYPE",
+            "name": "MIME_TYPE",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Output-QRGdImageJPEG.html#constant_MIME_TYPE"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImagePNG",
+            "name": "QRGdImagePNG",
+            "summary": "GdImage\u0020png\u0020output",
+            "url": "classes/chillerlan-QRCode-Output-QRGdImagePNG.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImagePNG\u003A\u003AgetQuality\u0028\u0029",
+            "name": "getQuality",
+            "summary": "Returns\u0020the\u0020image\u0020quality\u0020value\u0020for\u0020the\u0020current\u0020GdImage\u0020output\u0020child\u0020class\u0020\u0028defaults\u0020to\u0020\u002D1\u0020...\u0020100\u0029",
+            "url": "classes/chillerlan-QRCode-Output-QRGdImagePNG.html#method_getQuality"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImagePNG\u003A\u003ArenderImage\u0028\u0029",
+            "name": "renderImage",
+            "summary": "Renders\u0020the\u0020image\u0020with\u0020the\u0020gdimage\u0020function\u0020for\u0020the\u0020desired\u0020output",
+            "url": "classes/chillerlan-QRCode-Output-QRGdImagePNG.html#method_renderImage"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImagePNG\u003A\u003AMIME_TYPE",
+            "name": "MIME_TYPE",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Output-QRGdImagePNG.html#constant_MIME_TYPE"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImageWEBP",
+            "name": "QRGdImageWEBP",
+            "summary": "GdImage\u0020webp\u0020output",
+            "url": "classes/chillerlan-QRCode-Output-QRGdImageWEBP.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImageWEBP\u003A\u003ArenderImage\u0028\u0029",
+            "name": "renderImage",
+            "summary": "Renders\u0020the\u0020image\u0020with\u0020the\u0020gdimage\u0020function\u0020for\u0020the\u0020desired\u0020output",
+            "url": "classes/chillerlan-QRCode-Output-QRGdImageWEBP.html#method_renderImage"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRGdImageWEBP\u003A\u003AMIME_TYPE",
+            "name": "MIME_TYPE",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Output-QRGdImageWEBP.html#constant_MIME_TYPE"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Output\\QRImagick",
             "name": "QRImagick",
@@ -2333,93 +2718,238 @@ Search.appendIndex(
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Output\\QRImagick\u003A\u003AmoduleValueIsValid\u0028\u0029",
             "name": "moduleValueIsValid",
-            "summary": "Determines\u0020whether\u0020the\u0020given\u0020value\u0020is\u0020valid",
+            "summary": "note\u003A\u0020we\u0027re\u0020not\u0020necessarily\u0020validating\u0020the\u0020several\u0020values,\u0020just\u0020checking\u0020the\u0020general\u0020syntax",
             "url": "classes/chillerlan-QRCode-Output-QRImagick.html#method_moduleValueIsValid"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Output\\QRImagick\u003A\u003AgetModuleValue\u0028\u0029",
-            "name": "getModuleValue",
-            "summary": "Returns\u0020the\u0020final\u0020value\u0020for\u0020the\u0020given\u0020input\u0020\u0028return\u0020value\u0020depends\u0020on\u0020the\u0020output\u0020module\u0029",
-            "url": "classes/chillerlan-QRCode-Output-QRImagick.html#method_getModuleValue"
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRImagick\u003A\u003AprepareModuleValue\u0028\u0029",
+            "name": "prepareModuleValue",
+            "summary": "Prepares\u0020the\u0020value\u0020for\u0020the\u0020given\u0020input\u0020\u0028return\u0020value\u0020depends\u0020on\u0020the\u0020output\u0020class\u0029",
+            "url": "classes/chillerlan-QRCode-Output-QRImagick.html#method_prepareModuleValue"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Output\\QRImagick\u003A\u003AgetDefaultModuleValue\u0028\u0029",
             "name": "getDefaultModuleValue",
-            "summary": "Returns\u0020a\u0020defualt\u0020value\u0020for\u0020either\u0020dark\u0020or\u0020light\u0020modules\u0020\u0028return\u0020value\u0020depends\u0020on\u0020the\u0020output\u0020module\u0029",
+            "summary": "Returns\u0020a\u0020default\u0020value\u0020for\u0020either\u0020dark\u0020or\u0020light\u0020modules\u0020\u0028return\u0020value\u0020depends\u0020on\u0020the\u0020output\u0020class\u0029",
             "url": "classes/chillerlan-QRCode-Output-QRImagick.html#method_getDefaultModuleValue"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Output\\QRImagick\u003A\u003Adump\u0028\u0029",
             "name": "dump",
-            "summary": "",
+            "summary": "Generates\u0020the\u0020output,\u0020optionally\u0020dumps\u0020it\u0020to\u0020a\u0020file,\u0020and\u0020returns\u0020it",
             "url": "classes/chillerlan-QRCode-Output-QRImagick.html#method_dump"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRImagick\u003A\u003AsetBgColor\u0028\u0029",
+            "name": "setBgColor",
+            "summary": "Sets\u0020the\u0020background\u0020color",
+            "url": "classes/chillerlan-QRCode-Output-QRImagick.html#method_setBgColor"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRImagick\u003A\u003AcreateImage\u0028\u0029",
+            "name": "createImage",
+            "summary": "Creates\u0020a\u0020new\u0020Imagick\u0020instance",
+            "url": "classes/chillerlan-QRCode-Output-QRImagick.html#method_createImage"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRImagick\u003A\u003AsetTransparencyColor\u0028\u0029",
+            "name": "setTransparencyColor",
+            "summary": "Sets\u0020the\u0020transparency\u0020color",
+            "url": "classes/chillerlan-QRCode-Output-QRImagick.html#method_setTransparencyColor"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Output\\QRImagick\u003A\u003AdrawImage\u0028\u0029",
             "name": "drawImage",
             "summary": "Creates\u0020the\u0020QR\u0020image\u0020via\u0020ImagickDraw",
             "url": "classes/chillerlan-QRCode-Output-QRImagick.html#method_drawImage"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Output\\QRImagick\u003A\u003AsetPixel\u0028\u0029",
-            "name": "setPixel",
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRImagick\u003A\u003Amodule\u0028\u0029",
+            "name": "module",
             "summary": "draws\u0020a\u0020single\u0020pixel\u0020at\u0020the\u0020given\u0020position",
-            "url": "classes/chillerlan-QRCode-Output-QRImagick.html#method_setPixel"
+            "url": "classes/chillerlan-QRCode-Output-QRImagick.html#method_module"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Output\\QRImagick\u003A\u003A\u0024imagick",
             "name": "imagick",
-            "summary": "",
+            "summary": "The\u0020main\u0020image\u0020instance",
             "url": "classes/chillerlan-QRCode-Output-QRImagick.html#property_imagick"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Output\\QRImagick\u003A\u003A\u0024imagickDraw",
             "name": "imagickDraw",
-            "summary": "",
+            "summary": "The\u0020main\u0020draw\u0020instance",
             "url": "classes/chillerlan-QRCode-Output-QRImagick.html#property_imagickDraw"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRImagick\u003A\u003A\u0024backgroundColor",
+            "name": "backgroundColor",
+            "summary": "The\u0020allocated\u0020background\u0020color",
+            "url": "classes/chillerlan-QRCode-Output-QRImagick.html#property_backgroundColor"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRInterventionImage",
+            "name": "QRInterventionImage",
+            "summary": "intervention\/image\u0020\u0028GD\/ImageMagick\u0029\u0020output",
+            "url": "classes/chillerlan-QRCode-Output-QRInterventionImage.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRInterventionImage\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "QRInterventionImage\u0020constructor.",
+            "url": "classes/chillerlan-QRCode-Output-QRInterventionImage.html#method___construct"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRInterventionImage\u003A\u003AsetDriver\u0028\u0029",
+            "name": "setDriver",
+            "summary": "Sets\u0020a\u0020DriverInterface",
+            "url": "classes/chillerlan-QRCode-Output-QRInterventionImage.html#method_setDriver"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRInterventionImage\u003A\u003Adump\u0028\u0029",
+            "name": "dump",
+            "summary": "Generates\u0020the\u0020output,\u0020optionally\u0020dumps\u0020it\u0020to\u0020a\u0020file,\u0020and\u0020returns\u0020it",
+            "url": "classes/chillerlan-QRCode-Output-QRInterventionImage.html#method_dump"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRInterventionImage\u003A\u003Amodule\u0028\u0029",
+            "name": "module",
+            "summary": "draws\u0020a\u0020single\u0020pixel\u0020at\u0020the\u0020given\u0020position",
+            "url": "classes/chillerlan-QRCode-Output-QRInterventionImage.html#method_module"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRInterventionImage\u003A\u003A\u0024driver",
+            "name": "driver",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Output-QRInterventionImage.html#property_driver"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRInterventionImage\u003A\u003A\u0024manager",
+            "name": "manager",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Output-QRInterventionImage.html#property_manager"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRInterventionImage\u003A\u003A\u0024image",
+            "name": "image",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Output-QRInterventionImage.html#property_image"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Output\\QRMarkup",
             "name": "QRMarkup",
-            "summary": "Converts\u0020the\u0020matrix\u0020into\u0020markup\u0020types\u003A\u0020HTML,\u0020SVG,\u0020.",
+            "summary": "Abstract\u0020for\u0020markup\u0020types\u003A\u0020HTML,\u0020SVG,\u0020...\u0020XML\u0020anyone\u003F",
             "url": "classes/chillerlan-QRCode-Output-QRMarkup.html"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Output\\QRMarkup\u003A\u003AmoduleValueIsValid\u0028\u0029",
-            "name": "moduleValueIsValid",
-            "summary": "Determines\u0020whether\u0020the\u0020given\u0020value\u0020is\u0020valid",
-            "url": "classes/chillerlan-QRCode-Output-QRMarkup.html#method_moduleValueIsValid"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Output\\QRMarkup\u003A\u003AgetModuleValue\u0028\u0029",
-            "name": "getModuleValue",
-            "summary": "Returns\u0020the\u0020final\u0020value\u0020for\u0020the\u0020given\u0020input\u0020\u0028return\u0020value\u0020depends\u0020on\u0020the\u0020output\u0020module\u0029",
-            "url": "classes/chillerlan-QRCode-Output-QRMarkup.html#method_getModuleValue"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Output\\QRMarkup\u003A\u003AgetDefaultModuleValue\u0028\u0029",
-            "name": "getDefaultModuleValue",
-            "summary": "Returns\u0020a\u0020defualt\u0020value\u0020for\u0020either\u0020dark\u0020or\u0020light\u0020modules\u0020\u0028return\u0020value\u0020depends\u0020on\u0020the\u0020output\u0020module\u0029",
-            "url": "classes/chillerlan-QRCode-Output-QRMarkup.html#method_getDefaultModuleValue"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Output\\QRMarkup\u003A\u003Adump\u0028\u0029",
             "name": "dump",
-            "summary": "",
+            "summary": "Generates\u0020the\u0020output,\u0020optionally\u0020dumps\u0020it\u0020to\u0020a\u0020file,\u0020and\u0020returns\u0020it",
             "url": "classes/chillerlan-QRCode-Output-QRMarkup.html#method_dump"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Output\\QRMarkup\u003A\u003Ahtml\u0028\u0029",
-            "name": "html",
-            "summary": "HTML\u0020output",
-            "url": "classes/chillerlan-QRCode-Output-QRMarkup.html#method_html"
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRMarkup\u003A\u003AgetCssClass\u0028\u0029",
+            "name": "getCssClass",
+            "summary": "returns\u0020a\u0020string\u0020with\u0020all\u0020css\u0020classes\u0020for\u0020the\u0020current\u0020element",
+            "url": "classes/chillerlan-QRCode-Output-QRMarkup.html#method_getCssClass"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Output\\QRMarkup\u003A\u003Asvg\u0028\u0029",
-            "name": "svg",
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRMarkup\u003A\u003AcreateMarkup\u0028\u0029",
+            "name": "createMarkup",
+            "summary": "returns\u0020the\u0020fully\u0020parsed\u0020and\u0020rendered\u0020markup\u0020string\u0020for\u0020the\u0020given\u0020input",
+            "url": "classes/chillerlan-QRCode-Output-QRMarkup.html#method_createMarkup"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRMarkupHTML",
+            "name": "QRMarkupHTML",
+            "summary": "HTML\u0020output\u0020\u0028a\u0020cheap\u0020markup\u0020substitute\u0020when\u0020SVG\u0020is\u0020not\u0020available\u0020or\u0020not\u0020an\u0020option\u0029",
+            "url": "classes/chillerlan-QRCode-Output-QRMarkupHTML.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRMarkupHTML\u003A\u003AcreateMarkup\u0028\u0029",
+            "name": "createMarkup",
+            "summary": "returns\u0020the\u0020fully\u0020parsed\u0020and\u0020rendered\u0020markup\u0020string\u0020for\u0020the\u0020given\u0020input",
+            "url": "classes/chillerlan-QRCode-Output-QRMarkupHTML.html#method_createMarkup"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRMarkupHTML\u003A\u003AMIME_TYPE",
+            "name": "MIME_TYPE",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Output-QRMarkupHTML.html#constant_MIME_TYPE"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRMarkupSVG",
+            "name": "QRMarkupSVG",
             "summary": "SVG\u0020output",
-            "url": "classes/chillerlan-QRCode-Output-QRMarkup.html#method_svg"
+            "url": "classes/chillerlan-QRCode-Output-QRMarkupSVG.html"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Output\\QRMarkup\u003A\u003AsvgHeader\u0028\u0029",
-            "name": "svgHeader",
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRMarkupSVG\u003A\u003AmoduleValueIsValid\u0028\u0029",
+            "name": "moduleValueIsValid",
+            "summary": "Determines\u0020whether\u0020the\u0020given\u0020value\u0020is\u0020valid",
+            "url": "classes/chillerlan-QRCode-Output-QRMarkupSVG.html#method_moduleValueIsValid"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRMarkupSVG\u003A\u003AgetOutputDimensions\u0028\u0029",
+            "name": "getOutputDimensions",
+            "summary": "Returns\u0020a\u00202\u0020element\u0020array\u0020with\u0020the\u0020current\u0020output\u0020width\u0020and\u0020height",
+            "url": "classes/chillerlan-QRCode-Output-QRMarkupSVG.html#method_getOutputDimensions"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRMarkupSVG\u003A\u003AgetCssClass\u0028\u0029",
+            "name": "getCssClass",
+            "summary": "returns\u0020a\u0020string\u0020with\u0020all\u0020css\u0020classes\u0020for\u0020the\u0020current\u0020element",
+            "url": "classes/chillerlan-QRCode-Output-QRMarkupSVG.html#method_getCssClass"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRMarkupSVG\u003A\u003AcreateMarkup\u0028\u0029",
+            "name": "createMarkup",
+            "summary": "returns\u0020the\u0020fully\u0020parsed\u0020and\u0020rendered\u0020markup\u0020string\u0020for\u0020the\u0020given\u0020input",
+            "url": "classes/chillerlan-QRCode-Output-QRMarkupSVG.html#method_createMarkup"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRMarkupSVG\u003A\u003AgetViewBox\u0028\u0029",
+            "name": "getViewBox",
+            "summary": "returns\u0020the\u0020value\u0020for\u0020the\u0020SVG\u0020viewBox\u0020attribute",
+            "url": "classes/chillerlan-QRCode-Output-QRMarkupSVG.html#method_getViewBox"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRMarkupSVG\u003A\u003Aheader\u0028\u0029",
+            "name": "header",
             "summary": "returns\u0020the\u0020\u003Csvg\u003E\u0020header\u0020with\u0020the\u0020given\u0020options\u0020parsed",
-            "url": "classes/chillerlan-QRCode-Output-QRMarkup.html#method_svgHeader"
+            "url": "classes/chillerlan-QRCode-Output-QRMarkupSVG.html#method_header"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Output\\QRMarkup\u003A\u003AsvgPaths\u0028\u0029",
-            "name": "svgPaths",
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRMarkupSVG\u003A\u003Apaths\u0028\u0029",
+            "name": "paths",
             "summary": "returns\u0020one\u0020or\u0020more\u0020SVG\u0020\u003Cpath\u003E\u0020elements",
-            "url": "classes/chillerlan-QRCode-Output-QRMarkup.html#method_svgPaths"
+            "url": "classes/chillerlan-QRCode-Output-QRMarkupSVG.html#method_paths"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Output\\QRMarkup\u003A\u003AsvgModule\u0028\u0029",
-            "name": "svgModule",
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRMarkupSVG\u003A\u003Apath\u0028\u0029",
+            "name": "path",
+            "summary": "renders\u0020and\u0020returns\u0020a\u0020single\u0020\u003Cpath\u003E\u0020element",
+            "url": "classes/chillerlan-QRCode-Output-QRMarkupSVG.html#method_path"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRMarkupSVG\u003A\u003Amodule\u0028\u0029",
+            "name": "module",
             "summary": "returns\u0020a\u0020path\u0020segment\u0020for\u0020a\u0020single\u0020module",
-            "url": "classes/chillerlan-QRCode-Output-QRMarkup.html#method_svgModule"
+            "url": "classes/chillerlan-QRCode-Output-QRMarkupSVG.html#method_module"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRMarkupSVG\u003A\u003AMIME_TYPE",
+            "name": "MIME_TYPE",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Output-QRMarkupSVG.html#constant_MIME_TYPE"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRMarkupXML",
+            "name": "QRMarkupXML",
+            "summary": "XML\/XSLT\u0020output",
+            "url": "classes/chillerlan-QRCode-Output-QRMarkupXML.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRMarkupXML\u003A\u003AgetOutputDimensions\u0028\u0029",
+            "name": "getOutputDimensions",
+            "summary": "Returns\u0020a\u00202\u0020element\u0020array\u0020with\u0020the\u0020current\u0020output\u0020width\u0020and\u0020height",
+            "url": "classes/chillerlan-QRCode-Output-QRMarkupXML.html#method_getOutputDimensions"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRMarkupXML\u003A\u003AcreateMarkup\u0028\u0029",
+            "name": "createMarkup",
+            "summary": "returns\u0020the\u0020fully\u0020parsed\u0020and\u0020rendered\u0020markup\u0020string\u0020for\u0020the\u0020given\u0020input",
+            "url": "classes/chillerlan-QRCode-Output-QRMarkupXML.html#method_createMarkup"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRMarkupXML\u003A\u003AcreateMatrix\u0028\u0029",
+            "name": "createMatrix",
+            "summary": "Creates\u0020the\u0020matrix\u0020element",
+            "url": "classes/chillerlan-QRCode-Output-QRMarkupXML.html#method_createMatrix"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRMarkupXML\u003A\u003Arow\u0028\u0029",
+            "name": "row",
+            "summary": "Creates\u0020a\u0020DOM\u0020element\u0020for\u0020a\u0020matrix\u0020row",
+            "url": "classes/chillerlan-QRCode-Output-QRMarkupXML.html#method_row"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRMarkupXML\u003A\u003Amodule\u0028\u0029",
+            "name": "module",
+            "summary": "Creates\u0020a\u0020DOM\u0020element\u0020for\u0020a\u0020single\u0020module",
+            "url": "classes/chillerlan-QRCode-Output-QRMarkupXML.html#method_module"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRMarkupXML\u003A\u003AMIME_TYPE",
+            "name": "MIME_TYPE",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Output-QRMarkupXML.html#constant_MIME_TYPE"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRMarkupXML\u003A\u003ASCHEMA",
+            "name": "SCHEMA",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Output-QRMarkupXML.html#constant_SCHEMA"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRMarkupXML\u003A\u003A\u0024dom",
+            "name": "dom",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Output-QRMarkupXML.html#property_dom"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Output\\QROutputAbstract",
             "name": "QROutputAbstract",
@@ -2431,50 +2961,70 @@ Search.appendIndex(
             "summary": "QROutputAbstract\u0020constructor.",
             "url": "classes/chillerlan-QRCode-Output-QROutputAbstract.html#method___construct"
         },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QROutputAbstract\u003A\u003AcopyVars\u0028\u0029",
+            "name": "copyVars",
+            "summary": "Creates\u0020copies\u0020of\u0020several\u0020QROptions\u0020values\u0020to\u0020avoid\u0020calling\u0020the\u0020magic\u0020getters\nin\u0020long\u0020loops\u0020for\u0020a\u0020significant\u0020performance\u0020increase.",
+            "url": "classes/chillerlan-QRCode-Output-QROutputAbstract.html#method_copyVars"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QROutputAbstract\u003A\u003AsetMatrixDimensions\u0028\u0029",
+            "name": "setMatrixDimensions",
+            "summary": "Sets\/updates\u0020the\u0020matrix\u0020dimensions",
+            "url": "classes/chillerlan-QRCode-Output-QROutputAbstract.html#method_setMatrixDimensions"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QROutputAbstract\u003A\u003AgetOutputDimensions\u0028\u0029",
+            "name": "getOutputDimensions",
+            "summary": "Returns\u0020a\u00202\u0020element\u0020array\u0020with\u0020the\u0020current\u0020output\u0020width\u0020and\u0020height",
+            "url": "classes/chillerlan-QRCode-Output-QROutputAbstract.html#method_getOutputDimensions"
+        },                {
             "fqsen": "\\chillerlan\\QRCode\\Output\\QROutputAbstract\u003A\u003AsetModuleValues\u0028\u0029",
             "name": "setModuleValues",
             "summary": "Sets\u0020the\u0020initial\u0020module\u0020values",
             "url": "classes/chillerlan-QRCode-Output-QROutputAbstract.html#method_setModuleValues"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Output\\QROutputAbstract\u003A\u003AmoduleValueIsValid\u0028\u0029",
-            "name": "moduleValueIsValid",
-            "summary": "Determines\u0020whether\u0020the\u0020given\u0020value\u0020is\u0020valid",
-            "url": "classes/chillerlan-QRCode-Output-QROutputAbstract.html#method_moduleValueIsValid"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Output\\QROutputAbstract\u003A\u003AgetModuleValue\u0028\u0029",
-            "name": "getModuleValue",
-            "summary": "Returns\u0020the\u0020final\u0020value\u0020for\u0020the\u0020given\u0020input\u0020\u0028return\u0020value\u0020depends\u0020on\u0020the\u0020output\u0020module\u0029",
-            "url": "classes/chillerlan-QRCode-Output-QROutputAbstract.html#method_getModuleValue"
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QROutputAbstract\u003A\u003AprepareModuleValue\u0028\u0029",
+            "name": "prepareModuleValue",
+            "summary": "Prepares\u0020the\u0020value\u0020for\u0020the\u0020given\u0020input\u0020\u0028return\u0020value\u0020depends\u0020on\u0020the\u0020output\u0020class\u0029",
+            "url": "classes/chillerlan-QRCode-Output-QROutputAbstract.html#method_prepareModuleValue"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Output\\QROutputAbstract\u003A\u003AgetDefaultModuleValue\u0028\u0029",
             "name": "getDefaultModuleValue",
-            "summary": "Returns\u0020a\u0020defualt\u0020value\u0020for\u0020either\u0020dark\u0020or\u0020light\u0020modules\u0020\u0028return\u0020value\u0020depends\u0020on\u0020the\u0020output\u0020module\u0029",
+            "summary": "Returns\u0020a\u0020default\u0020value\u0020for\u0020either\u0020dark\u0020or\u0020light\u0020modules\u0020\u0028return\u0020value\u0020depends\u0020on\u0020the\u0020output\u0020class\u0029",
             "url": "classes/chillerlan-QRCode-Output-QROutputAbstract.html#method_getDefaultModuleValue"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Output\\QROutputAbstract\u003A\u003Abase64encode\u0028\u0029",
-            "name": "base64encode",
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QROutputAbstract\u003A\u003AgetModuleValue\u0028\u0029",
+            "name": "getModuleValue",
+            "summary": "Returns\u0020the\u0020prepared\u0020value\u0020for\u0020the\u0020given\u0020\u0024M_TYPE",
+            "url": "classes/chillerlan-QRCode-Output-QROutputAbstract.html#method_getModuleValue"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QROutputAbstract\u003A\u003AgetModuleValueAt\u0028\u0029",
+            "name": "getModuleValueAt",
+            "summary": "Returns\u0020the\u0020prepared\u0020module\u0020value\u0020at\u0020the\u0020given\u0020coordinate\u0020\u005B\u0024x,\u0020\u0024y\u005D\u0020\u0028convenience\u0029",
+            "url": "classes/chillerlan-QRCode-Output-QROutputAbstract.html#method_getModuleValueAt"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QROutputAbstract\u003A\u003AtoBase64DataURI\u0028\u0029",
+            "name": "toBase64DataURI",
             "summary": "Returns\u0020a\u0020base64\u0020data\u0020URI\u0020for\u0020the\u0020given\u0020string\u0020and\u0020mime\u0020type",
-            "url": "classes/chillerlan-QRCode-Output-QROutputAbstract.html#method_base64encode"
+            "url": "classes/chillerlan-QRCode-Output-QROutputAbstract.html#method_toBase64DataURI"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QROutputAbstract\u003A\u003AguessMimeType\u0028\u0029",
+            "name": "guessMimeType",
+            "summary": "Guesses\u0020the\u0020mime\u0020type\u0020from\u0020the\u0020given\u0020\u0024imageData",
+            "url": "classes/chillerlan-QRCode-Output-QROutputAbstract.html#method_guessMimeType"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Output\\QROutputAbstract\u003A\u003AsaveToFile\u0028\u0029",
             "name": "saveToFile",
-            "summary": "saves\u0020the\u0020qr\u0020data\u0020to\u0020a\u0020file",
+            "summary": "Saves\u0020the\u0020qr\u0020\u0024data\u0020to\u0020a\u0020\u0024file.\u0020If\u0020\u0024file\u0020is\u0020null,\u0020nothing\u0020happens.",
             "url": "classes/chillerlan-QRCode-Output-QROutputAbstract.html#method_saveToFile"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Output\\QROutputAbstract\u003A\u003AcollectModules\u0028\u0029",
             "name": "collectModules",
-            "summary": "collects\u0020the\u0020modules\u0020per\u0020QRMatrix\u003A\u003AM_\u002A\u0020type\u0020and\u0020runs\u0020a\u0020\u0024transform\u0020functio\u0020on\u0020each\u0020module\u0020and\nreturns\u0020an\u0020array\u0020with\u0020the\u0020transformed\u0020modules",
+            "summary": "collects\u0020the\u0020modules\u0020per\u0020QRMatrix\u003A\u003AM_\u002A\u0020type\u0020and\u0020runs\u0020a\u0020\u0024transform\u0020function\u0020on\u0020each\u0020module\u0020and\nreturns\u0020an\u0020array\u0020with\u0020the\u0020transformed\u0020modules",
             "url": "classes/chillerlan-QRCode-Output-QROutputAbstract.html#method_collectModules"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Output\\QROutputAbstract\u003A\u003A\u0024moduleCount",
             "name": "moduleCount",
             "summary": "the\u0020current\u0020size\u0020of\u0020the\u0020QR\u0020matrix",
             "url": "classes/chillerlan-QRCode-Output-QROutputAbstract.html#property_moduleCount"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\Output\\QROutputAbstract\u003A\u003A\u0024scale",
-            "name": "scale",
-            "summary": "the\u0020current\u0020scaling\u0020for\u0020a\u0020QR\u0020pixel",
-            "url": "classes/chillerlan-QRCode-Output-QROutputAbstract.html#property_scale"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Output\\QROutputAbstract\u003A\u003A\u0024length",
             "name": "length",
@@ -2493,58 +3043,178 @@ Search.appendIndex(
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Output\\QROutputAbstract\u003A\u003A\u0024options",
             "name": "options",
-            "summary": "",
+            "summary": "the\u0020options\u0020instance",
             "url": "classes/chillerlan-QRCode-Output-QROutputAbstract.html#property_options"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QROutputAbstract\u003A\u003A\u0024excludeFromConnect",
+            "name": "excludeFromConnect",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Output-QROutputAbstract.html#property_excludeFromConnect"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QROutputAbstract\u003A\u003A\u0024keepAsSquare",
+            "name": "keepAsSquare",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Output-QROutputAbstract.html#property_keepAsSquare"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QROutputAbstract\u003A\u003A\u0024scale",
+            "name": "scale",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Output-QROutputAbstract.html#property_scale"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QROutputAbstract\u003A\u003A\u0024connectPaths",
+            "name": "connectPaths",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Output-QROutputAbstract.html#property_connectPaths"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QROutputAbstract\u003A\u003A\u0024eol",
+            "name": "eol",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Output-QROutputAbstract.html#property_eol"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QROutputAbstract\u003A\u003A\u0024drawLightModules",
+            "name": "drawLightModules",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Output-QROutputAbstract.html#property_drawLightModules"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QROutputAbstract\u003A\u003A\u0024drawCircularModules",
+            "name": "drawCircularModules",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Output-QROutputAbstract.html#property_drawCircularModules"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QROutputAbstract\u003A\u003A\u0024circleRadius",
+            "name": "circleRadius",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Output-QROutputAbstract.html#property_circleRadius"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QROutputAbstract\u003A\u003A\u0024circleDiameter",
+            "name": "circleDiameter",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Output-QROutputAbstract.html#property_circleDiameter"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Output\\QROutputInterface",
             "name": "QROutputInterface",
             "summary": "Converts\u0020the\u0020data\u0020matrix\u0020into\u0020readable\u0020output",
             "url": "classes/chillerlan-QRCode-Output-QROutputInterface.html"
         },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QROutputInterface\u003A\u003AmoduleValueIsValid\u0028\u0029",
+            "name": "moduleValueIsValid",
+            "summary": "Determines\u0020whether\u0020the\u0020given\u0020value\u0020is\u0020valid",
+            "url": "classes/chillerlan-QRCode-Output-QROutputInterface.html#method_moduleValueIsValid"
+        },                {
             "fqsen": "\\chillerlan\\QRCode\\Output\\QROutputInterface\u003A\u003Adump\u0028\u0029",
             "name": "dump",
-            "summary": "generates\u0020the\u0020output,\u0020optionally\u0020dumps\u0020it\u0020to\u0020a\u0020file,\u0020and\u0020returns\u0020it",
+            "summary": "Generates\u0020the\u0020output,\u0020optionally\u0020dumps\u0020it\u0020to\u0020a\u0020file,\u0020and\u0020returns\u0020it",
             "url": "classes/chillerlan-QRCode-Output-QROutputInterface.html#method_dump"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QROutputInterface\u003A\u003AMODES",
+            "name": "MODES",
+            "summary": "Map\u0020of\u0020built\u002Din\u0020output\u0020class\u0020FQN",
+            "url": "classes/chillerlan-QRCode-Output-QROutputInterface.html#constant_MODES"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\Output\\QROutputInterface\u003A\u003ADEFAULT_MODULE_VALUES",
             "name": "DEFAULT_MODULE_VALUES",
-            "summary": "",
+            "summary": "Map\u0020of\u0020module\u0020type\u0020\u003D\u003E\u0020default\u0020value",
             "url": "classes/chillerlan-QRCode-Output-QROutputInterface.html#constant_DEFAULT_MODULE_VALUES"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Output\\QRString",
-            "name": "QRString",
-            "summary": "Converts\u0020the\u0020matrix\u0020data\u0020into\u0020string\u0020types",
-            "url": "classes/chillerlan-QRCode-Output-QRString.html"
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QROutputInterface\u003A\u003ALAYERNAMES",
+            "name": "LAYERNAMES",
+            "summary": "Map\u0020of\u0020module\u0020type\u0020\u003D\u003E\u0020readable\u0020name\u0020\u0028for\u0020CSS\u0020etc.\u0029",
+            "url": "classes/chillerlan-QRCode-Output-QROutputInterface.html#constant_LAYERNAMES"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Output\\QRString\u003A\u003AmoduleValueIsValid\u0028\u0029",
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QROutputInterface\u003A\u003AMIME_TYPE",
+            "name": "MIME_TYPE",
+            "summary": "Note\u003A\u0020do\u0020not\u0020call\u0020this\u0020constant\u0020from\u0020the\u0020interface,\u0020but\u0020rather\u0020from\u0020one\u0020of\u0020the\u0020child\u0020classes",
+            "url": "classes/chillerlan-QRCode-Output-QROutputInterface.html#constant_MIME_TYPE"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRStringJSON",
+            "name": "QRStringJSON",
+            "summary": "JSON\u0020Output",
+            "url": "classes/chillerlan-QRCode-Output-QRStringJSON.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRStringJSON\u003A\u003AgetOutputDimensions\u0028\u0029",
+            "name": "getOutputDimensions",
+            "summary": "Returns\u0020a\u00202\u0020element\u0020array\u0020with\u0020the\u0020current\u0020output\u0020width\u0020and\u0020height",
+            "url": "classes/chillerlan-QRCode-Output-QRStringJSON.html#method_getOutputDimensions"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRStringJSON\u003A\u003Adump\u0028\u0029",
+            "name": "dump",
+            "summary": "Generates\u0020the\u0020output,\u0020optionally\u0020dumps\u0020it\u0020to\u0020a\u0020file,\u0020and\u0020returns\u0020it",
+            "url": "classes/chillerlan-QRCode-Output-QRStringJSON.html#method_dump"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRStringJSON\u003A\u003Arow\u0028\u0029",
+            "name": "row",
+            "summary": "Creates\u0020an\u0020array\u0020element\u0020for\u0020a\u0020matrix\u0020row",
+            "url": "classes/chillerlan-QRCode-Output-QRStringJSON.html#method_row"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRStringJSON\u003A\u003Amodule\u0028\u0029",
+            "name": "module",
+            "summary": "Creates\u0020an\u0020array\u0020element\u0020for\u0020a\u0020single\u0020module",
+            "url": "classes/chillerlan-QRCode-Output-QRStringJSON.html#method_module"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRStringJSON\u003A\u003AMIME_TYPE",
+            "name": "MIME_TYPE",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Output-QRStringJSON.html#constant_MIME_TYPE"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRStringJSON\u003A\u003ASCHEMA",
+            "name": "SCHEMA",
+            "summary": "",
+            "url": "classes/chillerlan-QRCode-Output-QRStringJSON.html#constant_SCHEMA"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRStringText",
+            "name": "QRStringText",
+            "summary": "String\/plaintext\u0020output\u0020\u0028for\u0020CLI\u0020etc.\u0029",
+            "url": "classes/chillerlan-QRCode-Output-QRStringText.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRStringText\u003A\u003AmoduleValueIsValid\u0028\u0029",
             "name": "moduleValueIsValid",
             "summary": "Determines\u0020whether\u0020the\u0020given\u0020value\u0020is\u0020valid",
-            "url": "classes/chillerlan-QRCode-Output-QRString.html#method_moduleValueIsValid"
+            "url": "classes/chillerlan-QRCode-Output-QRStringText.html#method_moduleValueIsValid"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Output\\QRString\u003A\u003AgetModuleValue\u0028\u0029",
-            "name": "getModuleValue",
-            "summary": "Returns\u0020the\u0020final\u0020value\u0020for\u0020the\u0020given\u0020input\u0020\u0028return\u0020value\u0020depends\u0020on\u0020the\u0020output\u0020module\u0029",
-            "url": "classes/chillerlan-QRCode-Output-QRString.html#method_getModuleValue"
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRStringText\u003A\u003AprepareModuleValue\u0028\u0029",
+            "name": "prepareModuleValue",
+            "summary": "Prepares\u0020the\u0020value\u0020for\u0020the\u0020given\u0020input\u0020\u0028return\u0020value\u0020depends\u0020on\u0020the\u0020output\u0020class\u0029",
+            "url": "classes/chillerlan-QRCode-Output-QRStringText.html#method_prepareModuleValue"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Output\\QRString\u003A\u003AgetDefaultModuleValue\u0028\u0029",
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRStringText\u003A\u003AgetDefaultModuleValue\u0028\u0029",
             "name": "getDefaultModuleValue",
-            "summary": "Returns\u0020a\u0020defualt\u0020value\u0020for\u0020either\u0020dark\u0020or\u0020light\u0020modules\u0020\u0028return\u0020value\u0020depends\u0020on\u0020the\u0020output\u0020module\u0029",
-            "url": "classes/chillerlan-QRCode-Output-QRString.html#method_getDefaultModuleValue"
+            "summary": "Returns\u0020a\u0020default\u0020value\u0020for\u0020either\u0020dark\u0020or\u0020light\u0020modules\u0020\u0028return\u0020value\u0020depends\u0020on\u0020the\u0020output\u0020class\u0029",
+            "url": "classes/chillerlan-QRCode-Output-QRStringText.html#method_getDefaultModuleValue"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Output\\QRString\u003A\u003Adump\u0028\u0029",
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRStringText\u003A\u003Adump\u0028\u0029",
             "name": "dump",
+            "summary": "Generates\u0020the\u0020output,\u0020optionally\u0020dumps\u0020it\u0020to\u0020a\u0020file,\u0020and\u0020returns\u0020it",
+            "url": "classes/chillerlan-QRCode-Output-QRStringText.html#method_dump"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRStringText\u003A\u003Aansi8\u0028\u0029",
+            "name": "ansi8",
+            "summary": "a\u0020little\u0020helper\u0020to\u0020create\u0020a\u0020proper\u0020ANSI\u00208\u002Dbit\u0020color\u0020escape\u0020sequence",
+            "url": "classes/chillerlan-QRCode-Output-QRStringText.html#method_ansi8"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\QRStringText\u003A\u003AMIME_TYPE",
+            "name": "MIME_TYPE",
             "summary": "",
-            "url": "classes/chillerlan-QRCode-Output-QRString.html#method_dump"
+            "url": "classes/chillerlan-QRCode-Output-QRStringText.html#constant_MIME_TYPE"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Output\\QRString\u003A\u003Atext\u0028\u0029",
-            "name": "text",
-            "summary": "string\u0020output",
-            "url": "classes/chillerlan-QRCode-Output-QRString.html#method_text"
+            "fqsen": "\\chillerlan\\QRCode\\Output\\RGBArrayModuleValueTrait",
+            "name": "RGBArrayModuleValueTrait",
+            "summary": "Module\u0020value\u0020checks\u0020for\u0020output\u0020classes\u0020that\u0020use\u0020RGB\u0020color\u0020arrays",
+            "url": "classes/chillerlan-QRCode-Output-RGBArrayModuleValueTrait.html"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\Output\\QRString\u003A\u003Ajson\u0028\u0029",
-            "name": "json",
-            "summary": "JSON\u0020output",
-            "url": "classes/chillerlan-QRCode-Output-QRString.html#method_json"
+            "fqsen": "\\chillerlan\\QRCode\\Output\\RGBArrayModuleValueTrait\u003A\u003AmoduleValueIsValid\u0028\u0029",
+            "name": "moduleValueIsValid",
+            "summary": "implements\u0020\\chillerlan\\QRCode\\Output\\QROutputInterface\u003A\u003AmoduleValueIsValid\u0028\u0029",
+            "url": "classes/chillerlan-QRCode-Output-RGBArrayModuleValueTrait.html#method_moduleValueIsValid"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\RGBArrayModuleValueTrait\u003A\u003AprepareModuleValue\u0028\u0029",
+            "name": "prepareModuleValue",
+            "summary": "implements\u0020\\chillerlan\\QRCode\\Output\\QROutputAbstract\u003A\u003AprepareModuleValue\u0028\u0029",
+            "url": "classes/chillerlan-QRCode-Output-RGBArrayModuleValueTrait.html#method_prepareModuleValue"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\Output\\RGBArrayModuleValueTrait\u003A\u003AgetDefaultModuleValue\u0028\u0029",
+            "name": "getDefaultModuleValue",
+            "summary": "implements\u0020\\chillerlan\\QRCode\\Output\\QROutputAbstract\u003A\u003AgetDefaultModuleValue\u0028\u0029",
+            "url": "classes/chillerlan-QRCode-Output-RGBArrayModuleValueTrait.html#method_getDefaultModuleValue"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\QRCode",
             "name": "QRCode",
@@ -2556,45 +3226,35 @@ Search.appendIndex(
             "summary": "QRCode\u0020constructor.",
             "url": "classes/chillerlan-QRCode-QRCode.html#method___construct"
         },                {
+            "fqsen": "\\chillerlan\\QRCode\\QRCode\u003A\u003AsetOptions\u0028\u0029",
+            "name": "setOptions",
+            "summary": "Sets\u0020an\u0020options\u0020instance",
+            "url": "classes/chillerlan-QRCode-QRCode.html#method_setOptions"
+        },                {
             "fqsen": "\\chillerlan\\QRCode\\QRCode\u003A\u003Arender\u0028\u0029",
             "name": "render",
-            "summary": "Renders\u0020a\u0020QR\u0020Code\u0020for\u0020the\u0020given\u0020\u0024data\u0020and\u0020QROptions",
+            "summary": "Renders\u0020a\u0020QR\u0020Code\u0020for\u0020the\u0020given\u0020\u0024data\u0020and\u0020QROptions,\u0020saves\u0020\u0024file\u0020optionally",
             "url": "classes/chillerlan-QRCode-QRCode.html#method_render"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\QRCode\u003A\u003AgetMatrix\u0028\u0029",
-            "name": "getMatrix",
+            "fqsen": "\\chillerlan\\QRCode\\QRCode\u003A\u003ArenderMatrix\u0028\u0029",
+            "name": "renderMatrix",
+            "summary": "Renders\u0020a\u0020QR\u0020Code\u0020for\u0020the\u0020given\u0020QRMatrix\u0020and\u0020QROptions,\u0020saves\u0020\u0024file\u0020optionally",
+            "url": "classes/chillerlan-QRCode-QRCode.html#method_renderMatrix"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\QRCode\u003A\u003AgetQRMatrix\u0028\u0029",
+            "name": "getQRMatrix",
             "summary": "Returns\u0020a\u0020QRMatrix\u0020object\u0020for\u0020the\u0020given\u0020\u0024data\u0020and\u0020current\u0020QROptions",
-            "url": "classes/chillerlan-QRCode-QRCode.html#method_getMatrix"
+            "url": "classes/chillerlan-QRCode-QRCode.html#method_getQRMatrix"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\QRCode\u003A\u003AaddMatrixModifications\u0028\u0029",
+            "name": "addMatrixModifications",
+            "summary": "add\u0020matrix\u0020modifications\u0020after\u0020mask\u0020pattern\u0020evaluation\u0020and\u0020before\u0020handing\u0020over\u0020to\u0020output",
+            "url": "classes/chillerlan-QRCode-QRCode.html#method_addMatrixModifications"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\QRCode\u003A\u003AinitOutputInterface\u0028\u0029",
             "name": "initOutputInterface",
-            "summary": "returns\u0020a\u0020fresh\u0020\u0028built\u002Din\u0029\u0020QROutputInterface",
+            "summary": "initializes\u0020a\u0020fresh\u0020built\u002Din\u0020or\u0020custom\u0020QROutputInterface",
             "url": "classes/chillerlan-QRCode-QRCode.html#method_initOutputInterface"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QRCode\u003A\u003AinitCustomOutputInterface\u0028\u0029",
-            "name": "initCustomOutputInterface",
-            "summary": "initializes\u0020a\u0020custom\u0020output\u0020module\u0020after\u0020checking\u0020the\u0020existence\u0020of\u0020the\u0020class\u0020and\u0020if\u0020it\u0020implemnts\u0020the\u0020required\u0020interface",
-            "url": "classes/chillerlan-QRCode-QRCode.html#method_initCustomOutputInterface"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QRCode\u003A\u003AisNumber\u0028\u0029",
-            "name": "isNumber",
-            "summary": "checks\u0020if\u0020a\u0020string\u0020qualifies\u0020as\u0020numeric\u0020\u0028convenience\u0020method\u0029",
-            "url": "classes/chillerlan-QRCode-QRCode.html#method_isNumber"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QRCode\u003A\u003AisAlphaNum\u0028\u0029",
-            "name": "isAlphaNum",
-            "summary": "checks\u0020if\u0020a\u0020string\u0020qualifies\u0020as\u0020alphanumeric\u0020\u0028convenience\u0020method\u0029",
-            "url": "classes/chillerlan-QRCode-QRCode.html#method_isAlphaNum"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QRCode\u003A\u003AisKanji\u0028\u0029",
-            "name": "isKanji",
-            "summary": "checks\u0020if\u0020a\u0020string\u0020qualifies\u0020as\u0020Kanji\u0020\u0028convenience\u0020method\u0029",
-            "url": "classes/chillerlan-QRCode-QRCode.html#method_isKanji"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QRCode\u003A\u003AisByte\u0028\u0029",
-            "name": "isByte",
-            "summary": "a\u0020dummy\u0020\u0028convenience\u0020method\u0029",
-            "url": "classes/chillerlan-QRCode-QRCode.html#method_isByte"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\QRCode\u003A\u003AaddSegment\u0028\u0029",
             "name": "addSegment",
@@ -2618,8 +3278,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\chillerlan\\QRCode\\QRCode\u003A\u003AaddKanjiSegment\u0028\u0029",
             "name": "addKanjiSegment",
-            "summary": "Adds\u0020a\u0020Kanji\u0020data\u0020segment",
+            "summary": "Adds\u0020a\u0020Kanji\u0020data\u0020segment\u0020\u0028Japanese\u002013\u002Dbit\u0020double\u002Dbyte\u0020characters,\u0020Shift\u002DJIS\u0029",
             "url": "classes/chillerlan-QRCode-QRCode.html#method_addKanjiSegment"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\QRCode\u003A\u003AaddHanziSegment\u0028\u0029",
+            "name": "addHanziSegment",
+            "summary": "Adds\u0020a\u0020Hanzi\u0020data\u0020segment\u0020\u0028simplified\u0020Chinese\u002013\u002Dbit\u0020double\u002Dbyte\u0020characters,\u0020GB2312\/GB18030\u0029",
+            "url": "classes/chillerlan-QRCode-QRCode.html#method_addHanziSegment"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\QRCode\u003A\u003AaddByteSegment\u0028\u0029",
             "name": "addByteSegment",
@@ -2651,96 +3316,6 @@ Search.appendIndex(
             "summary": "Reads\u0020a\u0020QR\u0020Code\u0020from\u0020the\u0020given\u0020luminance\u0020source",
             "url": "classes/chillerlan-QRCode-QRCode.html#method_readFromSource"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\QRCode\u003A\u003AVERSION_AUTO",
-            "name": "VERSION_AUTO",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-QRCode.html#constant_VERSION_AUTO"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QRCode\u003A\u003AMASK_PATTERN_AUTO",
-            "name": "MASK_PATTERN_AUTO",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-QRCode.html#constant_MASK_PATTERN_AUTO"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QRCode\u003A\u003AECC_L",
-            "name": "ECC_L",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-QRCode.html#constant_ECC_L"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QRCode\u003A\u003AECC_M",
-            "name": "ECC_M",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-QRCode.html#constant_ECC_M"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QRCode\u003A\u003AECC_Q",
-            "name": "ECC_Q",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-QRCode.html#constant_ECC_Q"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QRCode\u003A\u003AECC_H",
-            "name": "ECC_H",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-QRCode.html#constant_ECC_H"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QRCode\u003A\u003AOUTPUT_MARKUP_HTML",
-            "name": "OUTPUT_MARKUP_HTML",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-QRCode.html#constant_OUTPUT_MARKUP_HTML"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QRCode\u003A\u003AOUTPUT_MARKUP_SVG",
-            "name": "OUTPUT_MARKUP_SVG",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-QRCode.html#constant_OUTPUT_MARKUP_SVG"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QRCode\u003A\u003AOUTPUT_IMAGE_PNG",
-            "name": "OUTPUT_IMAGE_PNG",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-QRCode.html#constant_OUTPUT_IMAGE_PNG"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QRCode\u003A\u003AOUTPUT_IMAGE_JPG",
-            "name": "OUTPUT_IMAGE_JPG",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-QRCode.html#constant_OUTPUT_IMAGE_JPG"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QRCode\u003A\u003AOUTPUT_IMAGE_GIF",
-            "name": "OUTPUT_IMAGE_GIF",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-QRCode.html#constant_OUTPUT_IMAGE_GIF"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QRCode\u003A\u003AOUTPUT_STRING_JSON",
-            "name": "OUTPUT_STRING_JSON",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-QRCode.html#constant_OUTPUT_STRING_JSON"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QRCode\u003A\u003AOUTPUT_STRING_TEXT",
-            "name": "OUTPUT_STRING_TEXT",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-QRCode.html#constant_OUTPUT_STRING_TEXT"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QRCode\u003A\u003AOUTPUT_IMAGICK",
-            "name": "OUTPUT_IMAGICK",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-QRCode.html#constant_OUTPUT_IMAGICK"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QRCode\u003A\u003AOUTPUT_FPDF",
-            "name": "OUTPUT_FPDF",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-QRCode.html#constant_OUTPUT_FPDF"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QRCode\u003A\u003AOUTPUT_EPS",
-            "name": "OUTPUT_EPS",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-QRCode.html#constant_OUTPUT_EPS"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QRCode\u003A\u003AOUTPUT_CUSTOM",
-            "name": "OUTPUT_CUSTOM",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-QRCode.html#constant_OUTPUT_CUSTOM"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QRCode\u003A\u003AOUTPUT_MODES",
-            "name": "OUTPUT_MODES",
-            "summary": "Map\u0020of\u0020built\u002Din\u0020output\u0020modes\u0020\u003D\u003E\u0020modules",
-            "url": "classes/chillerlan-QRCode-QRCode.html#constant_OUTPUT_MODES"
-        },                {
             "fqsen": "\\chillerlan\\QRCode\\QRCode\u003A\u003A\u0024options",
             "name": "options",
             "summary": "The\u0020settings\u0020container",
@@ -2748,13 +3323,48 @@ Search.appendIndex(
         },                {
             "fqsen": "\\chillerlan\\QRCode\\QRCode\u003A\u003A\u0024dataSegments",
             "name": "dataSegments",
-            "summary": "A\u0020collection\u0020of\u0020one\u0020or\u0020more\u0020data\u0020segments\u0020of\u0020\u005Bclassname,\u0020data\u005D\u0020to\u0020write",
+            "summary": "A\u0020collection\u0020of\u0020one\u0020or\u0020more\u0020data\u0020segments\u0020of\u0020QRDataModeInterface\u0020instances\u0020to\u0020write",
             "url": "classes/chillerlan-QRCode-QRCode.html#property_dataSegments"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\QRCode\u003A\u003A\u0024luminanceSourceFQN",
+            "name": "luminanceSourceFQN",
+            "summary": "The\u0020luminance\u0020source\u0020for\u0020the\u0020reader",
+            "url": "classes/chillerlan-QRCode-QRCode.html#property_luminanceSourceFQN"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\QRCodeException",
             "name": "QRCodeException",
             "summary": "An\u0020exception\u0020container",
             "url": "classes/chillerlan-QRCode-QRCodeException.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\QRCodeReaderOptionsTrait",
+            "name": "QRCodeReaderOptionsTrait",
+            "summary": "Trait\u0020QRCodeReaderOptionsTrait",
+            "url": "classes/chillerlan-QRCode-QRCodeReaderOptionsTrait.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\QRCodeReaderOptionsTrait\u003A\u003Aset_readerUseImagickIfAvailable\u0028\u0029",
+            "name": "set_readerUseImagickIfAvailable",
+            "summary": "enables\u0020Imagick\u0020for\u0020the\u0020QR\u0020Code\u0020reader\u0020if\u0020the\u0020extension\u0020is\u0020available",
+            "url": "classes/chillerlan-QRCode-QRCodeReaderOptionsTrait.html#method_set_readerUseImagickIfAvailable"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\QRCodeReaderOptionsTrait\u003A\u003A\u0024readerUseImagickIfAvailable",
+            "name": "readerUseImagickIfAvailable",
+            "summary": "Use\u0020Imagick\u0020\u0028if\u0020available\u0029\u0020when\u0020reading\u0020QR\u0020Codes",
+            "url": "classes/chillerlan-QRCode-QRCodeReaderOptionsTrait.html#property_readerUseImagickIfAvailable"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\QRCodeReaderOptionsTrait\u003A\u003A\u0024readerGrayscale",
+            "name": "readerGrayscale",
+            "summary": "Grayscale\u0020the\u0020image\u0020before\u0020reading",
+            "url": "classes/chillerlan-QRCode-QRCodeReaderOptionsTrait.html#property_readerGrayscale"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\QRCodeReaderOptionsTrait\u003A\u003A\u0024readerInvertColors",
+            "name": "readerInvertColors",
+            "summary": "Invert\u0020the\u0020colors\u0020of\u0020the\u0020image",
+            "url": "classes/chillerlan-QRCode-QRCodeReaderOptionsTrait.html#property_readerInvertColors"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\QRCodeReaderOptionsTrait\u003A\u003A\u0024readerIncreaseContrast",
+            "name": "readerIncreaseContrast",
+            "summary": "Increase\u0020the\u0020contrast\u0020before\u0020reading",
+            "url": "classes/chillerlan-QRCode-QRCodeReaderOptionsTrait.html#property_readerIncreaseContrast"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\QROptions",
             "name": "QROptions",
@@ -2781,40 +3391,25 @@ Search.appendIndex(
             "summary": "sets\u0020the\u0020maximum\u0020version\u0020number",
             "url": "classes/chillerlan-QRCode-QROptionsTrait.html#method_set_versionMax"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003Aset_eccLevel\u0028\u0029",
-            "name": "set_eccLevel",
-            "summary": "sets\u0020the\u0020error\u0020correction\u0020level",
-            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#method_set_eccLevel"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003Aset_maskPattern\u0028\u0029",
-            "name": "set_maskPattern",
-            "summary": "sets\/clamps\u0020the\u0020mask\u0020pattern",
-            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#method_set_maskPattern"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003Aset_imageTransparencyBG\u0028\u0029",
-            "name": "set_imageTransparencyBG",
-            "summary": "sets\u0020the\u0020transparency\u0020background\u0020color",
-            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#method_set_imageTransparencyBG"
-        },                {
             "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003Aset_version\u0028\u0029",
             "name": "set_version",
             "summary": "sets\/clamps\u0020the\u0020version\u0020number",
             "url": "classes/chillerlan-QRCode-QROptionsTrait.html#method_set_version"
         },                {
+            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003Aset_eccLevel\u0028\u0029",
+            "name": "set_eccLevel",
+            "summary": "sets\u0020the\u0020ECC\u0020level",
+            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#method_set_eccLevel"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003Aset_quietzoneSize\u0028\u0029",
+            "name": "set_quietzoneSize",
+            "summary": "sets\/clamps\u0020the\u0020quiet\u0020zone\u0020size",
+            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#method_set_quietzoneSize"
+        },                {
             "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003Aset_fpdfMeasureUnit\u0028\u0029",
             "name": "set_fpdfMeasureUnit",
             "summary": "sets\u0020the\u0020FPDF\u0020measurement\u0020unit",
             "url": "classes/chillerlan-QRCode-QROptionsTrait.html#method_set_fpdfMeasureUnit"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003Aset_readerUseImagickIfAvailable\u0028\u0029",
-            "name": "set_readerUseImagickIfAvailable",
-            "summary": "enables\u0020Imagick\u0020for\u0020the\u0020QR\u0020Code\u0020reader\u0020if\u0020the\u0020extension\u0020is\u0020available",
-            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#method_set_readerUseImagickIfAvailable"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003AgetLuminanceSourceFQCN\u0028\u0029",
-            "name": "getLuminanceSourceFQCN",
-            "summary": "returns\u0020the\u0020FQCN\u0020of\u0020the\u0020luminance\u0020source\u0020class\u0020to\u0020use\u0020in\u0020the\u0020reader\u0020\u0028GD\u0020or\u0020Imagick\u0029",
-            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#method_getLuminanceSourceFQCN"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003AclampLogoSpaceValue\u0028\u0029",
             "name": "clampLogoSpaceValue",
@@ -2881,175 +3476,75 @@ Search.appendIndex(
             "summary": "Size\u0020of\u0020the\u0020quiet\u0020zone",
             "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_quietzoneSize"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024outputType",
-            "name": "outputType",
-            "summary": "The\u0020output\u0020type",
-            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_outputType"
-        },                {
             "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024outputInterface",
             "name": "outputInterface",
-            "summary": "the\u0020FQCN\u0020of\u0020the\u0020custom\u0020QROutputInterface\u0020if\u0020\u0024outputType\u0020is\u0020set\u0020to\u0020QRCode\u003A\u003AOUTPUT_CUSTOM",
+            "summary": "The\u0020FQCN\u0020of\u0020the\u0020\u0060QROutputInterface\u0060\u0020to\u0020use",
             "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_outputInterface"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024cachefile",
-            "name": "cachefile",
-            "summary": "\/path\/to\/cache.file",
-            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_cachefile"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024eol",
-            "name": "eol",
-            "summary": "newline\u0020string\u0020\u005BHTML,\u0020SVG,\u0020TEXT\u005D",
-            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_eol"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024scale",
-            "name": "scale",
-            "summary": "size\u0020of\u0020a\u0020QR\u0020code\u0020pixel\u0020\u005BSVG,\u0020IMAGE_\u002A\u005D,\u0020HTML\u0020via\u0020CSS",
-            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_scale"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024cssClass",
-            "name": "cssClass",
-            "summary": "a\u0020common\u0020css\u0020class",
-            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_cssClass"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024svgOpacity",
-            "name": "svgOpacity",
-            "summary": "SVG\u0020opacity",
-            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_svgOpacity"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024svgDefs",
-            "name": "svgDefs",
-            "summary": "anything\u0020between\u0020\u003Cdefs\u003E",
-            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_svgDefs"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024svgViewBoxSize",
-            "name": "svgViewBoxSize",
-            "summary": "SVG\u0020viewBox\u0020size.\u0020a\u0020single\u0020integer\u0020number\u0020which\u0020defines\u0020width\/height\u0020of\u0020the\u0020viewBox\u0020attribute.",
-            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_svgViewBoxSize"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024svgPreserveAspectRatio",
-            "name": "svgPreserveAspectRatio",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_svgPreserveAspectRatio"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024svgWidth",
-            "name": "svgWidth",
-            "summary": "optional\u0020\u0022width\u0022\u0020attribute\u0020with\u0020the\u0020specified\u0020value\u0020\u0028note\u0020that\u0020the\u0020value\u0020is\u0020not\u0020checked\u0021\u0029",
-            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_svgWidth"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024svgHeight",
-            "name": "svgHeight",
-            "summary": "optional\u0020\u0022height\u0022\u0020attribute\u0020with\u0020the\u0020specified\u0020value\u0020\u0028note\u0020that\u0020the\u0020value\u0020is\u0020not\u0020checked\u0021\u0029",
-            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_svgHeight"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024connectPaths",
-            "name": "connectPaths",
-            "summary": "whether\u0020to\u0020connect\u0020the\u0020paths\u0020for\u0020the\u0020several\u0020module\u0020types\u0020to\u0020avoid\u0020weird\u0020glitches\u0020when\u0020using\u0020gradients\u0020etc.",
-            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_connectPaths"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024excludeFromConnect",
-            "name": "excludeFromConnect",
-            "summary": "specify\u0020which\u0020paths\/patterns\u0020to\u0020exclude\u0020from\u0020connecting\u0020if\u0020\u0024svgConnectPaths\u0020is\u0020set\u0020to\u0020true",
-            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_excludeFromConnect"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024drawCircularModules",
-            "name": "drawCircularModules",
-            "summary": "specify\u0020whether\u0020to\u0020draw\u0020the\u0020modules\u0020as\u0020filled\u0020circles",
-            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_drawCircularModules"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024circleRadius",
-            "name": "circleRadius",
-            "summary": "specifies\u0020the\u0020radius\u0020of\u0020the\u0020modules\u0020when\u0020\u0024svgDrawCircularModules\u0020is\u0020set\u0020to\u0020true",
-            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_circleRadius"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024keepAsSquare",
-            "name": "keepAsSquare",
-            "summary": "specifies\u0020which\u0020module\u0020types\u0020to\u0020exclude\u0020when\u0020\u0024svgDrawCircularModules\u0020is\u0020set\u0020to\u0020true",
-            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_keepAsSquare"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024textDark",
-            "name": "textDark",
-            "summary": "string\u0020substitute\u0020for\u0020dark",
-            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_textDark"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024textLight",
-            "name": "textLight",
-            "summary": "string\u0020substitute\u0020for\u0020light",
-            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_textLight"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024markupDark",
-            "name": "markupDark",
-            "summary": "markup\u0020substitute\u0020for\u0020dark\u0020\u0028CSS\u0020value\u0029",
-            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_markupDark"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024markupLight",
-            "name": "markupLight",
-            "summary": "markup\u0020substitute\u0020for\u0020light\u0020\u0028CSS\u0020value\u0029",
-            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_markupLight"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024returnResource",
             "name": "returnResource",
             "summary": "Return\u0020the\u0020image\u0020resource\u0020instead\u0020of\u0020a\u0020render\u0020if\u0020applicable.",
             "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_returnResource"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024imageBase64",
-            "name": "imageBase64",
-            "summary": "toggle\u0020base64\u0020or\u0020raw\u0020image\u0020data",
-            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_imageBase64"
+            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024cachefile",
+            "name": "cachefile",
+            "summary": "Optional\u0020cache\u0020file\u0020path\u0020\u0060\/path\/to\/cache.file\u0060",
+            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_cachefile"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024imageTransparent",
-            "name": "imageTransparent",
-            "summary": "toggle\u0020background\u0020transparency",
-            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_imageTransparent"
+            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024outputBase64",
+            "name": "outputBase64",
+            "summary": "Toggle\u0020base64\u0020data\u0020URI\u0020or\u0020raw\u0020data\u0020output\u0020\u0028if\u0020applicable\u0029",
+            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_outputBase64"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024imageTransparencyBG",
-            "name": "imageTransparencyBG",
-            "summary": "Sets\u0020the\u0020background\u0020color\u0020in\u0020GD\u0020mode.",
-            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_imageTransparencyBG"
+            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024eol",
+            "name": "eol",
+            "summary": "Newline\u0020string",
+            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_eol"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024pngCompression",
-            "name": "pngCompression",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_pngCompression"
+            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024bgColor",
+            "name": "bgColor",
+            "summary": "Sets\u0020the\u0020image\u0020background\u0020color\u0020\u0028if\u0020applicable\u0029",
+            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_bgColor"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024jpegQuality",
-            "name": "jpegQuality",
-            "summary": "",
-            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_jpegQuality"
+            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024invertMatrix",
+            "name": "invertMatrix",
+            "summary": "Whether\u0020to\u0020invert\u0020the\u0020matrix\u0020\u0028reflectance\u0020reversal\u0029",
+            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_invertMatrix"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024imagickFormat",
-            "name": "imagickFormat",
-            "summary": "Imagick\u0020output\u0020format",
-            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_imagickFormat"
+            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024drawLightModules",
+            "name": "drawLightModules",
+            "summary": "Whether\u0020to\u0020draw\u0020the\u0020light\u0020\u0028false\u0029\u0020modules",
+            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_drawLightModules"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024imagickBG",
-            "name": "imagickBG",
-            "summary": "Imagick\u0020background\u0020color\u0020\u0028defaults\u0020to\u0020\u0022transparent\u0022\u0029",
-            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_imagickBG"
+            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024drawCircularModules",
+            "name": "drawCircularModules",
+            "summary": "Specify\u0020whether\u0020to\u0020draw\u0020the\u0020modules\u0020as\u0020filled\u0020circles",
+            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_drawCircularModules"
         },                {
-            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024fpdfMeasureUnit",
-            "name": "fpdfMeasureUnit",
-            "summary": "Measurement\u0020unit\u0020for\u0020FPDF\u0020output\u003A\u0020pt,\u0020mm,\u0020cm,\u0020in\u0020\u0028defaults\u0020to\u0020\u0022pt\u0022\u0029",
-            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_fpdfMeasureUnit"
+            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024circleRadius",
+            "name": "circleRadius",
+            "summary": "Specifies\u0020the\u0020radius\u0020of\u0020the\u0020modules\u0020when\u0020\u0060QROptions\u003A\u003A\u0024drawCircularModules\u0060\u0020is\u0020set\u0020to\u0020\u0060true\u0060",
+            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_circleRadius"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024keepAsSquare",
+            "name": "keepAsSquare",
+            "summary": "Specifies\u0020which\u0020module\u0020types\u0020to\u0020exclude\u0020when\u0020\u0060QROptions\u003A\u003A\u0024drawCircularModules\u0060\u0020is\u0020set\u0020to\u0020\u0060true\u0060",
+            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_keepAsSquare"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024connectPaths",
+            "name": "connectPaths",
+            "summary": "Whether\u0020to\u0020connect\u0020the\u0020paths\u0020for\u0020the\u0020several\u0020module\u0020types\u0020to\u0020avoid\u0020weird\u0020glitches\u0020when\u0020using\u0020gradients\u0020etc.",
+            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_connectPaths"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024excludeFromConnect",
+            "name": "excludeFromConnect",
+            "summary": "Specify\u0020which\u0020paths\/patterns\u0020to\u0020exclude\u0020from\u0020connecting\u0020if\u0020\u0060QROptions\u003A\u003A\u0024connectPaths\u0060\u0020is\u0020set\u0020to\u0020\u0060true\u0060",
+            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_excludeFromConnect"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024moduleValues",
             "name": "moduleValues",
             "summary": "Module\u0020values\u0020map",
             "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_moduleValues"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024readerUseImagickIfAvailable",
-            "name": "readerUseImagickIfAvailable",
-            "summary": "use\u0020Imaagick\u0020\u0028if\u0020available\u0029\u0020when\u0020reading\u0020QR\u0020Codes",
-            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_readerUseImagickIfAvailable"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024readerGrayscale",
-            "name": "readerGrayscale",
-            "summary": "grayscale\u0020the\u0020image\u0020before\u0020reading",
-            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_readerGrayscale"
-        },                {
-            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024readerIncreaseContrast",
-            "name": "readerIncreaseContrast",
-            "summary": "increase\u0020the\u0020contrast\u0020before\u0020reading",
-            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_readerIncreaseContrast"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024addLogoSpace",
             "name": "addLogoSpace",
@@ -3058,23 +3553,133 @@ Search.appendIndex(
         },                {
             "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024logoSpaceWidth",
             "name": "logoSpaceWidth",
-            "summary": "width\u0020of\u0020the\u0020logo\u0020space",
+            "summary": "Width\u0020of\u0020the\u0020logo\u0020space",
             "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_logoSpaceWidth"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024logoSpaceHeight",
             "name": "logoSpaceHeight",
-            "summary": "height\u0020of\u0020the\u0020logo\u0020space",
+            "summary": "Height\u0020of\u0020the\u0020logo\u0020space",
             "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_logoSpaceHeight"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024logoSpaceStartX",
             "name": "logoSpaceStartX",
-            "summary": "optional\u0020horizontal\u0020start\u0020position\u0020of\u0020the\u0020logo\u0020space\u0020\u0028top\u0020left\u0020corner\u0029",
+            "summary": "Optional\u0020horizontal\u0020start\u0020position\u0020of\u0020the\u0020logo\u0020space\u0020\u0028top\u0020left\u0020corner\u0029",
             "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_logoSpaceStartX"
         },                {
             "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024logoSpaceStartY",
             "name": "logoSpaceStartY",
-            "summary": "optional\u0020vertical\u0020start\u0020position\u0020of\u0020the\u0020logo\u0020space\u0020\u0028top\u0020left\u0020corner\u0029",
+            "summary": "Optional\u0020vertical\u0020start\u0020position\u0020of\u0020the\u0020logo\u0020space\u0020\u0028top\u0020left\u0020corner\u0029",
             "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_logoSpaceStartY"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024scale",
+            "name": "scale",
+            "summary": "Pixel\u0020size\u0020of\u0020a\u0020QR\u0020code\u0020module",
+            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_scale"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024imageTransparent",
+            "name": "imageTransparent",
+            "summary": "Toggle\u0020transparency",
+            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_imageTransparent"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024transparencyColor",
+            "name": "transparencyColor",
+            "summary": "Sets\u0020a\u0020transparency\u0020color\u0020for\u0020when\u0020\u0060QROptions\u003A\u003A\u0024imageTransparent\u0060\u0020is\u0020set\u0020to\u0020\u0060true\u0060.",
+            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_transparencyColor"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024quality",
+            "name": "quality",
+            "summary": "Compression\u0020quality",
+            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_quality"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024gdImageUseUpscale",
+            "name": "gdImageUseUpscale",
+            "summary": "Toggles\u0020the\u0020usage\u0020of\u0020internal\u0020upscaling\u0020when\u0020\u0060QROptions\u003A\u003A\u0024drawCircularModules\u0060\u0020is\u0020set\u0020to\u0020\u0060true\u0060\u0020and\n\u0060QROptions\u003A\u003A\u0024scale\u0060\u0020is\u0020less\u0020than\u002020",
+            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_gdImageUseUpscale"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024imagickFormat",
+            "name": "imagickFormat",
+            "summary": "Imagick\u0020output\u0020format",
+            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_imagickFormat"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024cssClass",
+            "name": "cssClass",
+            "summary": "A\u0020common\u0020css\u0020class",
+            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_cssClass"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024svgAddXmlHeader",
+            "name": "svgAddXmlHeader",
+            "summary": "Whether\u0020to\u0020add\u0020an\u0020XML\u0020header\u0020line\u0020or\u0020not,\u0020e.g.\u0020to\u0020embed\u0020the\u0020SVG\u0020directly\u0020in\u0020HTML",
+            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_svgAddXmlHeader"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024svgDefs",
+            "name": "svgDefs",
+            "summary": "Anything\u0020in\u0020the\u0020SVG\u0020\u0060\u003Cdefs\u003E\u0060\u0020tag",
+            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_svgDefs"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024svgPreserveAspectRatio",
+            "name": "svgPreserveAspectRatio",
+            "summary": "Sets\u0020the\u0020value\u0020for\u0020the\u0020\u0022preserveAspectRatio\u0022\u0020on\u0020the\u0020\u0060\u003Csvg\u003E\u0060\u0020element",
+            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_svgPreserveAspectRatio"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024svgUseFillAttributes",
+            "name": "svgUseFillAttributes",
+            "summary": "Whether\u0020to\u0020use\u0020the\u0020SVG\u0020\u0060fill\u0060\u0020attributes",
+            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_svgUseFillAttributes"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024textLineStart",
+            "name": "textLineStart",
+            "summary": "An\u0020optional\u0020line\u0020prefix,\u0020e.g.\u0020empty\u0020space\u0020to\u0020align\u0020the\u0020QR\u0020Code\u0020in\u0020a\u0020console",
+            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_textLineStart"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024jsonFlags",
+            "name": "jsonFlags",
+            "summary": "Sets\u0020the\u0020flags\u0020to\u0020use\u0020for\u0020the\u0020\u0060json_encode\u0028\u0029\u0060\u0020call",
+            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_jsonFlags"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024fpdfMeasureUnit",
+            "name": "fpdfMeasureUnit",
+            "summary": "Measurement\u0020unit\u0020for\u0020\u0060FPDF\u0060\u0020output\u003A\u0020\u0060pt\u0060,\u0020\u0060mm\u0060,\u0020\u0060cm\u0060,\u0020\u0060in\u0060\u0020\u0028default\u003A\u0020\u0060pt\u0060\u0029",
+            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_fpdfMeasureUnit"
+        },                {
+            "fqsen": "\\chillerlan\\QRCode\\QROptionsTrait\u003A\u003A\u0024xmlStylesheet",
+            "name": "xmlStylesheet",
+            "summary": "Sets\u0020an\u0020optional\u0020XSLT\u0020stylesheet\u0020in\u0020the\u0020XML\u0020output",
+            "url": "classes/chillerlan-QRCode-QROptionsTrait.html#property_xmlStylesheet"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\BuildDirTrait",
+            "name": "BuildDirTrait",
+            "summary": "Trait\u0020BuildDirTrait",
+            "url": "classes/chillerlan-QRCodeTest-BuildDirTrait.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\BuildDirTrait\u003A\u003AgetBuildPath\u0028\u0029",
+            "name": "getBuildPath",
+            "summary": "returns\u0020the\u0020full\u0020raw\u0020path\u0020to\u0020the\u0020build\u0020dir",
+            "url": "classes/chillerlan-QRCodeTest-BuildDirTrait.html#method_getBuildPath"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\BuildDirTrait\u003A\u003AcreateBuildDir\u0028\u0029",
+            "name": "createBuildDir",
+            "summary": "attempts\u0020to\u0020create\u0020the\u0020build\u0020dir",
+            "url": "classes/chillerlan-QRCodeTest-BuildDirTrait.html#method_createBuildDir"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\BuildDirTrait\u003A\u003AgetBuildDir\u0028\u0029",
+            "name": "getBuildDir",
+            "summary": "returns\u0020the\u0020full\u0020\u0028real\u0029\u0020path\u0020to\u0020the\u0020given\u0020build\u0020path",
+            "url": "classes/chillerlan-QRCodeTest-BuildDirTrait.html#method_getBuildDir"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\BuildDirTrait\u003A\u003AgetBuildFilePath\u0028\u0029",
+            "name": "getBuildFilePath",
+            "summary": "returns\u0020the\u0020full\u0020\u0028real\u0029\u0020path\u0020to\u0020the\u0020given\u0020build\u0020file",
+            "url": "classes/chillerlan-QRCodeTest-BuildDirTrait.html#method_getBuildFilePath"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\BuildDirTrait\u003A\u003AgetBuildFileContent\u0028\u0029",
+            "name": "getBuildFileContent",
+            "summary": "returns\u0020the\u0020contents\u0020of\u0020the\u0020given\u0020build\u0020file",
+            "url": "classes/chillerlan-QRCodeTest-BuildDirTrait.html#method_getBuildFileContent"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\BuildDirTrait\u003A\u003A\u0024_buildDir",
+            "name": "_buildDir",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-BuildDirTrait.html#property__buildDir"
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Common\\BitBufferTest",
             "name": "BitBufferTest",
@@ -3096,10 +3701,75 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/chillerlan-QRCodeTest-Common-BitBufferTest.html#method_testPut"
         },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Common\\BitBufferTest\u003A\u003AtestReadException\u0028\u0029",
+            "name": "testReadException",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Common-BitBufferTest.html#method_testReadException"
+        },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Common\\BitBufferTest\u003A\u003A\u0024bitBuffer",
             "name": "bitBuffer",
             "summary": "",
             "url": "classes/chillerlan-QRCodeTest-Common-BitBufferTest.html#property_bitBuffer"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Common\\EccLevelTest",
+            "name": "EccLevelTest",
+            "summary": "EccLevel\u0020coverage\u0020test",
+            "url": "classes/chillerlan-QRCodeTest-Common-EccLevelTest.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Common\\EccLevelTest\u003A\u003AtestConstructInvalidEccException\u0028\u0029",
+            "name": "testConstructInvalidEccException",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Common-EccLevelTest.html#method_testConstructInvalidEccException"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Common\\EccLevelTest\u003A\u003AtestToString\u0028\u0029",
+            "name": "testToString",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Common-EccLevelTest.html#method_testToString"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Common\\EccLevelTest\u003A\u003AtestGetLevel\u0028\u0029",
+            "name": "testGetLevel",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Common-EccLevelTest.html#method_testGetLevel"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Common\\EccLevelTest\u003A\u003AtestGetOrdinal\u0028\u0029",
+            "name": "testGetOrdinal",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Common-EccLevelTest.html#method_testGetOrdinal"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Common\\EccLevelTest\u003A\u003AtestGetformatPattern\u0028\u0029",
+            "name": "testGetformatPattern",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Common-EccLevelTest.html#method_testGetformatPattern"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Common\\EccLevelTest\u003A\u003AgetMaxBits\u0028\u0029",
+            "name": "getMaxBits",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Common-EccLevelTest.html#method_getMaxBits"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Common\\ECICharsetTest",
+            "name": "ECICharsetTest",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Common-ECICharsetTest.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Common\\ECICharsetTest\u003A\u003AinvalidIdProvider\u0028\u0029",
+            "name": "invalidIdProvider",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Common-ECICharsetTest.html#method_invalidIdProvider"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Common\\ECICharsetTest\u003A\u003AtestInvalidDataException\u0028\u0029",
+            "name": "testInvalidDataException",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Common-ECICharsetTest.html#method_testInvalidDataException"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Common\\ECICharsetTest\u003A\u003AencodingProvider\u0028\u0029",
+            "name": "encodingProvider",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Common-ECICharsetTest.html#method_encodingProvider"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Common\\ECICharsetTest\u003A\u003AtestGetName\u0028\u0029",
+            "name": "testGetName",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Common-ECICharsetTest.html#method_testGetName"
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Common\\MaskPatternTest",
             "name": "MaskPatternTest",
@@ -3113,7 +3783,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Common\\MaskPatternTest\u003A\u003AtestMask\u0028\u0029",
             "name": "testMask",
-            "summary": "",
+            "summary": "Tests\u0020if\u0020the\u0020mask\u0020function\u0020generates\u0020the\u0020correct\u0020pattern",
             "url": "classes/chillerlan-QRCodeTest-Common-MaskPatternTest.html#method_testMask"
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Common\\MaskPatternTest\u003A\u003AassertMask\u0028\u0029",
@@ -3123,7 +3793,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Common\\MaskPatternTest\u003A\u003AtestInvalidMaskPatternException\u0028\u0029",
             "name": "testInvalidMaskPatternException",
-            "summary": "",
+            "summary": "Tests\u0020if\u0020an\u0020exception\u0020is\u0020thrown\u0020on\u0020an\u0020incorrect\u0020mask\u0020pattern",
             "url": "classes/chillerlan-QRCodeTest-Common-MaskPatternTest.html#method_testInvalidMaskPatternException"
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Common\\MaskPatternTest\u003A\u003AtestPenaltyRule1\u0028\u0029",
@@ -3146,30 +3816,115 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/chillerlan-QRCodeTest-Common-MaskPatternTest.html#method_testPenaltyRule4"
         },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Common\\ModeTest",
+            "name": "ModeTest",
+            "summary": "Mode\u0020coverage\u0020test",
+            "url": "classes/chillerlan-QRCodeTest-Common-ModeTest.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Common\\ModeTest\u003A\u003AversionProvider\u0028\u0029",
+            "name": "versionProvider",
+            "summary": "version\u0020breakpoints\u0020for\u0020numeric\u0020mode",
+            "url": "classes/chillerlan-QRCodeTest-Common-ModeTest.html#method_versionProvider"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Common\\ModeTest\u003A\u003AtestGetLengthBitsForVersionBreakpoints\u0028\u0029",
+            "name": "testGetLengthBitsForVersionBreakpoints",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Common-ModeTest.html#method_testGetLengthBitsForVersionBreakpoints"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Common\\ModeTest\u003A\u003AtestGetLengthBitsForVersionInvalidModeException\u0028\u0029",
+            "name": "testGetLengthBitsForVersionInvalidModeException",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Common-ModeTest.html#method_testGetLengthBitsForVersionInvalidModeException"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Common\\ModeTest\u003A\u003AtestGetLengthBitsForVersionInvalidVersionException\u0028\u0029",
+            "name": "testGetLengthBitsForVersionInvalidVersionException",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Common-ModeTest.html#method_testGetLengthBitsForVersionInvalidVersionException"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Common\\VersionTest",
+            "name": "VersionTest",
+            "summary": "Version\u0020coverage\u0020test",
+            "url": "classes/chillerlan-QRCodeTest-Common-VersionTest.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Common\\VersionTest\u003A\u003AsetUp\u0028\u0029",
+            "name": "setUp",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Common-VersionTest.html#method_setUp"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Common\\VersionTest\u003A\u003AtestToString\u0028\u0029",
+            "name": "testToString",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Common-VersionTest.html#method_testToString"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Common\\VersionTest\u003A\u003AtestGetVersionNumber\u0028\u0029",
+            "name": "testGetVersionNumber",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Common-VersionTest.html#method_testGetVersionNumber"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Common\\VersionTest\u003A\u003AtestGetDimension\u0028\u0029",
+            "name": "testGetDimension",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Common-VersionTest.html#method_testGetDimension"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Common\\VersionTest\u003A\u003AtestGetVersionPattern\u0028\u0029",
+            "name": "testGetVersionPattern",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Common-VersionTest.html#method_testGetVersionPattern"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Common\\VersionTest\u003A\u003AtestGetAlignmentPattern\u0028\u0029",
+            "name": "testGetAlignmentPattern",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Common-VersionTest.html#method_testGetAlignmentPattern"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Common\\VersionTest\u003A\u003AtestGetRSBlocks\u0028\u0029",
+            "name": "testGetRSBlocks",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Common-VersionTest.html#method_testGetRSBlocks"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Common\\VersionTest\u003A\u003AtestGetTotalCodewords\u0028\u0029",
+            "name": "testGetTotalCodewords",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Common-VersionTest.html#method_testGetTotalCodewords"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Common\\VersionTest\u003A\u003AtestConstructInvalidVersion\u0028\u0029",
+            "name": "testConstructInvalidVersion",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Common-VersionTest.html#method_testConstructInvalidVersion"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Common\\VersionTest\u003A\u003A\u0024version",
+            "name": "version",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Common-VersionTest.html#property_version"
+        },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Data\\AlphaNumTest",
             "name": "AlphaNumTest",
             "summary": "Tests\u0020the\u0020AlphaNum\u0020class",
             "url": "classes/chillerlan-QRCodeTest-Data-AlphaNumTest.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\AlphaNumTest\u003A\u003AgetDataModeInterface\u0028\u0029",
+            "name": "getDataModeInterface",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Data-AlphaNumTest.html#method_getDataModeInterface"
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Data\\AlphaNumTest\u003A\u003AstringValidateProvider\u0028\u0029",
             "name": "stringValidateProvider",
             "summary": "isAlphaNum\u0028\u0029\u0020should\u0020pass\u0020on\u0020the\u002045\u0020defined\u0020characters\u0020and\u0020fail\u0020on\u0020anything\u0020else\u0020\u0028e.g.\u0020lowercase\u0029",
             "url": "classes/chillerlan-QRCodeTest-Data-AlphaNumTest.html#method_stringValidateProvider"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\AlphaNumTest\u003A\u003A\u0024FQN",
-            "name": "FQN",
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\AlphaNumTest\u003A\u003AtestData",
+            "name": "testData",
             "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-Data-AlphaNumTest.html#property_FQN"
-        },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\AlphaNumTest\u003A\u003A\u0024testdata",
-            "name": "testdata",
-            "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-Data-AlphaNumTest.html#property_testdata"
+            "url": "classes/chillerlan-QRCodeTest-Data-AlphaNumTest.html#constant_testData"
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Data\\ByteTest",
             "name": "ByteTest",
             "summary": "Tests\u0020the\u0020Byte\u0020class",
             "url": "classes/chillerlan-QRCodeTest-Data-ByteTest.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\ByteTest\u003A\u003AgetDataModeInterface\u0028\u0029",
+            "name": "getDataModeInterface",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Data-ByteTest.html#method_getDataModeInterface"
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Data\\ByteTest\u003A\u003AstringValidateProvider\u0028\u0029",
             "name": "stringValidateProvider",
@@ -3181,139 +3936,294 @@ Search.appendIndex(
             "summary": "Tests\u0020if\u0020an\u0020exception\u0020is\u0020thrown\u0020when\u0020an\u0020invalid\u0020character\u0020is\u0020encountered",
             "url": "classes/chillerlan-QRCodeTest-Data-ByteTest.html#method_testInvalidDataException"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\ByteTest\u003A\u003A\u0024FQN",
-            "name": "FQN",
-            "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-Data-ByteTest.html#property_FQN"
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\ByteTest\u003A\u003AtestBinaryStringInvalid\u0028\u0029",
+            "name": "testBinaryStringInvalid",
+            "summary": "Tests\u0020if\u0020a\u0020random\u0020binary\u0020string\u0020is\u0020properly\u0020validated\u0020as\u0020false",
+            "url": "classes/chillerlan-QRCodeTest-Data-ByteTest.html#method_testBinaryStringInvalid"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\ByteTest\u003A\u003A\u0024testdata",
-            "name": "testdata",
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\ByteTest\u003A\u003AtestData",
+            "name": "testData",
             "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-Data-ByteTest.html#property_testdata"
+            "url": "classes/chillerlan-QRCodeTest-Data-ByteTest.html#constant_testData"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\DatainterfaceTestAbstract",
-            "name": "DatainterfaceTestAbstract",
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\DataInterfaceTestAbstract",
+            "name": "DataInterfaceTestAbstract",
             "summary": "The\u0020data\u0020interface\u0020test\u0020abstract",
-            "url": "classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html"
+            "url": "classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\DatainterfaceTestAbstract\u003A\u003AsetUp\u0028\u0029",
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\DataInterfaceTestAbstract\u003A\u003AsetUp\u0028\u0029",
             "name": "setUp",
             "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html#method_setUp"
+            "url": "classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_setUp"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\DatainterfaceTestAbstract\u003A\u003AtestInstance\u0028\u0029",
-            "name": "testInstance",
-            "summary": "Verifies\u0020the\u0020data\u0020interface\u0020instance",
-            "url": "classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html#method_testInstance"
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\DataInterfaceTestAbstract\u003A\u003AgetDataModeInterface\u0028\u0029",
+            "name": "getDataModeInterface",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_getDataModeInterface"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\DatainterfaceTestAbstract\u003A\u003AmaskPatternProvider\u0028\u0029",
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\DataInterfaceTestAbstract\u003A\u003AmaskPatternProvider\u0028\u0029",
             "name": "maskPatternProvider",
             "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html#method_maskPatternProvider"
+            "url": "classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_maskPatternProvider"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\DatainterfaceTestAbstract\u003A\u003AtestInitMatrix\u0028\u0029",
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\DataInterfaceTestAbstract\u003A\u003AtestInitMatrix\u0028\u0029",
             "name": "testInitMatrix",
             "summary": "Tests\u0020initializing\u0020the\u0020data\u0020matrix",
-            "url": "classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html#method_testInitMatrix"
+            "url": "classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testInitMatrix"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\DatainterfaceTestAbstract\u003A\u003AtestGetMinimumVersion\u0028\u0029",
-            "name": "testGetMinimumVersion",
-            "summary": "Tests\u0020getting\u0020the\u0020minimum\u0020QR\u0020version\u0020for\u0020the\u0020given\u0020data",
-            "url": "classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html#method_testGetMinimumVersion"
-        },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\DatainterfaceTestAbstract\u003A\u003AstringValidateProvider\u0028\u0029",
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\DataInterfaceTestAbstract\u003A\u003AstringValidateProvider\u0028\u0029",
             "name": "stringValidateProvider",
             "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html#method_stringValidateProvider"
+            "url": "classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_stringValidateProvider"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\DatainterfaceTestAbstract\u003A\u003AtestValidateString\u0028\u0029",
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\DataInterfaceTestAbstract\u003A\u003AtestValidateString\u0028\u0029",
             "name": "testValidateString",
+            "summary": "Tests\u0020if\u0020a\u0020string\u0020is\u0020properly\u0020validated\u0020for\u0020the\u0020respective\u0020data\u0020mode",
+            "url": "classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testValidateString"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\DataInterfaceTestAbstract\u003A\u003AtestBinaryStringInvalid\u0028\u0029",
+            "name": "testBinaryStringInvalid",
+            "summary": "Tests\u0020if\u0020a\u0020random\u0020binary\u0020string\u0020is\u0020properly\u0020validated\u0020as\u0020false",
+            "url": "classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testBinaryStringInvalid"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\DataInterfaceTestAbstract\u003A\u003AversionBreakpointProvider\u0028\u0029",
+            "name": "versionBreakpointProvider",
+            "summary": "returns\u0020versions\u0020within\u0020the\u0020version\u0020breakpoints\u00201\u002D9,\u002010\u002D26\u0020and\u002027\u002D40",
+            "url": "classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_versionBreakpointProvider"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\DataInterfaceTestAbstract\u003A\u003AtestDecodeSegment\u0028\u0029",
+            "name": "testDecodeSegment",
+            "summary": "Tests\u0020decoding\u0020a\u0020data\u0020segment\u0020from\u0020a\u0020given\u0020BitBuffer",
+            "url": "classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testDecodeSegment"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\DataInterfaceTestAbstract\u003A\u003AmaxLengthProvider\u0028\u0029",
+            "name": "maxLengthProvider",
+            "summary": "Generates\u0020test\u0020data\u0020for\u0020each\u0020data\u0020mode\u003A",
+            "url": "classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_maxLengthProvider"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\DataInterfaceTestAbstract\u003A\u003AtestMaxLength\u0028\u0029",
+            "name": "testMaxLength",
             "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html#method_testValidateString"
+            "url": "classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testMaxLength"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\DatainterfaceTestAbstract\u003A\u003AtestGetMinimumVersionException\u0028\u0029",
-            "name": "testGetMinimumVersionException",
-            "summary": "Tests\u0020if\u0020an\u0020exception\u0020is\u0020thrown\u0020when\u0020the\u0020data\u0020exceeds\u0020the\u0020maximum\u0020version\u0020while\u0020auto\u0020detecting",
-            "url": "classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html#method_testGetMinimumVersionException"
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\DataInterfaceTestAbstract\u003A\u003AtestGetMinimumVersion\u0028\u0029",
+            "name": "testGetMinimumVersion",
+            "summary": "Tests\u0020getting\u0020the\u0020minimum\u0020QR\u0020version\u0020for\u0020the\u0020given\u0020data",
+            "url": "classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testGetMinimumVersion"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\DatainterfaceTestAbstract\u003A\u003AtestCodeLengthOverflowException\u0028\u0029",
-            "name": "testCodeLengthOverflowException",
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\DataInterfaceTestAbstract\u003A\u003AtestMaxLengthOverflowException\u0028\u0029",
+            "name": "testMaxLengthOverflowException",
             "summary": "Tests\u0020if\u0020an\u0020exception\u0020is\u0020thrown\u0020on\u0020data\u0020overflow",
-            "url": "classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html#method_testCodeLengthOverflowException"
+            "url": "classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testMaxLengthOverflowException"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\DatainterfaceTestAbstract\u003A\u003AtestInvalidDataException\u0028\u0029",
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\DataInterfaceTestAbstract\u003A\u003AtestGetMinimumVersionException\u0028\u0029",
+            "name": "testGetMinimumVersionException",
+            "summary": "Tests\u0020if\u0020an\u0020exception\u0020is\u0020thrown\u0020when\u0020the\u0020data\u0020exceeds\u0020the\u0020maximum\u0020version\u0020while\u0020auto\u002Ddetecting",
+            "url": "classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testGetMinimumVersionException"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\DataInterfaceTestAbstract\u003A\u003AtestInvalidDataException\u0028\u0029",
             "name": "testInvalidDataException",
             "summary": "Tests\u0020if\u0020an\u0020exception\u0020is\u0020thrown\u0020when\u0020an\u0020invalid\u0020character\u0020is\u0020encountered",
-            "url": "classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html#method_testInvalidDataException"
+            "url": "classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testInvalidDataException"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\DatainterfaceTestAbstract\u003A\u003AtestInvalidDataOnEmptyException\u0028\u0029",
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\DataInterfaceTestAbstract\u003A\u003AtestInvalidDataOnEmptyException\u0028\u0029",
             "name": "testInvalidDataOnEmptyException",
             "summary": "Tests\u0020if\u0020an\u0020exception\u0020is\u0020thrown\u0020if\u0020the\u0020given\u0020string\u0020is\u0020empty",
-            "url": "classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html#method_testInvalidDataOnEmptyException"
+            "url": "classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#method_testInvalidDataOnEmptyException"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\DatainterfaceTestAbstract\u003A\u003A\u0024reflection",
-            "name": "reflection",
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\DataInterfaceTestAbstract\u003A\u003AtestData",
+            "name": "testData",
             "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html#property_reflection"
+            "url": "classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#constant_testData"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\DatainterfaceTestAbstract\u003A\u003A\u0024QRData",
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\DataInterfaceTestAbstract\u003A\u003A\u0024QRData",
             "name": "QRData",
             "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html#property_QRData"
+            "url": "classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#property_QRData"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\DatainterfaceTestAbstract\u003A\u003A\u0024FQN",
-            "name": "FQN",
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\DataInterfaceTestAbstract\u003A\u003A\u0024dataMode",
+            "name": "dataMode",
             "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html#property_FQN"
+            "url": "classes/chillerlan-QRCodeTest-Data-DataInterfaceTestAbstract.html#property_dataMode"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\DatainterfaceTestAbstract\u003A\u003A\u0024testdata",
-            "name": "testdata",
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\ECITest",
+            "name": "ECITest",
+            "summary": "Tests\u0020the\u0020ECI\u0020class",
+            "url": "classes/chillerlan-QRCodeTest-Data-ECITest.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\ECITest\u003A\u003AsetUp\u0028\u0029",
+            "name": "setUp",
             "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-Data-DatainterfaceTestAbstract.html#property_testdata"
+            "url": "classes/chillerlan-QRCodeTest-Data-ECITest.html#method_setUp"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\ECITest\u003A\u003AgetDataSegments\u0028\u0029",
+            "name": "getDataSegments",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Data-ECITest.html#method_getDataSegments"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\ECITest\u003A\u003AtestDataModeInstance\u0028\u0029",
+            "name": "testDataModeInstance",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Data-ECITest.html#method_testDataModeInstance"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\ECITest\u003A\u003AversionBreakpointProvider\u0028\u0029",
+            "name": "versionBreakpointProvider",
+            "summary": "returns\u0020versions\u0020within\u0020the\u0020version\u0020breakpoints\u00201\u002D9,\u002010\u002D26\u0020and\u002027\u002D40",
+            "url": "classes/chillerlan-QRCodeTest-Data-ECITest.html#method_versionBreakpointProvider"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\ECITest\u003A\u003AtestDecodeSegment\u0028\u0029",
+            "name": "testDecodeSegment",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Data-ECITest.html#method_testDecodeSegment"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\ECITest\u003A\u003AtestInvalidDataException\u0028\u0029",
+            "name": "testInvalidDataException",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Data-ECITest.html#method_testInvalidDataException"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\ECITest\u003A\u003AtestInvalidDataOnEmptyException\u0028\u0029",
+            "name": "testInvalidDataOnEmptyException",
+            "summary": "since\u0020the\u0020ECI\u0020class\u0020only\u0020accepts\u0020integer\u0020values,\nwe\u0027ll\u0020use\u0020this\u0020test\u0020to\u0020check\u0020for\u0020the\u0020upper\u0020end\u0020of\u0020the\u0020accepted\u0020input\u0020range",
+            "url": "classes/chillerlan-QRCodeTest-Data-ECITest.html#method_testInvalidDataOnEmptyException"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\ECITest\u003A\u003AeciCharsetIdProvider\u0028\u0029",
+            "name": "eciCharsetIdProvider",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Data-ECITest.html#method_eciCharsetIdProvider"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\ECITest\u003A\u003AtestReadWrite\u0028\u0029",
+            "name": "testReadWrite",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Data-ECITest.html#method_testReadWrite"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\ECITest\u003A\u003AtestDecodeECISegmentFollowedByInvalidModeException\u0028\u0029",
+            "name": "testDecodeECISegmentFollowedByInvalidModeException",
+            "summary": "Tests\u0020if\u0020and\u0020exception\u0020is\u0020thrown\u0020when\u0020the\u0020ECI\u0020segment\u0020is\u0020followed\u0020by\u0020a\u0020mode\u0020that\u0020is\u0020not\u00208\u002Dbit\u0020byte",
+            "url": "classes/chillerlan-QRCodeTest-Data-ECITest.html#method_testDecodeECISegmentFollowedByInvalidModeException"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\ECITest\u003A\u003AunknownEncodingDataProvider\u0028\u0029",
+            "name": "unknownEncodingDataProvider",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Data-ECITest.html#method_unknownEncodingDataProvider"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\ECITest\u003A\u003AtestConvertUnknownEncoding\u0028\u0029",
+            "name": "testConvertUnknownEncoding",
+            "summary": "Tests\u0020detection\u0020of\u0020an\u0020unknown\u0020character\u0020set",
+            "url": "classes/chillerlan-QRCodeTest-Data-ECITest.html#method_testConvertUnknownEncoding"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\ECITest\u003A\u003AtestData",
+            "name": "testData",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Data-ECITest.html#constant_testData"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\ECITest\u003A\u003A\u0024QRData",
+            "name": "QRData",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Data-ECITest.html#property_QRData"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\ECITest\u003A\u003A\u0024testCharset",
+            "name": "testCharset",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Data-ECITest.html#property_testCharset"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\HanziTest",
+            "name": "HanziTest",
+            "summary": "Tests\u0020the\u0020Hanzi\/GB2312\u0020class",
+            "url": "classes/chillerlan-QRCodeTest-Data-HanziTest.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\HanziTest\u003A\u003AgetDataModeInterface\u0028\u0029",
+            "name": "getDataModeInterface",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Data-HanziTest.html#method_getDataModeInterface"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\HanziTest\u003A\u003AstringValidateProvider\u0028\u0029",
+            "name": "stringValidateProvider",
+            "summary": "isGB2312\u0028\u0029\u0020should\u0020pass\u0020on\u0020Hanzi\/GB2312\u0020characters\u0020and\u0020fail\u0020on\u0020everything\u0020else",
+            "url": "classes/chillerlan-QRCodeTest-Data-HanziTest.html#method_stringValidateProvider"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\HanziTest\u003A\u003AhanziProvider\u0028\u0029",
+            "name": "hanziProvider",
+            "summary": "lists\u0020all\u0020characters\u0020in\u0020the\u0020valid\u0020GB2312\u0020range",
+            "url": "classes/chillerlan-QRCodeTest-Data-HanziTest.html#method_hanziProvider"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\HanziTest\u003A\u003AtestValidateGB2312\u0028\u0029",
+            "name": "testValidateGB2312",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Data-HanziTest.html#method_testValidateGB2312"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\HanziTest\u003A\u003AtestData",
+            "name": "testData",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Data-HanziTest.html#constant_testData"
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Data\\KanjiTest",
             "name": "KanjiTest",
             "summary": "Tests\u0020the\u0020Kanji\u0020class",
             "url": "classes/chillerlan-QRCodeTest-Data-KanjiTest.html"
         },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\KanjiTest\u003A\u003AgetDataModeInterface\u0028\u0029",
+            "name": "getDataModeInterface",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Data-KanjiTest.html#method_getDataModeInterface"
+        },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Data\\KanjiTest\u003A\u003AstringValidateProvider\u0028\u0029",
             "name": "stringValidateProvider",
             "summary": "isKanji\u0028\u0029\u0020should\u0020pass\u0020on\u0020Kanji\/SJIS\u0020characters\u0020and\u0020fail\u0020on\u0020everything\u0020else",
             "url": "classes/chillerlan-QRCodeTest-Data-KanjiTest.html#method_stringValidateProvider"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\KanjiTest\u003A\u003A\u0024FQN",
-            "name": "FQN",
-            "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-Data-KanjiTest.html#property_FQN"
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\KanjiTest\u003A\u003AkanjiProvider\u0028\u0029",
+            "name": "kanjiProvider",
+            "summary": "lists\u0020the\u0020valid\u0020SJIS\u0020kanji",
+            "url": "classes/chillerlan-QRCodeTest-Data-KanjiTest.html#method_kanjiProvider"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\KanjiTest\u003A\u003A\u0024testdata",
-            "name": "testdata",
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\KanjiTest\u003A\u003AtestValidateSJIS\u0028\u0029",
+            "name": "testValidateSJIS",
             "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-Data-KanjiTest.html#property_testdata"
+            "url": "classes/chillerlan-QRCodeTest-Data-KanjiTest.html#method_testValidateSJIS"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\KanjiTest\u003A\u003AtestData",
+            "name": "testData",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Data-KanjiTest.html#constant_testData"
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Data\\NumberTest",
             "name": "NumberTest",
             "summary": "Tests\u0020the\u0020Number\u0020class",
             "url": "classes/chillerlan-QRCodeTest-Data-NumberTest.html"
         },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\NumberTest\u003A\u003AgetDataModeInterface\u0028\u0029",
+            "name": "getDataModeInterface",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Data-NumberTest.html#method_getDataModeInterface"
+        },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Data\\NumberTest\u003A\u003AstringValidateProvider\u0028\u0029",
             "name": "stringValidateProvider",
             "summary": "isNumber\u0028\u0029\u0020should\u0020pass\u0020on\u0020any\u0020number\u0020and\u0020fail\u0020on\u0020anything\u0020else",
             "url": "classes/chillerlan-QRCodeTest-Data-NumberTest.html#method_stringValidateProvider"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\NumberTest\u003A\u003A\u0024FQN",
-            "name": "FQN",
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\NumberTest\u003A\u003AtestData",
+            "name": "testData",
             "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-Data-NumberTest.html#property_FQN"
+            "url": "classes/chillerlan-QRCodeTest-Data-NumberTest.html#constant_testData"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\NumberTest\u003A\u003A\u0024testdata",
-            "name": "testdata",
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\QRDataTest",
+            "name": "QRDataTest",
             "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-Data-NumberTest.html#property_testdata"
+            "url": "classes/chillerlan-QRCodeTest-Data-QRDataTest.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\QRDataTest\u003A\u003AtestSetBitBuffer\u0028\u0029",
+            "name": "testSetBitBuffer",
+            "summary": "tests\u0020setting\u0020the\u0020BitBuffer\u0020object\u0020directly",
+            "url": "classes/chillerlan-QRCodeTest-Data-QRDataTest.html#method_testSetBitBuffer"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\QRDataTest\u003A\u003AtestEstimateTotalBitLength\u0028\u0029",
+            "name": "testEstimateTotalBitLength",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Data-QRDataTest.html#method_testEstimateTotalBitLength"
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Data\\QRMatrixTest",
             "name": "QRMatrixTest",
-            "summary": "Tests\u0020the\u0020QRMatix\u0020class",
+            "summary": "Tests\u0020the\u0020QRMatrix\u0020class",
             "url": "classes/chillerlan-QRCodeTest-Data-QRMatrixTest.html"
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Data\\QRMatrixTest\u003A\u003AsetUp\u0028\u0029",
@@ -3321,45 +4231,35 @@ Search.appendIndex(
             "summary": "invokes\u0020a\u0020QRMatrix\u0020object",
             "url": "classes/chillerlan-QRCodeTest-Data-QRMatrixTest.html#method_setUp"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\QRMatrixTest\u003A\u003AgetMatrix\u0028\u0029",
-            "name": "getMatrix",
-            "summary": "shortcut",
-            "url": "classes/chillerlan-QRCodeTest-Data-QRMatrixTest.html#method_getMatrix"
-        },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\QRMatrixTest\u003A\u003AtestInstance\u0028\u0029",
-            "name": "testInstance",
-            "summary": "Validates\u0020the\u0020QRMatrix\u0020instance",
-            "url": "classes/chillerlan-QRCodeTest-Data-QRMatrixTest.html#method_testInstance"
-        },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\QRMatrixTest\u003A\u003AtestSize\u0028\u0029",
-            "name": "testSize",
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\QRMatrixTest\u003A\u003AtestGetSize\u0028\u0029",
+            "name": "testGetSize",
             "summary": "Tests\u0020if\u0020size\u0028\u0029\u0020returns\u0020the\u0020actual\u0020matrix\u0020size\/count",
-            "url": "classes/chillerlan-QRCodeTest-Data-QRMatrixTest.html#method_testSize"
+            "url": "classes/chillerlan-QRCodeTest-Data-QRMatrixTest.html#method_testGetSize"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\QRMatrixTest\u003A\u003AtestVersion\u0028\u0029",
-            "name": "testVersion",
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\QRMatrixTest\u003A\u003AtestGetVersion\u0028\u0029",
+            "name": "testGetVersion",
             "summary": "Tests\u0020if\u0020version\u0028\u0029\u0020returns\u0020the\u0020current\u0020\u0028given\u0029\u0020version",
-            "url": "classes/chillerlan-QRCodeTest-Data-QRMatrixTest.html#method_testVersion"
+            "url": "classes/chillerlan-QRCodeTest-Data-QRMatrixTest.html#method_testGetVersion"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\QRMatrixTest\u003A\u003AtestECC\u0028\u0029",
-            "name": "testECC",
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\QRMatrixTest\u003A\u003AtestGetECC\u0028\u0029",
+            "name": "testGetECC",
             "summary": "Tests\u0020if\u0020eccLevel\u0028\u0029\u0020returns\u0020the\u0020current\u0020\u0028given\u0029\u0020ECC\u0020level",
-            "url": "classes/chillerlan-QRCodeTest-Data-QRMatrixTest.html#method_testECC"
+            "url": "classes/chillerlan-QRCodeTest-Data-QRMatrixTest.html#method_testGetECC"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\QRMatrixTest\u003A\u003AtestMaskPattern\u0028\u0029",
-            "name": "testMaskPattern",
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\QRMatrixTest\u003A\u003AtestGetMaskPattern\u0028\u0029",
+            "name": "testGetMaskPattern",
             "summary": "Tests\u0020if\u0020maskPattern\u0028\u0029\u0020returns\u0020the\u0020current\u0020\u0028or\u0020default\u0029\u0020mask\u0020pattern",
-            "url": "classes/chillerlan-QRCodeTest-Data-QRMatrixTest.html#method_testMaskPattern"
+            "url": "classes/chillerlan-QRCodeTest-Data-QRMatrixTest.html#method_testGetMaskPattern"
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Data\\QRMatrixTest\u003A\u003AtestGetSetCheck\u0028\u0029",
             "name": "testGetSetCheck",
             "summary": "Tests\u0020the\u0020set\u0028\u0029,\u0020get\u0028\u0029\u0020and\u0020check\u0028\u0029\u0020methods",
             "url": "classes/chillerlan-QRCodeTest-Data-QRMatrixTest.html#method_testGetSetCheck"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\QRMatrixTest\u003A\u003AversionProvider\u0028\u0029",
-            "name": "versionProvider",
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\QRMatrixTest\u003A\u003AmatrixProvider\u0028\u0029",
+            "name": "matrixProvider",
             "summary": "Version\u0020data\u0020provider\u0020for\u0020several\u0020pattern\u0020tests",
-            "url": "classes/chillerlan-QRCodeTest-Data-QRMatrixTest.html#method_versionProvider"
+            "url": "classes/chillerlan-QRCodeTest-Data-QRMatrixTest.html#method_matrixProvider"
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Data\\QRMatrixTest\u003A\u003AtestSetDarkModule\u0028\u0029",
             "name": "testSetDarkModule",
@@ -3406,6 +4306,16 @@ Search.appendIndex(
             "summary": "Tests\u0020if\u0020an\u0020exception\u0020is\u0020thrown\u0020in\u0020an\u0020attempt\u0020to\u0020create\u0020the\u0020quiet\u0020zone\u0020before\u0020data\u0020was\u0020written",
             "url": "classes/chillerlan-QRCodeTest-Data-QRMatrixTest.html#method_testSetQuietZoneException"
         },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\QRMatrixTest\u003A\u003AtestRotate90\u0028\u0029",
+            "name": "testRotate90",
+            "summary": "Tests\u0020rotating\u0020the\u0020matrix\u0020by\u002090\u0020degrees\u0020CW",
+            "url": "classes/chillerlan-QRCodeTest-Data-QRMatrixTest.html#method_testRotate90"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\QRMatrixTest\u003A\u003AtestSetLogoSpaceOmitDimension\u0028\u0029",
+            "name": "testSetLogoSpaceOmitDimension",
+            "summary": "Tests\u0020if\u0020the\u0020logo\u0020space\u0020is\u0020drawn\u0020square\u0020if\u0020one\u0020of\u0020the\u0020dimensions\u0020is\u0020omitted",
+            "url": "classes/chillerlan-QRCodeTest-Data-QRMatrixTest.html#method_testSetLogoSpaceOmitDimension"
+        },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Data\\QRMatrixTest\u003A\u003AtestSetLogoSpaceOrientation\u0028\u0029",
             "name": "testSetLogoSpaceOrientation",
             "summary": "Tests\u0020the\u0020auto\u0020orientation\u0020of\u0020the\u0020logo\u0020space",
@@ -3421,6 +4331,11 @@ Search.appendIndex(
             "summary": "Tests\u0020whether\u0020an\u0020exception\u0020is\u0020thrown\u0020when\u0020an\u0020ECC\u0020level\u0020other\u0020than\u0020\u0022H\u0022\u0020is\u0020set\u0020when\u0020attempting\u0020to\u0020add\u0020logo\u0020space",
             "url": "classes/chillerlan-QRCodeTest-Data-QRMatrixTest.html#method_testSetLogoSpaceInvalidEccException"
         },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\QRMatrixTest\u003A\u003AtestSetLogoSpaceExceedsException\u0028\u0029",
+            "name": "testSetLogoSpaceExceedsException",
+            "summary": "Tests\u0020whether\u0020an\u0020exception\u0020is\u0020thrown\u0020when\u0020width\u0020or\u0020height\u0020exceed\u0020the\u0020matrix\u0020size",
+            "url": "classes/chillerlan-QRCodeTest-Data-QRMatrixTest.html#method_testSetLogoSpaceExceedsException"
+        },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Data\\QRMatrixTest\u003A\u003AtestSetLogoSpaceMaxSizeException\u0028\u0029",
             "name": "testSetLogoSpaceMaxSizeException",
             "summary": "Tests\u0020whether\u0020an\u0020exception\u0020is\u0020thrown\u0020when\u0020the\u0020logo\u0020space\u0020size\u0020exceeds\u0020the\u0020maximum\u0020ECC\u0020capacity",
@@ -3430,6 +4345,16 @@ Search.appendIndex(
             "name": "testFlip",
             "summary": "Tests\u0020flipping\u0020the\u0020value\u0020of\u0020a\u0020module",
             "url": "classes/chillerlan-QRCodeTest-Data-QRMatrixTest.html#method_testFlip"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\QRMatrixTest\u003A\u003AtestCheckTypeIn\u0028\u0029",
+            "name": "testCheckTypeIn",
+            "summary": "Tests\u0020checking\u0020whether\u0020the\u0020M_TYPE\u0020of\u0020a\u0020module\u0020is\u0020not\u0020one\u0020of\u0020an\u0020array\u0020of\u0020M_TYPES",
+            "url": "classes/chillerlan-QRCodeTest-Data-QRMatrixTest.html#method_testCheckTypeIn"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Data\\QRMatrixTest\u003A\u003AtestCheckNeighbours\u0028\u0029",
+            "name": "testCheckNeighbours",
+            "summary": "Tests\u0020checking\u0020the\u0020adjacent\u0020modules",
+            "url": "classes/chillerlan-QRCodeTest-Data-QRMatrixTest.html#method_testCheckNeighbours"
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Data\\QRMatrixTest\u003A\u003Aversion",
             "name": "version",
@@ -3441,6 +4366,36 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/chillerlan-QRCodeTest-Data-QRMatrixTest.html#property_matrix"
         },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\CssColorModuleValueProviderTrait",
+            "name": "CssColorModuleValueProviderTrait",
+            "summary": "A\u0020data\u0020provider\u0020for\u0020use\u0020in\u0020tests\u0020that\u0020include\u0020CssColorModuleValueTrait",
+            "url": "classes/chillerlan-QRCodeTest-Output-CssColorModuleValueProviderTrait.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\CssColorModuleValueProviderTrait\u003A\u003AmoduleValueProvider\u0028\u0029",
+            "name": "moduleValueProvider",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Output-CssColorModuleValueProviderTrait.html#method_moduleValueProvider"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QREpsTest",
+            "name": "QREpsTest",
+            "summary": "Test\u0020abstract\u0020for\u0020the\u0020several\u0020\u0028built\u002Din\u0029\u0020output\u0020modules,\nshould\u0020also\u0020be\u0020used\u0020to\u0020test\u0020custom\u0020output\u0020modules",
+            "url": "classes/chillerlan-QRCodeTest-Output-QREpsTest.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QREpsTest\u003A\u003AmoduleValueProvider\u0028\u0029",
+            "name": "moduleValueProvider",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Output-QREpsTest.html#method_moduleValueProvider"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QREpsTest\u003A\u003AgetOutputInterface\u0028\u0029",
+            "name": "getOutputInterface",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Output-QREpsTest.html#method_getOutputInterface"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QREpsTest\u003A\u003AtestSetModuleValues\u0028\u0029",
+            "name": "testSetModuleValues",
+            "summary": "covers\u0020the\u0020module\u0020values\u0020settings",
+            "url": "classes/chillerlan-QRCodeTest-Output-QREpsTest.html#method_testSetModuleValues"
+        },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRFpdfTest",
             "name": "QRFpdfTest",
             "summary": "Tests\u0020the\u0020QRFpdf\u0020output\u0020module",
@@ -3450,6 +4405,11 @@ Search.appendIndex(
             "name": "setUp",
             "summary": "Attempts\u0020to\u0020create\u0020a\u0020directory\u0020under\u0020\/.build\u0020and\u0020instances\u0020several\u0020required\u0020objects",
             "url": "classes/chillerlan-QRCodeTest-Output-QRFpdfTest.html#method_setUp"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRFpdfTest\u003A\u003AgetOutputInterface\u0028\u0029",
+            "name": "getOutputInterface",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Output-QRFpdfTest.html#method_getOutputInterface"
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRFpdfTest\u003A\u003AtestSetModuleValues\u0028\u0029",
             "name": "testSetModuleValues",
@@ -3461,45 +4421,55 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/chillerlan-QRCodeTest-Output-QRFpdfTest.html#method_testOutputGetResource"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRFpdfTest\u003A\u003A\u0024FQN",
-            "name": "FQN",
-            "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-Output-QRFpdfTest.html#property_FQN"
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRGdImageAVIFTest",
+            "name": "QRGdImageAVIFTest",
+            "summary": "Tests\u0020the\u0020QRGdImage\u0020output\u0020module",
+            "url": "classes/chillerlan-QRCodeTest-Output-QRGdImageAVIFTest.html"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRFpdfTest\u003A\u003A\u0024type",
-            "name": "type",
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRGdImageAVIFTest\u003A\u003AgetOutputInterface\u0028\u0029",
+            "name": "getOutputInterface",
             "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-Output-QRFpdfTest.html#property_type"
+            "url": "classes/chillerlan-QRCodeTest-Output-QRGdImageAVIFTest.html#method_getOutputInterface"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRGdImageBMPTest",
+            "name": "QRGdImageBMPTest",
+            "summary": "Tests\u0020the\u0020QRGdImage\u0020output\u0020module",
+            "url": "classes/chillerlan-QRCodeTest-Output-QRGdImageBMPTest.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRGdImageBMPTest\u003A\u003AgetOutputInterface\u0028\u0029",
+            "name": "getOutputInterface",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Output-QRGdImageBMPTest.html#method_getOutputInterface"
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRGdImageGIFTest",
             "name": "QRGdImageGIFTest",
             "summary": "Tests\u0020the\u0020QRGdImage\u0020output\u0020module",
             "url": "classes/chillerlan-QRCodeTest-Output-QRGdImageGIFTest.html"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRGdImageGIFTest\u003A\u003A\u0024type",
-            "name": "type",
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRGdImageGIFTest\u003A\u003AgetOutputInterface\u0028\u0029",
+            "name": "getOutputInterface",
             "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-Output-QRGdImageGIFTest.html#property_type"
+            "url": "classes/chillerlan-QRCodeTest-Output-QRGdImageGIFTest.html#method_getOutputInterface"
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRGdImageJPGTest",
             "name": "QRGdImageJPGTest",
             "summary": "Tests\u0020the\u0020QRGdImage\u0020output\u0020module",
             "url": "classes/chillerlan-QRCodeTest-Output-QRGdImageJPGTest.html"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRGdImageJPGTest\u003A\u003A\u0024type",
-            "name": "type",
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRGdImageJPGTest\u003A\u003AgetOutputInterface\u0028\u0029",
+            "name": "getOutputInterface",
             "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-Output-QRGdImageJPGTest.html#property_type"
+            "url": "classes/chillerlan-QRCodeTest-Output-QRGdImageJPGTest.html#method_getOutputInterface"
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRGdImagePNGTest",
             "name": "QRGdImagePNGTest",
             "summary": "Tests\u0020the\u0020QRGdImage\u0020output\u0020module",
             "url": "classes/chillerlan-QRCodeTest-Output-QRGdImagePNGTest.html"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRGdImagePNGTest\u003A\u003A\u0024type",
-            "name": "type",
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRGdImagePNGTest\u003A\u003AgetOutputInterface\u0028\u0029",
+            "name": "getOutputInterface",
             "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-Output-QRGdImagePNGTest.html#property_type"
+            "url": "classes/chillerlan-QRCodeTest-Output-QRGdImagePNGTest.html#method_getOutputInterface"
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRGdImageTestAbstract",
             "name": "QRGdImageTestAbstract",
@@ -3521,10 +4491,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/chillerlan-QRCodeTest-Output-QRGdImageTestAbstract.html#method_testOutputGetResource"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRGdImageTestAbstract\u003A\u003A\u0024FQN",
-            "name": "FQN",
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRGdImageTestAbstract\u003A\u003AtestBase64MimeType\u0028\u0029",
+            "name": "testBase64MimeType",
             "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-Output-QRGdImageTestAbstract.html#property_FQN"
+            "url": "classes/chillerlan-QRCodeTest-Output-QRGdImageTestAbstract.html#method_testBase64MimeType"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRGdImageWEBPTest",
+            "name": "QRGdImageWEBPTest",
+            "summary": "Tests\u0020the\u0020QRGdImage\u0020output\u0020module",
+            "url": "classes/chillerlan-QRCodeTest-Output-QRGdImageWEBPTest.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRGdImageWEBPTest\u003A\u003AgetOutputInterface\u0028\u0029",
+            "name": "getOutputInterface",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Output-QRGdImageWEBPTest.html#method_getOutputInterface"
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRImagickTest",
             "name": "QRImagickTest",
@@ -3536,6 +4516,16 @@ Search.appendIndex(
             "summary": "Attempts\u0020to\u0020create\u0020a\u0020directory\u0020under\u0020\/.build\u0020and\u0020instances\u0020several\u0020required\u0020objects",
             "url": "classes/chillerlan-QRCodeTest-Output-QRImagickTest.html#method_setUp"
         },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRImagickTest\u003A\u003AgetOutputInterface\u0028\u0029",
+            "name": "getOutputInterface",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Output-QRImagickTest.html#method_getOutputInterface"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRImagickTest\u003A\u003AmoduleValueProvider\u0028\u0029",
+            "name": "moduleValueProvider",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Output-QRImagickTest.html#method_moduleValueProvider"
+        },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRImagickTest\u003A\u003AtestSetModuleValues\u0028\u0029",
             "name": "testSetModuleValues",
             "summary": "covers\u0020the\u0020module\u0020values\u0020settings",
@@ -3546,35 +4536,55 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/chillerlan-QRCodeTest-Output-QRImagickTest.html#method_testOutputGetResource"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRImagickTest\u003A\u003A\u0024FQN",
-            "name": "FQN",
-            "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-Output-QRImagickTest.html#property_FQN"
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRInterventionImageTest",
+            "name": "QRInterventionImageTest",
+            "summary": "Tests\u0020the\u0020QRInterventionImage\u0020output\u0020module",
+            "url": "classes/chillerlan-QRCodeTest-Output-QRInterventionImageTest.html"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRImagickTest\u003A\u003A\u0024type",
-            "name": "type",
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRInterventionImageTest\u003A\u003AsetUp\u0028\u0029",
+            "name": "setUp",
+            "summary": "Attempts\u0020to\u0020create\u0020a\u0020directory\u0020under\u0020\/.build\u0020and\u0020instances\u0020several\u0020required\u0020objects",
+            "url": "classes/chillerlan-QRCodeTest-Output-QRInterventionImageTest.html#method_setUp"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRInterventionImageTest\u003A\u003AgetOutputInterface\u0028\u0029",
+            "name": "getOutputInterface",
             "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-Output-QRImagickTest.html#property_type"
+            "url": "classes/chillerlan-QRCodeTest-Output-QRInterventionImageTest.html#method_getOutputInterface"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRInterventionImageTest\u003A\u003AtestSetModuleValues\u0028\u0029",
+            "name": "testSetModuleValues",
+            "summary": "covers\u0020the\u0020module\u0020values\u0020settings",
+            "url": "classes/chillerlan-QRCodeTest-Output-QRInterventionImageTest.html#method_testSetModuleValues"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRInterventionImageTest\u003A\u003AtestOutputGetResource\u0028\u0029",
+            "name": "testOutputGetResource",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Output-QRInterventionImageTest.html#method_testOutputGetResource"
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRMarkupHTMLTest",
             "name": "QRMarkupHTMLTest",
             "summary": "Tests\u0020the\u0020QRMarkup\u0020output\u0020module",
             "url": "classes/chillerlan-QRCodeTest-Output-QRMarkupHTMLTest.html"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRMarkupHTMLTest\u003A\u003A\u0024type",
-            "name": "type",
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRMarkupHTMLTest\u003A\u003AgetOutputInterface\u0028\u0029",
+            "name": "getOutputInterface",
             "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-Output-QRMarkupHTMLTest.html#property_type"
+            "url": "classes/chillerlan-QRCodeTest-Output-QRMarkupHTMLTest.html#method_getOutputInterface"
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRMarkupSVGTest",
             "name": "QRMarkupSVGTest",
             "summary": "Tests\u0020the\u0020QRMarkup\u0020output\u0020module",
             "url": "classes/chillerlan-QRCodeTest-Output-QRMarkupSVGTest.html"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRMarkupSVGTest\u003A\u003A\u0024type",
-            "name": "type",
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRMarkupSVGTest\u003A\u003AgetOutputInterface\u0028\u0029",
+            "name": "getOutputInterface",
             "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-Output-QRMarkupSVGTest.html#property_type"
+            "url": "classes/chillerlan-QRCodeTest-Output-QRMarkupSVGTest.html#method_getOutputInterface"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRMarkupSVGTest\u003A\u003AmoduleValueProvider\u0028\u0029",
+            "name": "moduleValueProvider",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Output-QRMarkupSVGTest.html#method_moduleValueProvider"
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRMarkupTestAbstract",
             "name": "QRMarkupTestAbstract",
@@ -3586,10 +4596,15 @@ Search.appendIndex(
             "summary": "covers\u0020the\u0020module\u0020values\u0020settings",
             "url": "classes/chillerlan-QRCodeTest-Output-QRMarkupTestAbstract.html#method_testSetModuleValues"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRMarkupTestAbstract\u003A\u003A\u0024FQN",
-            "name": "FQN",
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRMarkupXMLTest",
+            "name": "QRMarkupXMLTest",
+            "summary": "Tests\u0020the\u0020QRMarkup\u0020output\u0020module",
+            "url": "classes/chillerlan-QRCodeTest-Output-QRMarkupXMLTest.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRMarkupXMLTest\u003A\u003AgetOutputInterface\u0028\u0029",
+            "name": "getOutputInterface",
             "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-Output-QRMarkupTestAbstract.html#property_FQN"
+            "url": "classes/chillerlan-QRCodeTest-Output-QRMarkupXMLTest.html#method_getOutputInterface"
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QROutputTestAbstract",
             "name": "QROutputTestAbstract",
@@ -3601,15 +4616,25 @@ Search.appendIndex(
             "summary": "Attempts\u0020to\u0020create\u0020a\u0020directory\u0020under\u0020\/.build\u0020and\u0020instances\u0020several\u0020required\u0020objects",
             "url": "classes/chillerlan-QRCodeTest-Output-QROutputTestAbstract.html#method_setUp"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QROutputTestAbstract\u003A\u003AtestInstance\u0028\u0029",
-            "name": "testInstance",
-            "summary": "Validate\u0020the\u0020instance\u0020of\u0020the\u0020interface",
-            "url": "classes/chillerlan-QRCodeTest-Output-QROutputTestAbstract.html#method_testInstance"
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QROutputTestAbstract\u003A\u003AgetOutputInterface\u0028\u0029",
+            "name": "getOutputInterface",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Output-QROutputTestAbstract.html#method_getOutputInterface"
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QROutputTestAbstract\u003A\u003AtestSaveException\u0028\u0029",
             "name": "testSaveException",
             "summary": "Tests\u0020if\u0020an\u0020exception\u0020is\u0020thrown\u0020when\u0020trying\u0020to\u0020write\u0020a\u0020cache\u0020file\u0020to\u0020an\u0020invalid\u0020destination",
             "url": "classes/chillerlan-QRCodeTest-Output-QROutputTestAbstract.html#method_testSaveException"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QROutputTestAbstract\u003A\u003AmoduleValueProvider\u0028\u0029",
+            "name": "moduleValueProvider",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Output-QROutputTestAbstract.html#method_moduleValueProvider"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QROutputTestAbstract\u003A\u003AtestValidateModuleValues\u0028\u0029",
+            "name": "testValidateModuleValues",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Output-QROutputTestAbstract.html#method_testValidateModuleValues"
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QROutputTestAbstract\u003A\u003AtestSetModuleValues\u0028\u0029",
             "name": "testSetModuleValues",
@@ -3620,6 +4645,11 @@ Search.appendIndex(
             "name": "testRenderToCacheFile",
             "summary": "coverage\u0020of\u0020the\u0020built\u002Din\u0020output\u0020modules",
             "url": "classes/chillerlan-QRCodeTest-Output-QROutputTestAbstract.html#method_testRenderToCacheFile"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QROutputTestAbstract\u003A\u003AbuildDir",
+            "name": "buildDir",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-Output-QROutputTestAbstract.html#constant_buildDir"
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QROutputTestAbstract\u003A\u003A\u0024options",
             "name": "options",
@@ -3636,75 +4666,60 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/chillerlan-QRCodeTest-Output-QROutputTestAbstract.html#property_matrix"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QROutputTestAbstract\u003A\u003A\u0024builddir",
-            "name": "builddir",
-            "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-Output-QROutputTestAbstract.html#property_builddir"
-        },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QROutputTestAbstract\u003A\u003A\u0024FQN",
-            "name": "FQN",
-            "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-Output-QROutputTestAbstract.html#property_FQN"
-        },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QROutputTestAbstract\u003A\u003A\u0024type",
-            "name": "type",
-            "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-Output-QROutputTestAbstract.html#property_type"
-        },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRStringJSONTest",
             "name": "QRStringJSONTest",
-            "summary": "Tests\u0020the\u0020QRString\u0020output\u0020module",
+            "summary": "Test\u0020abstract\u0020for\u0020the\u0020several\u0020\u0028built\u002Din\u0029\u0020output\u0020modules,\nshould\u0020also\u0020be\u0020used\u0020to\u0020test\u0020custom\u0020output\u0020modules",
             "url": "classes/chillerlan-QRCodeTest-Output-QRStringJSONTest.html"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRStringJSONTest\u003A\u003AsetUp\u0028\u0029",
-            "name": "setUp",
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRStringJSONTest\u003A\u003AgetOutputInterface\u0028\u0029",
+            "name": "getOutputInterface",
             "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-Output-QRStringJSONTest.html#method_setUp"
+            "url": "classes/chillerlan-QRCodeTest-Output-QRStringJSONTest.html#method_getOutputInterface"
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRStringJSONTest\u003A\u003AtestSetModuleValues\u0028\u0029",
             "name": "testSetModuleValues",
-            "summary": "",
+            "summary": "covers\u0020the\u0020module\u0020values\u0020settings",
             "url": "classes/chillerlan-QRCodeTest-Output-QRStringJSONTest.html#method_testSetModuleValues"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRStringJSONTest\u003A\u003A\u0024type",
-            "name": "type",
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRStringTextTest",
+            "name": "QRStringTextTest",
+            "summary": "Test\u0020abstract\u0020for\u0020the\u0020several\u0020\u0028built\u002Din\u0029\u0020output\u0020modules,\nshould\u0020also\u0020be\u0020used\u0020to\u0020test\u0020custom\u0020output\u0020modules",
+            "url": "classes/chillerlan-QRCodeTest-Output-QRStringTextTest.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRStringTextTest\u003A\u003AgetOutputInterface\u0028\u0029",
+            "name": "getOutputInterface",
             "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-Output-QRStringJSONTest.html#property_type"
+            "url": "classes/chillerlan-QRCodeTest-Output-QRStringTextTest.html#method_getOutputInterface"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRStringTestAbstract",
-            "name": "QRStringTestAbstract",
-            "summary": "Tests\u0020the\u0020QRString\u0020output\u0020module",
-            "url": "classes/chillerlan-QRCodeTest-Output-QRStringTestAbstract.html"
-        },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRStringTestAbstract\u003A\u003A\u0024FQN",
-            "name": "FQN",
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRStringTextTest\u003A\u003AmoduleValueProvider\u0028\u0029",
+            "name": "moduleValueProvider",
             "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-Output-QRStringTestAbstract.html#property_FQN"
+            "url": "classes/chillerlan-QRCodeTest-Output-QRStringTextTest.html#method_moduleValueProvider"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRStringTEXTTest",
-            "name": "QRStringTEXTTest",
-            "summary": "Tests\u0020the\u0020QRString\u0020output\u0020module",
-            "url": "classes/chillerlan-QRCodeTest-Output-QRStringTEXTTest.html"
-        },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRStringTEXTTest\u003A\u003AtestSetModuleValues\u0028\u0029",
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRStringTextTest\u003A\u003AtestSetModuleValues\u0028\u0029",
             "name": "testSetModuleValues",
-            "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-Output-QRStringTEXTTest.html#method_testSetModuleValues"
+            "summary": "covers\u0020the\u0020module\u0020values\u0020settings",
+            "url": "classes/chillerlan-QRCodeTest-Output-QRStringTextTest.html#method_testSetModuleValues"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\QRStringTEXTTest\u003A\u003A\u0024type",
-            "name": "type",
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\RGBArrayModuleValueProviderTrait",
+            "name": "RGBArrayModuleValueProviderTrait",
+            "summary": "A\u0020data\u0020provider\u0020for\u0020use\u0020in\u0020tests\u0020that\u0020include\u0020RGBArrayModuleValueTrait",
+            "url": "classes/chillerlan-QRCodeTest-Output-RGBArrayModuleValueProviderTrait.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\Output\\RGBArrayModuleValueProviderTrait\u003A\u003AmoduleValueProvider\u0028\u0029",
+            "name": "moduleValueProvider",
             "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-Output-QRStringTEXTTest.html#property_type"
+            "url": "classes/chillerlan-QRCodeTest-Output-RGBArrayModuleValueProviderTrait.html#method_moduleValueProvider"
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\QRCodeReaderGDTest",
             "name": "QRCodeReaderGDTest",
             "summary": "Tests\u0020the\u0020GD\u0020based\u0020reader",
             "url": "classes/chillerlan-QRCodeTest-QRCodeReaderGDTest.html"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\QRCodeReaderGDTest\u003A\u003A\u0024FQN",
-            "name": "FQN",
+            "fqsen": "\\chillerlan\\QRCodeTest\\QRCodeReaderGDTest\u003A\u003AgetLuminanceSourceFromFile\u0028\u0029",
+            "name": "getLuminanceSourceFromFile",
             "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-QRCodeReaderGDTest.html#property_FQN"
+            "url": "classes/chillerlan-QRCodeTest-QRCodeReaderGDTest.html#method_getLuminanceSourceFromFile"
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\QRCodeReaderImagickTest",
             "name": "QRCodeReaderImagickTest",
@@ -3716,10 +4731,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/chillerlan-QRCodeTest-QRCodeReaderImagickTest.html#method_setUp"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\QRCodeReaderImagickTest\u003A\u003A\u0024FQN",
-            "name": "FQN",
+            "fqsen": "\\chillerlan\\QRCodeTest\\QRCodeReaderImagickTest\u003A\u003AgetLuminanceSourceFromFile\u0028\u0029",
+            "name": "getLuminanceSourceFromFile",
             "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-QRCodeReaderImagickTest.html#property_FQN"
+            "url": "classes/chillerlan-QRCodeTest-QRCodeReaderImagickTest.html#method_getLuminanceSourceFromFile"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\QRCodeReaderImagickTest\u003A\u003AvectorQRCodeProvider\u0028\u0029",
+            "name": "vectorQRCodeProvider",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-QRCodeReaderImagickTest.html#method_vectorQRCodeProvider"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\QRCodeReaderImagickTest\u003A\u003AtestReadVectorFormats\u0028\u0029",
+            "name": "testReadVectorFormats",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-QRCodeReaderImagickTest.html#method_testReadVectorFormats"
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\QRCodeReaderTestAbstract",
             "name": "QRCodeReaderTestAbstract",
@@ -3736,15 +4761,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/chillerlan-QRCodeTest-QRCodeReaderTestAbstract.html#method_qrCodeProvider"
         },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\QRCodeReaderTestAbstract\u003A\u003AgetLuminanceSourceFromFile\u0028\u0029",
+            "name": "getLuminanceSourceFromFile",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-QRCodeReaderTestAbstract.html#method_getLuminanceSourceFromFile"
+        },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\QRCodeReaderTestAbstract\u003A\u003AtestReader\u0028\u0029",
             "name": "testReader",
             "summary": "",
             "url": "classes/chillerlan-QRCodeTest-QRCodeReaderTestAbstract.html#method_testReader"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\QRCodeReaderTestAbstract\u003A\u003AtestReaderMultiSegment\u0028\u0029",
-            "name": "testReaderMultiSegment",
+            "fqsen": "\\chillerlan\\QRCodeTest\\QRCodeReaderTestAbstract\u003A\u003AtestReaderMultiMode\u0028\u0029",
+            "name": "testReaderMultiMode",
             "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-QRCodeReaderTestAbstract.html#method_testReaderMultiSegment"
+            "url": "classes/chillerlan-QRCodeTest-QRCodeReaderTestAbstract.html#method_testReaderMultiMode"
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\QRCodeReaderTestAbstract\u003A\u003AdataTestProvider\u0028\u0029",
             "name": "dataTestProvider",
@@ -3761,15 +4791,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/chillerlan-QRCodeTest-QRCodeReaderTestAbstract.html#constant_loremipsum"
         },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\QRCodeReaderTestAbstract\u003A\u003AsamplesDir",
+            "name": "samplesDir",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-QRCodeReaderTestAbstract.html#constant_samplesDir"
+        },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\QRCodeReaderTestAbstract\u003A\u003A\u0024options",
             "name": "options",
             "summary": "",
             "url": "classes/chillerlan-QRCodeTest-QRCodeReaderTestAbstract.html#property_options"
-        },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\QRCodeReaderTestAbstract\u003A\u003A\u0024FQN",
-            "name": "FQN",
-            "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-QRCodeReaderTestAbstract.html#property_FQN"
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\QRCodeTest",
             "name": "QRCodeTest",
@@ -3781,15 +4811,30 @@ Search.appendIndex(
             "summary": "invoke\u0020test\u0020instances",
             "url": "classes/chillerlan-QRCodeTest-QRCodeTest.html#method_setUp"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\QRCodeTest\u003A\u003AtestInitDataInterfaceException\u0028\u0029",
-            "name": "testInitDataInterfaceException",
-            "summary": "tests\u0020if\u0020an\u0020exception\u0020is\u0020thrown\u0020when\u0020an\u0020invalid\u0020\u0028built\u002Din\u0029\u0020output\u0020type\u0020is\u0020specified",
-            "url": "classes/chillerlan-QRCodeTest-QRCodeTest.html#method_testInitDataInterfaceException"
+            "fqsen": "\\chillerlan\\QRCodeTest\\QRCodeTest\u003A\u003AtestInitCustomOutputInterfaceNotExistsException\u0028\u0029",
+            "name": "testInitCustomOutputInterfaceNotExistsException",
+            "summary": "tests\u0020if\u0020an\u0020exception\u0020is\u0020thrown\u0020if\u0020the\u0020given\u0020output\u0020class\u0020does\u0020not\u0020exist",
+            "url": "classes/chillerlan-QRCodeTest-QRCodeTest.html#method_testInitCustomOutputInterfaceNotExistsException"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\QRCodeTest\u003A\u003AtestGetMatrixException\u0028\u0029",
-            "name": "testGetMatrixException",
-            "summary": "tests\u0020if\u0020an\u0020exception\u0020is\u0020thrown\u0020when\u0020trying\u0020to\u0020call\u0020getMatrix\u0028\u0029\u0020without\u0020data\u0020\u0028empty\u0020string,\u0020no\u0020data\u0020set\u0029",
-            "url": "classes/chillerlan-QRCodeTest-QRCodeTest.html#method_testGetMatrixException"
+            "fqsen": "\\chillerlan\\QRCodeTest\\QRCodeTest\u003A\u003AtestInitCustomOutputInterfaceNotImplementsException\u0028\u0029",
+            "name": "testInitCustomOutputInterfaceNotImplementsException",
+            "summary": "tests\u0020if\u0020an\u0020exception\u0020is\u0020thrown\u0020if\u0020the\u0020given\u0020output\u0020class\u0020does\u0020not\u0020implement\u0020QROutputInterface",
+            "url": "classes/chillerlan-QRCodeTest-QRCodeTest.html#method_testInitCustomOutputInterfaceNotImplementsException"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\QRCodeTest\u003A\u003AtestSaveException\u0028\u0029",
+            "name": "testSaveException",
+            "summary": "Tests\u0020if\u0020an\u0020exception\u0020is\u0020thrown\u0020when\u0020trying\u0020to\u0020write\u0020a\u0020cache\u0020file\u0020to\u0020an\u0020invalid\u0020destination",
+            "url": "classes/chillerlan-QRCodeTest-QRCodeTest.html#method_testSaveException"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\QRCodeTest\u003A\u003AtestRenderToCacheFile\u0028\u0029",
+            "name": "testRenderToCacheFile",
+            "summary": "Tests\u0020if\u0020a\u0020cache\u0020file\u0020is\u0020properly\u0020saved\u0020in\u0020the\u0020given\u0020path",
+            "url": "classes/chillerlan-QRCodeTest-QRCodeTest.html#method_testRenderToCacheFile"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\QRCodeTest\u003A\u003AbuildDir",
+            "name": "buildDir",
+            "summary": "",
+            "url": "classes/chillerlan-QRCodeTest-QRCodeTest.html#constant_buildDir"
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\QRCodeTest\u003A\u003A\u0024qrcode",
             "name": "qrcode",
@@ -3800,6 +4845,31 @@ Search.appendIndex(
             "name": "options",
             "summary": "",
             "url": "classes/chillerlan-QRCodeTest-QRCodeTest.html#property_options"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\QRMatrixDebugTrait",
+            "name": "QRMatrixDebugTrait",
+            "summary": "Trait\u0020QRMatrixDebugTrait",
+            "url": "classes/chillerlan-QRCodeTest-QRMatrixDebugTrait.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\QRMatrixDebugTrait\u003A\u003AdebugMatrix\u0028\u0029",
+            "name": "debugMatrix",
+            "summary": "Matrix\u0020debugging\u0020console\u0020output",
+            "url": "classes/chillerlan-QRCodeTest-QRMatrixDebugTrait.html#method_debugMatrix"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\QRMatrixDebugTrait\u003A\u003Adm\u0028\u0029",
+            "name": "dm",
+            "summary": "debugging\u0020shortcut\u0020\u002D\u0020limit\u0020to\u0020a\u0020single\u0020version\u0020when\u0020using\u0020with\u0020matrixProvider",
+            "url": "classes/chillerlan-QRCodeTest-QRMatrixDebugTrait.html#method_dm"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\QRMaxLengthTrait",
+            "name": "QRMaxLengthTrait",
+            "summary": "Trait\u0020QRMaxLengthTrait",
+            "url": "classes/chillerlan-QRCodeTest-QRMaxLengthTrait.html"
+        },                {
+            "fqsen": "\\chillerlan\\QRCodeTest\\QRMaxLengthTrait\u003A\u003AgetMaxLengthForMode\u0028\u0029",
+            "name": "getMaxLengthForMode",
+            "summary": "the\u0020maximum\u0020character\u0020count\u0020for\u0020the\u0020given\u0020\u0024mode\u0020and\u0020\u0024eccLevel",
+            "url": "classes/chillerlan-QRCodeTest-QRMaxLengthTrait.html#method_getMaxLengthForMode"
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\QROptionsTest",
             "name": "QROptionsTest",
@@ -3826,35 +4896,25 @@ Search.appendIndex(
             "summary": "Tests\u0020the\u0020\u0024versionMin\/\u0024versionMax\u0020clamping",
             "url": "classes/chillerlan-QRCodeTest-QROptionsTest.html#method_testVersionMinMaxClamp"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\QROptionsTest\u003A\u003AMaskPatternProvider\u0028\u0029",
-            "name": "MaskPatternProvider",
-            "summary": "",
-            "url": "classes/chillerlan-QRCodeTest-QROptionsTest.html#method_MaskPatternProvider"
+            "fqsen": "\\chillerlan\\QRCodeTest\\QROptionsTest\u003A\u003AtestSetEccLevel\u0028\u0029",
+            "name": "testSetEccLevel",
+            "summary": "Tests\u0020setting\u0020the\u0020ECC\u0020level\u0020from\u0020string\u0020or\u0020int",
+            "url": "classes/chillerlan-QRCodeTest-QROptionsTest.html#method_testSetEccLevel"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\QROptionsTest\u003A\u003AtestMaskPatternClamp\u0028\u0029",
-            "name": "testMaskPatternClamp",
-            "summary": "Tests\u0020the\u0020\u0024maskPattern\u0020clamping",
-            "url": "classes/chillerlan-QRCodeTest-QROptionsTest.html#method_testMaskPatternClamp"
+            "fqsen": "\\chillerlan\\QRCodeTest\\QROptionsTest\u003A\u003AtestSetEccLevelFromIntException\u0028\u0029",
+            "name": "testSetEccLevelFromIntException",
+            "summary": "Tests\u0020if\u0020an\u0020exception\u0020is\u0020thrown\u0020when\u0020attempting\u0020to\u0020set\u0020an\u0020invalid\u0020ECC\u0020level\u0020integer",
+            "url": "classes/chillerlan-QRCodeTest-QROptionsTest.html#method_testSetEccLevelFromIntException"
         },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\QROptionsTest\u003A\u003AtestInvalidEccLevelException\u0028\u0029",
-            "name": "testInvalidEccLevelException",
-            "summary": "Tests\u0020if\u0020an\u0020exception\u0020is\u0020thrown\u0020on\u0020an\u0020incorrect\u0020ECC\u0020level",
-            "url": "classes/chillerlan-QRCodeTest-QROptionsTest.html#method_testInvalidEccLevelException"
+            "fqsen": "\\chillerlan\\QRCodeTest\\QROptionsTest\u003A\u003AtestSetEccLevelFromStringException\u0028\u0029",
+            "name": "testSetEccLevelFromStringException",
+            "summary": "Tests\u0020if\u0020an\u0020exception\u0020is\u0020thrown\u0020when\u0020attempting\u0020to\u0020set\u0020an\u0020invalid\u0020ECC\u0020level\u0020string",
+            "url": "classes/chillerlan-QRCodeTest-QROptionsTest.html#method_testSetEccLevelFromStringException"
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\QROptionsTest\u003A\u003ARGBProvider\u0028\u0029",
             "name": "RGBProvider",
             "summary": "",
             "url": "classes/chillerlan-QRCodeTest-QROptionsTest.html#method_RGBProvider"
-        },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\QROptionsTest\u003A\u003AtestClampRGBValues\u0028\u0029",
-            "name": "testClampRGBValues",
-            "summary": "Tests\u0020clamping\u0020of\u0020the\u0020RGB\u0020values\u0020for\u0020\u0024imageTransparencyBG",
-            "url": "classes/chillerlan-QRCodeTest-QROptionsTest.html#method_testClampRGBValues"
-        },                {
-            "fqsen": "\\chillerlan\\QRCodeTest\\QROptionsTest\u003A\u003AtestInvalidRGBValueException\u0028\u0029",
-            "name": "testInvalidRGBValueException",
-            "summary": "Tests\u0020if\u0020an\u0020exception\u0020is\u0020thrown\u0020when\u0020a\u0020non\u002Dnumeric\u0020RGB\u0020value\u0020was\u0020encoutered",
-            "url": "classes/chillerlan-QRCodeTest-QROptionsTest.html#method_testInvalidRGBValueException"
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\QROptionsTest\u003A\u003AlogoSpaceValueProvider\u0028\u0029",
             "name": "logoSpaceValueProvider",
@@ -3878,7 +4938,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\QROptionsTest\u003A\u003AtestClampCircleRadius\u0028\u0029",
             "name": "testClampCircleRadius",
-            "summary": "",
+            "summary": "Tests\u0020clamping\u0020of\u0020the\u0020circle\u0020radius",
             "url": "classes/chillerlan-QRCodeTest-QROptionsTest.html#method_testClampCircleRadius"
         },                {
             "fqsen": "\\",
@@ -3921,6 +4981,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/chillerlan.html"
         },                {
+            "fqsen": "\\chillerlan\\QRCodeTest",
+            "name": "QRCodeTest",
+            "summary": "",
+            "url": "namespaces/chillerlan-qrcodetest.html"
+        },                {
             "fqsen": "\\chillerlan\\QRCodeTest\\Common",
             "name": "Common",
             "summary": "",
@@ -3935,10 +5000,5 @@ Search.appendIndex(
             "name": "Output",
             "summary": "",
             "url": "namespaces/chillerlan-qrcodetest-output.html"
-        },                {
-            "fqsen": "\\chillerlan\\QRCodeTest",
-            "name": "QRCodeTest",
-            "summary": "",
-            "url": "namespaces/chillerlan-qrcodetest.html"
         }            ]
 );
